@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Semantiska element för struktur</title>
+	<link href="../Styles/MenuStyle.css" rel="stylesheet" />
+	<link href="../Styles/SemanticStyle.css" rel="stylesheet" />
+</head>
+<body>
+	<header>
+			<nav class="Nav-Index">
+				<ul class="logo" id="left">
+					<li><a href="../Views/index.html"><span>Webbutveckling</span><span id="rightlogo">Klientsidan</span></a></li>
+				</ul>
+				</div>
+			</nav>
+	</header>
+	<div class="container">
+		<aside>
+			<section>
+				<h2>Innehåll</h2>
+				<ul>
+					<li>&lt;article&gt;</li>
+					<li>&lt;nav&gt;</li>
+					<li>&lt;header&gt;</li>
+					<li>&lt;footer&gt;</li>
+					<li>&lt;section&gt;</li>
+					<li>&lt;figure&gt;</li>
+					<li>&lt;figcaption&gt;</li>
+					<li>&lt;aside&gt;</li>
+					<li>&lt;details&gt;</li>
+					<li>&lt;summary&gt;</li>
+				</ul>
+			</section>
+		</aside>
+		<article>
+			<article class="nested-article" id="nested-article">
+				<h2>Semantiska element</h2>
+				<p>
+					Till skillnad från icke semantiska element som till exempel &lt;div&gt; som måste dekoreras med ett beskrivande klassnamn eller id för att ge en beskrivning till utvecklaren om dess användningsområde,
+					så avger semantiska element redan i sitt namn en beskrivning av detta och kan användas för att lättare strukturera en webbsida
+				</p>
+			</article>
+			<section>
+				<h2>Några av de semantiska element som finns i HTML5</h2>
+				<p><b>&lt;article&gt;</b> omsluter en sammansättning som på egen hand kan återges utan att tappa innebörden. article-taggen kan innehålla andra article-taggar och section-taggar</p>
+				<p><b>&lt;nav&gt;</b>Används för att omsluta en grupp av navigationslänkar. Skillnaden mot en &lt;div&gt; är att nav-taggen berättar för programvara som hjälper funktionsnedsatta att detta område innehåller navigationslänkar.</p>
+				<p><b>&lt;header&gt;</b> läggs inuti article-taggarna och omsluter inledande innehåll. Exempel på detta är h-taggar eller information om webbsidans utvecklare</p>
+				<p><b>&lt;footer&gt;</b> läggs inuti article-taggarna och innehåller vanligtvis information om webbsidans utvecklare, äganderätt, kontaktinformation eller länk till toppen av sidan.</p>
+				<p><b>&lt;section&gt;</b> innehåller ofta en header men är inget måste. Tumkravet för att använda en section-tagg brukar vara att om kraven för att använda en article-tagg ej är uppfyllda, men sektionen med dess header skulle bli en del av innehållsförteckningen så kan man använda section-taggen.
+				section-taggen kan nästlas inuti en article-tagg eller läggas som en fristående del. Om det enda syftet är utseendet, så används istället en vanlig div-tagg.</p>
+				<p><b>&lt;figure&gt;</b> används för att bland annat visa bilder, grafer med mera. figure-taggen är en del av huvudinnehållet men kan flyttas till exempelvis en bilaga utan att påverka flödet av huvudinnehållet.</p>
+				<p><b>&lt;figcaption&gt;</b> används tillsammans med &lt;figure&gt; för att lägga till en rubrik eller inskrift till bilden som visas.</p>
+				<p><b>&lt;aside&gt;</b>inom aside-taggarna läggs innehåll som inte hör till huvudinnehållet i det parent-element som den ligger i, men som ändå är relaterat till detta. aside kan läggas inuti exempelvis ett article-element eller direkt i body.</p>
+				<p><b>&lt;details&gt;</b> skapar en Window gadget som består av en togglingsknapp som expanderar eller minimerar ett fält där ytterligare innehåll kan läggas.</p>
+				<p><b>&lt;summary&gt;</b> läggs först inom details-taggarna, och kommer visas som rubrik på togglingsknappen i både stängt och öppet läge. Om ingen summary-tagg finns med, sätter webbläsaren själv ett defaultvärde (för Chrome är defaultvärdet <q>Info</q>).</p>
+			</section>
+			<section>
+				<h2>Exempel</h2>
+				Exempel på hur figure-taggarna kan användas i ett html dokument.
+				<figure>
+					<img src="../Resources/semanticexample.png" />
+					<fig-caption><b>Figur 1.</b> Exempel på kod med nästlade semantiska element </fig-caption>
+				</figure>
+			</section>
+			<details>
+				<summary>Källor</summary>
+				<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/">Mozilla (element types)</a>, Sökt 2018-05-14</p>
+				https://www.w3.org/TR/2011/WD-html5-20110525/sections.html#the-nav-element
+			</details>
+		</article>
+
+		<aside>
+			<section>
+				<h2>Legend</h2>
+				<div><div class="color-legend" id="body"></div><p><code>body</code></p></div>
+				<div><div class="color-legend" id="header"></div><p><code>header</code></p></div>
+				<div><div class="color-legend" id="nav"></div><p><code>nav</code></p></div>
+				<div><div class="color-legend" id="aside"></div><p><code>aside</code></p></div>
+				<div><div class="color-legend" id="article"></div><p><code>article</code></p></div>
+				<div><div class="color-legend" id="nested-article"></div><p><code>article</code> (nästlad)</p></div>
+				<div><div class="color-legend" id="section"></div><p><code>section</code></p></div>
+				<div><div class="color-legend" id="details"></div><p><code>details</code></p></div>
+				<div><div class="color-legend" id="footer"></div><p><code>footer</code></p></div>
+			</section>
+		</aside>
+	</div>
+	<footer>
+		<p>&copy; Alexander Krasse 2018</p>
+		<a id="top" href="#">back to top</a>
+	</footer>
+</body>
+</html>

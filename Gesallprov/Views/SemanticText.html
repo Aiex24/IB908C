@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Semantiska element text</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+</head>
+<body>
+<h2>Några av de semantiska element för text som finns i HTML5</h2>
+<p><b>&lt;mark&gt;</b></p>
+<p><b>&lt;time&gt;</b></p>
+<p><b>&lt;datetime&gt;</b></p>
+<p><b>&lt;wbr&gt;</b></p>
+
+	<p>
+		<b><code>&lt;mark&gt;</code></b>
+		<br>
+			Sätter en texts bakgrund till gul utan att man behöver implementera CSS, och används för att markera text som för tillfället är relevant för användaren. 
+			Ett exempel på detta är att dekorera ord som matchar en sökning med mark-elementet. Ett annat användningsområde är att markera en del inom en q-tagg eller
+			blockquote, för att indikera något av extra intresse. I detta fall kan man säga att mark-taggen fungerar som en överstrykningspenna.
+	<p>
+		Det hä<mark>r</mark> ä<mark>r</mark> en mening dä<mark>r</mark> alla <q><mark>r</mark></q> ha<mark>r</mark> lagts inom ma<mark>r</mark>k-tagga<mark>r</mark>
+	</p>
+
+	<p>
+		<b><code>&lt;time&gt;</code></b>
+		<br>
+		Används tillsammans med attributet <q>datetime</q> för att lägga till tid, datum, eller tidsperiod som är lättare för program att läsa av exempelvis
+		sökmotorer.
+		<br>
+		<code>
+			&lt;time datetime="2018-W34"&gt;<br>
+			&nbsp;&nbsp;&nbsp;Rättningen för det här årets sommarperiod börjar vecka 34
+			<br>
+			&lt;/time&gt;
+		</code>
+		Resultat:
+	</p>
+
+	<time datetime="2018-W34">
+		Rättningen för det här årets sommarperiod börjar vecka 34
+	</time>
+
+	<p>
+		<b><code>&lt;wbr&gt;</code></b>
+		<br>
+		<q>Word Break Opportunity</q> fungerar lite som ett <q>osynligt bindestreck</q>. Om utrymmet är för litet för en text så kommer raden att brytas på något av de ställen
+		där man lagt in en wbr-tagg.
+	</p>
+
+	<p>
+		Nedanstående <q>två</q> ord får en radbrytning efter första ordet eftersom det andra ordet är för långt för att få plats på det återstående utrymmet 
+		(prova att minska fönstret för att se resultatet).
+		<br>
+		Hejsan CharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharChar
+		<br>
+		<br>
+		I exemplet nedan har wbr-taggar lagts in där det funnits passande att radbrytning kan göras vid behov
+		<br>
+		Hejsan CharCharCharCharChar<wbr>CharCharCharCharCharCharChar<wbr>CharCharCharCharCharCharCharCharCharCharCharChar
+	</p>
+</body>
+</html>

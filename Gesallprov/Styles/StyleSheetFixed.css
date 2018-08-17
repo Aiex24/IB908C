@@ -1,0 +1,49 @@
+﻿body{
+
+}
+
+header {
+	width: 1400px;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+	background: red;
+	left: 0;
+	margin: auto;
+	right: 0;
+}
+
+.columnContainer {
+	width: 1400px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding-top: 200px;
+}
+
+.sideColumn {
+	float: left;
+	width: 400px;
+	z-index: 2;
+	height: 500px;
+	background: #00ff90;
+	position:relative;
+
+}
+
+.centerColumn {
+	float: left;
+	width: 600px;
+	height: 500px;
+	background: #00ffff;
+}
+
+.photoContainer {
+	width: 1400px;
+}
+
+img {
+	width:1400px;
+}

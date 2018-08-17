@@ -1,0 +1,55 @@
+﻿body{
+	font-size: 100%;
+}
+
+body > * {
+	max-width: 1000px;
+	max-height: 700px;
+	min-width: 300px;
+	min-height: 100px;
+}
+header {
+	width: 80%;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+	background: blue;
+	left: 0;
+	margin: auto;
+	right: 0;
+}
+
+h1{
+	font-size:200%;
+}
+
+.columnContainer {
+	width: 80%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 200px;
+	position: absolute;
+}
+
+.sideColumn {
+	float: left;
+	width: 28%;
+	z-index: 2;
+	height: 500px;
+	background: #00ff90;
+	position: relative;
+}
+
+.centerColumn {
+	float: left;
+	width: 44%;
+	height: 500px;
+	background: #00ffff;
+}
+
+.photoContainer, img {
+	width: 100%;
+}

@@ -1,0 +1,3 @@
+﻿@import url('devices/PrintMode.css') print;
+@import url('devices/Stationary.css') screen;
+@import url('devices/Mobile.css') (min-resolution: 2dppx);

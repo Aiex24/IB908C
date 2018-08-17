@@ -1,0 +1,152 @@
+﻿.code-example-container {
+	background: #252526;
+	border-style: solid;
+	border-color: #000;
+	border-width: 1px;
+}
+
+.code-example-source {
+	width: 100%;
+	color: white;
+	max-height: 140px;
+	border-style: solid;
+	border-color: #000;
+	border-width: 1px;
+}
+
+.code-example-content {
+	padding: 10px 10px 10px 10px;
+	max-height: 110px;
+	max-width: 563px;
+	overflow: auto;
+}
+
+	.code-example-content > p {
+		margin: 0;
+	}
+
+#html-example {
+	background: #E54D26;
+}
+
+#css-example {
+	background: #0070BA;
+}
+
+#js-example {
+	background: #D6BA33;
+}
+
+#result-example {
+	background: #14c61d;
+}
+
+.HtmlBracket {
+	color: #808080;
+}
+
+.JsNumberColor {
+	color: #B5CEA8;
+}
+
+.CssKeywordColor, .HtmlElementColor, .JsKeyWordColor, .ideLink {
+	color: #569CD6;
+}
+
+
+.JsCommentColor, .CssCommentColor, .HtmlCommentColor {
+	color: #57A64A;
+}
+
+.CssSelectorColor {
+	color: #D7BA7D;
+}
+
+.CssPropertyColor, .HtmlAttributeColor {
+	color: #9CDCFE;
+}
+
+.CssStringColor, .JsStringColor {
+	color: #D69D85;
+}
+
+.CssTextColor, .HtmlTextColor {
+	color: #C8C8C8;
+}
+
+.white {
+	color: white;
+}
+
+.JsRegExColor {
+	color: #9A5334;
+}
+
+.codepresenter {
+	background: #22282A;
+	color: white;
+}
+
+.codepresenter-result > samp {
+	font-family: 'Times New Roman';
+	font-size: 16px;
+}
+
+.codepresenter1, .codepresenter-container {
+	border-style: solid;
+	border-color: #312e2e;
+	border-width: 1px;
+}
+
+.codepresenter-containerRes {
+	border-style: solid;
+	border-color: #312e2e;
+	border-width: 1px 2px 2px 2px;
+}
+/*.codepresenter-CSS, .codepresenter-HTML, .codepresenter-JavaScript, .codepresenter-Resultat {
+}*/
+.codepresenter-source {
+	max-height: 128px;
+	overflow: auto;
+	padding: 15px;
+}
+
+.code-example {
+	width: 100px;
+	text-align: center;
+	font-family: Arial;
+	padding: 2px 0 2px 0;
+}
+
+.HTML-example {
+	background: #E54D26;
+}
+
+.CSS-example {
+	background: #0070BA;
+}
+
+.JavaScript-example {
+	background: #D6BA33;
+}
+
+.Resultat-example {
+	background: #14c61d;
+}
+
+.HTML-example, .CSS-example, .JavaScript-example, .Resultat-example{
+	font-family: Arial;
+	padding: 3px 0 3px 3px;
+}
+
+.codepresenter-HTML, .codepresenter-CSS, .codepresenter-JavaScript {
+	white-space: nowrap;
+}
+
+.codepresenter-Resultat {
+	color: black;
+}
+
+.codepresenter-containerRes {
+	background: white;
+}

@@ -1,0 +1,22 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Life+Savers|Open+Sans');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Life Savers', cursive;
+}
+
+@media (orientation: portrait) {
+	body {
+		background: yellow;
+		columns: 100px 1;
+		font-size: 2em;
+	}
+}
+
+@media (orientation: landscape) {
+	body {
+		background: red;
+		columns: 100px 2;
+		font-size: 2em;
+	}
+}

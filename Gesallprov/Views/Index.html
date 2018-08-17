@@ -1,0 +1,3725 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Webbutveckling - Klientsidan</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Gesällprov Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="gesällprov, stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="../Styles/MenuStyle.css" rel="stylesheet" />
+	<link href="../Styles/IndexStyle.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../Styles/jquery-ui.css">
+	<link href="../Styles/Codepresenter.css" rel="stylesheet" />
+</head>
+<body>
+	<header class="nav-header">
+		<nav class="Nav-Index">
+			<ul class="logo" id="left">
+				<li><a href="/home/index"><span>Webbutveckling</span><span id="rightlogo">Klientsidan</span></a></li>
+			</ul>
+			<div class="menu">
+				<ul>
+					<li class="index"><a href="">Home</a></li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">HTML</a>
+						<div class="dropdown-content">
+							<a target="_blank" href="#in2-1" class="scrollToContent">2.1 Struktur med HTML5</a>
+							<a target="_blank" href="#in2-1-1" class="scrollToContent">2.1.1 Grunderna i HTML5 (U1.1)</a>
+							<a target="_blank" href="#in2-1-2" class="scrollToContent">2.1.2 Semantiska element för struktur (U1.2)</a>
+							<a target="_blank" href="#in2-1-3" class="scrollToContent">2.1.3 Semantiska element för text (U1.3)</a>
+							<a target="_blank" href="#in2-1-4" class="scrollToContent">2.1.4 Formulär (U1.4)</a>
+							<a target="_blank" href="#in2-1-5" class="scrollToContent">2.1.5 Progressivt nerladdad media (U1.6.2)</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">CSS</a>
+						<div class="dropdown-content">
+							<a target="_blank" href="#in2-2" class="scrollToContent">2.2 Design med CSS 3</a>
+							<a target="_blank" href="#in2-2-1" class="scrollToContent">2.2.1 Grunderna i CSS 3 (U2.1)</a>
+							<a target="_blank" href="#in2-2-2" class="scrollToContent">2.2.2 Text och listor (U2.2)</a>
+							<a target="_blank" href="#in2-2-3" class="scrollToContent">2.2.3 Marginaler kantlinjer och padding (U2.3)</a>
+							<a target="_blank" href="#in2-2-4" class="scrollToContent">2.2.4 Bilder och bakgrunder (U2.4)</a>
+							<a target="_blank" href="#in2-2-5" class="scrollToContent">2.2.5 Navigering (U2.5)</a>
+							<a target="_blank" href="#in2-2-6" class="scrollToContent">2.2.6 Tabeller och formulär (U2.6)</a>
+							<a target="_blank" href="#in2-2-7" class="scrollToContent">2.2.7 Sidlayout (U2.7)</a>
+							<a target="_blank" href="#in2-2-8" class="scrollToContent">2.2.8 Anpassning till olika enheter (U2.8)</a>
+							<a target="_blank" href="#in2-2-9" class="scrollToContent">2.2.9 Nerladdad font (U2.9)</a>
+							<a target="_blank" href="#in2-2-10" class="scrollToContent">2.2.10 Övergångar (U2.10)</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">JavaScript</a>
+						<div class="dropdown-content">
+							<a target="_blank" href="#in2-3" class="scrollToContent">2.3 Grunderna i JavaScript (U3.1)</a>
+							<a target="_blank" href="#in2-3-1" class="scrollToContent">2.3.1 DOM-objekt och jQuery (U3.2)</a>
+							<a target="_blank" href="#in2-3-2" class="scrollToContent">2.3.2 Webbläsar-objekt (U3.3)</a>
+							<a target="_blank" href="#in2-3-3" class="scrollToContent">2.3.3 Effekter och navigering (U3.4.1)</a>
+							<a target="_blank" href="#in2-3-4" class="scrollToContent">2.3.4 Bildhantering (U3.4.2)</a>
+							<a target="_blank" href="#in2-3-5" class="scrollToContent">2.3.5 Navigering (U3.4.3)</a>
+							<a target="_blank" href="#in2-3-6" class="scrollToContent">2.3.6 Utvidgbara gränssnitt (U3.4.4)</a>
+							<a target="_blank" href="#in2-3-7" class="scrollToContent">2.3.7 Formulärhantering (U3.4.5)</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Codepresenter.js</a>
+						<div class="dropdown-content">
+							<a target="_blank" href="#in3" class="scrollToContent">3. Script</a>
+							<a target="_blank" href="#in3-1" class="scrollToContent">3.1 Codepresenter.js</a>
+							<a target="_blank" href="#in3-1-1" class="scrollToContent">3.1.1 Implementation</a>
+							<a target="_blank" href="#in3-1-2" class="scrollToContent">3.1.2 Användning</a>
+							<a target="_blank" href="#in3-1-3" class="scrollToContent">3.1.3 Funktioner</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">REFERENSER/BILAGA</a>
+						<div class="dropdown-content">
+							<a target="_blank" href="#source" class="scrollToContent">4. REFERENSER</a>
+							<a target="_blank" href="#attachment1" class="scrollToContent">Bilaga 1</a>
+							<a target="_blank" href="#attachment2" class="scrollToContent">Bilaga 2</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Exempelsidor</a>
+						<div class="dropdown-content">
+							<a target="_blank" href="Semantic.html">Semantiska element</a>
+							<a target="_blank" href="LayoutFixed.html">Sidlayout Fixed</a>
+							<a target="_blank" href="LayoutFloat.html">Sidlayout Float</a>
+							<a target="_blank" href="UnitDependent.html">Enhetsberoende</a>
+							<a target="_blank" href="Form.html">Formulär</a>
+							<a target="_blank" href="SemanticText.html">Semantiska element: text</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+
+
+
+	<div class="paper-A4" id="frontpage">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+
+				<h1>WEBBUTVECKLING -</h1>
+				<h1>KLIENTSIDAN</h1>
+				<h5>Distanskurs på grundnivå 7,5 ECTS</h5>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h5>Alexander Krasse</h5>
+				<br><br><br><br>
+				<img src="../Resources/Background.png" alt="Background.png" />
+				<div class="fp-info">
+					<h6>Institutionen för data- och systemvetenskap (DSV)</h6>
+					<h6>Webbutveckling - Klientsidan</h6>
+					<h6>Inlämningsuppgifter</h6>
+					<h6>Grunder i HTML, CSS och JavaScript</h6>
+					<h6>Vårterminen 2018</h6>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h1 id="abstract">SAMMANFATTNING</h1>
+				<p>Detta projekt är ett gesällprov i kursen Webbutveckling - Klientsidan, och är anpassat främst för att köras i Chrome.</p>
+				<p>
+					Syftet med arbetet är att göra ett gesällprov. Kriterierna för gesällprovet är att det skall baseras på de tekniker som kursen bygger på och
+					ska vara bra både till form och funktion.
+				</p>
+				<p>
+					Programmet har mestadels skrivits i Microsoft Visual Studio Community 2017. Koden har därefter flyttats ut till rena textfiler med hjälp av Notepad++ v7.5.7, för att
+					få ett mer <q>rent</q> program för att begränsa sig till de tekniker som ingått i kursen.
+					<br>
+					För att kunna visa kod till exemplen på ett mer visuellt tilltalande sätt än att bara använda <code>&lt;code&gt;</code> utan att behöva skriva allt för mycket HTML-kod har ett script gjorts. Detta script lägger till CSS för att efterlikna hur koden ser ut i ett
+					utvecklingsverktyg. Scriptet bygger mestadels på RegEx för att dela upp varje rad i delar med olika färg. För att lösa dessa RegEx-uttryck har en RegEx-tester används som går att hitta på
+					<a href="https://regex101.com/">https://regex101.com/</a>
+				</p>
+				<p>
+					All HTML-kod och CSS har validerats med w3s validator som finns på <a href="https://validator.w3.org/">https://validator.w3.org/</a>
+				</p>
+				<p>
+					Resultatet är en hemsida som visar kursens uppgifter liknande ett dokument i A4-format med interaktiv funktion, och beskriver hur sidan är uppbyggd.
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+
+				<h1 id="table-of-content">INNEHÅLLSFÖRTECKNING</h1>
+				<ul id="tableOfContent">
+					<li><a target="_blank" href="#abstract" class="scrollToContent"><b>SAMMANFATTNING</b></a></li>
+					<li><a target="_blank" href="#table-of-content" class="scrollToContent"><b>INNEHÅLLSFÖRTECKNING</b></a></li>
+					<li><a target="_blank" href="#in1" class="scrollToContent"><b>1. INTRODUKTION</b></a></li>
+					<li><a target="_blank" href="#in1-1" class="scrollToContent">1.1 Bakgrund</a></li>
+					<li><a target="_blank" href="#in1-2" class="scrollToContent">1.2 Syfte</a></li>
+					<li><a target="_blank" href="#in1-3" class="scrollToContent">1.3 Mål</a></li>
+					<li><a target="_blank" href="#in1-4" class="scrollToContent">1.4 Metod</a></li>
+					<li><a target="_blank" href="#in1-5" class="scrollToContent">1.5 Begränsningar</a></li>
+					<li><a target="_blank" href="#in2" class="scrollToContent"><b>2. UPPGIFTER</b></a></li>
+					<li><a target="_blank" href="#in2-1" class="scrollToContent"><b>2.1 Struktur med HTML5</b></a></li>
+					<li><a target="_blank" href="#in2-1-1" class="scrollToContent">2.1.1 Grunderna i HTML5 (U1.1)</a></li>
+					<li><a target="_blank" href="#in2-1-2" class="scrollToContent">2.1.2 Semantiska element för struktur (U1.2)</a></li>
+					<li><a target="_blank" href="#in2-1-3" class="scrollToContent">2.1.3 Semantiska element för text (U1.3)</a></li>
+					<li><a target="_blank" href="#in2-1-4" class="scrollToContent">2.1.4 Formulär (U1.4)</a></li>
+					<li><a target="_blank" href="#in2-1-5" class="scrollToContent">2.1.5 Progressivt nerladdad media (U1.6.2)</a></li>
+					<li><a target="_blank" href="#in2-2" class="scrollToContent"><b>2.2 Design med CSS 3</b></a></li>
+					<li><a target="_blank" href="#in2-2-1" class="scrollToContent">2.2.1 Grunderna i CSS 3 (U2.1)</a></li>
+					<li><a target="_blank" href="#in2-2-2" class="scrollToContent">2.2.2 Text och listor (U2.2)</a></li>
+					<li><a target="_blank" href="#in2-2-3" class="scrollToContent">2.2.3 Marginaler kantlinjer och padding (U2.3)</a></li>
+					<li><a target="_blank" href="#in2-2-4" class="scrollToContent">2.2.4 Bilder och bakgrunder (U2.4)</a></li>
+					<li><a target="_blank" href="#in2-2-5" class="scrollToContent">2.2.5 Navigering (U2.5)</a></li>
+					<li><a target="_blank" href="#in2-2-6" class="scrollToContent">2.2.6 Tabeller och formulär (U2.6)</a></li>
+					<li><a target="_blank" href="#in2-2-7" class="scrollToContent">2.2.7 Sidlayout (U2.7)</a></li>
+					<li><a target="_blank" href="#in2-2-8" class="scrollToContent">2.2.8 Anpassning till olika enheter (U2.8)</a></li>
+					<li><a target="_blank" href="#in2-2-9" class="scrollToContent">2.2.9 Nerladdad font (U2.9)</a></li>
+					<li><a target="_blank" href="#in2-2-10" class="scrollToContent">2.2.10 Övergångar (U2.10)</a></li>
+					<li><a target="_blank" href="#in2-3" class="scrollToContent"><b>2.3 Dynamik med JavaScript (U3.1)</b></a></li>
+					<li><a target="_blank" href="#in2-3-1" class="scrollToContent">2.3.1 Grunderna i JavaScript (U3.2)</a></li>
+					<li><a target="_blank" href="#in2-3-2" class="scrollToContent">2.3.2 DOM-objekt och jQuery (U3.3)</a></li>
+					<li><a target="_blank" href="#in2-3-3" class="scrollToContent">2.3.3 Webbläsar-objekt (U3.4.1)</a></li>
+					<li><a target="_blank" href="#in2-3-4" class="scrollToContent">2.3.4 Effekter och navigering (U3.2)</a></li>
+					<li><a target="_blank" href="#in2-3-5" class="scrollToContent">2.3.5 Bildhantering (U3.4.2)</a></li>
+					<li><a target="_blank" href="#in2-3-6" class="scrollToContent">2.3.6 Navigering (U3.4.3)</a></li>
+					<li><a target="_blank" href="#in2-3-7" class="scrollToContent">2.3.7 Utvidgbara gränssnitt (U3.4.4)</a>
+					<li><a target="_blank" href="#in2-3-8" class="scrollToContent">2.3.8 Formulärhantering (U3.4.5)</a></li>
+					<li><a target="_blank" href="#in3" class="scrollToContent"><b>3. SCRIPT</b></a></li>
+					<li><a target="_blank" href="#in3-1" class="scrollToContent">3.1 Codepresenter.js</a></li>
+					<li><a target="_blank" href="#in3-1-1" class="scrollToContent">3.1.1 Implementation</a></li>
+					<li><a target="_blank" href="#in3-1-2" class="scrollToContent">3.1.2 Användning</a></li>
+					<li><a target="_blank" href="#in3-1-3" class="scrollToContent">3.1.3 Funktioner</a></li>
+					<li><a target="_blank" href="#source" class="scrollToContent"><b>4. REFERENSER</b></a></li>
+					<li><a target="_blank" href="#attachment1" class="scrollToContent"><b>Bilaga 1</b></a></li>
+					<li><a target="_blank" href="#attachment2" class="scrollToContent"><b>Bilaga 2</b></a></li>
+				</ul>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h1 id="in1">1. INTRODUKTION</h1>
+				<p>
+					Detta projekt är ett gesällprov i kursen Webbutveckling - Klientsidan, och är anpassat främst för att köras i Chrome.
+				</p>
+				<h2 id="in1-1">1.1 Bakgrund</h2>
+				<p>
+					IB908C Webbutveckling - Klientsidan 7,5 hp är en kurs på Institutionen för data- och systemvetenskap (DSV) Stockholms Universitet. Kursen är en grundkurs
+					som behandlar Struktur med HTML5, Design med CSS 3 och Dynamik med JavaScript. Förutom övningsuppgifter ingår ett gesällprov där tekniker från kursen tillämpas.
+				</p>
+				<h2 id="in1-2">1.2 Syfte</h2>
+				<p>
+					Syftet med arbetet är att göra ett gesällprov. Kriterierna för gesällprovet är:
+				</p>
+				<ul>
+					<li>
+						Ska baseras på de tekniker som kursen bygger på men får givetvis även innehålla tekniker från andra områden
+					</li>
+					<li>Ska vara bra både till form och funktion</li>
+					<li>Ska inte vara en av de tidigare uppgifterna på kursen men får gärna vara en utökning av en eller flera av dessa</li>
+				</ul>
+
+				<h2 id="in1-3">1.3 Mål</h2>
+				<p>
+					Målet med projektet är att skapa en hemsida som med HTML, CSS, och JavaScript efterliknar ett PDF-dokument med interaktiv funktion för att beskriva uppgifterna i kursen och sig självt.
+				</p>
+				<h2 id="in1-4">1.4 Metod</h2>
+				<p>
+					Programmet har mestadels skrivits i Microsoft Visual Studio Community 2017 med MVC struktur och C# på backend-sidan. Koden har därefter flyttats ut till rena textfiler med hjälp av Notepad++ v7.5.7, för att
+					få ett mer <q>rent</q> program för att begränsa sig till de tekniker som ingått i kursen och C#-koden har tagits bort.
+					<br>
+					För att kunna visa kod till exemplen på ett mer visuellt tilltalande sätt än att bara använda <code>&lt;code&gt;</code> utan att behöva skriva allt för mycket HTML-kod har ett script gjorts. Detta script lägger till CSS för att efterlikna hur koden ser ut i ett
+					utvecklingsverktyg. Scriptet bygger mestadels på RegEx för att dela upp varje rad i delar beroende på vilken färg som skall användas. För att lösa dessa RegEx-uttryck har en RegEx-tester används som går att hitta på
+					<a href="https://regex101.com/">regex101.com</a>
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h2 id="in1-5">1.5 Begränsningar</h2>
+				<p>
+					Projektet har begränsats till HTML5, CSS3, JavaScript i den slutgiltiga versionen, projektet använder dock i viss mån jQuery. Till en av övningsuppgifterna har jQuery UI använts, och till övningsuppgifter som kräver validering av <code>&lt;form&gt;</code> har jQuery validering använts.
+					För att presentera scheman (se Bilagor) har ett script använts från <a href="https://www.draw.io/">www.draw.io</a>
+				</p>
+				<h1 id="in2">2. UPPGIFTER</h1>
+				<p>
+					Uppgifter i kursen IB908C Webbutveckling - Klientsidan. Inom parentesen står uppgiftsnumret.
+				</p>
+				<h2 id="in2-1">2.1 Struktur med HTML5</h2>
+				<p>
+					Övningsuppgifter för HTML5.
+				</p>
+				<h3 id="in2-1-1">2.1.1 Grunderna i HTML5 (U1.1)</h3>
+				<p><b>Doctype</b><br>Är en förkortning av "Document type decleration", och är en instruktion till webbläsaren vilket markup language som skall användas. För att använda sig av HTML5 används taggen <code>&lt;!DOCTYPE html&gt;</code></p>
+				<p><b>Teckenkod</b><br>Teckenkod avgör hur t.ex en byte skall tolkas av webbläsaren. Själva värdet på byten ändras inte när den överförs mellan två enheter, men det är upp till teckenkodningen att avgöra hur värdet skall tolkas.</p>
+				<p><b>Språk</b><br>Programspråk är det sätt en människa använder för att skriva program med instruktioner som tolkas av datorns processor. En processor klarar bara av att tolka 1:or och 0:or, vilket är extremt tidskrävande att direkt skriva program med. I programspråket kan instruktionerna skrivas på en nivå som är betydligt mer mer intuitivt. Denna kod översätts sedan av ett annat program till maskinkod.</p>
+				<p><b>Validering</b><br>Precis som ett vanligt språk som har en uppsättning av regler gällande grammatik och vokabulär, så förväntas även datorprogram och webbsidor att följa de uppsatta reglerna som gäller för det språket eller ramverket. Att ett program är validerat är dock ingen garanti för att programmet är väl konstruerat.</p>
+				<p>
+					<b>Hur ett HTML-dokument är uppbyggt</b><br>
+					Ett HTML-dokument börjar med definieringen vilket markup language (märkspråk) som
+					skall användas. Exempelvis för att använda sig av HTML5 så inleds html dokumentet med
+					<q><code>&lt;!DOCTYPE html&gt;</code></q> vilket i sig självt inte är en html-tagg. Sedan kommer så kallade taggar, vilka börjar med <code>&lt;<q><i>tagg-namn</i></q>&gt;</code> och har en avslutande del <code>&lt;/<q><i>tagg-namn</i></q>&gt;</code>.
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Den första
+					taggen är <code>&lt;html&gt;</code> vilket utgör basen och berättar för webbläsaren att dokumentet är ett HTML-dokument. Det är inom html-taggarna som alla andra HTML-element ligger. Efter html-taggen
+					kommer head-taggen som är en behållare för alla huvudelementen. Exempelvis: <code>&lt;title&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;noscript&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;base&gt;</code>, <code>&lt;meta&gt;</code>.
+					Därefter kommer body-taggen som innehåller sådant som syns i själva webbläsaren, som till exempel bilder, tabeller, text med mera.
+				</p>
+				<figure>
+					<img src="../Resources/Exempelsida.png" alt="Exempelsida.png" />
+					<fig-caption><strong>Figur 1.</strong> Enkelt exempel av ett html-dokument, som visar en bild på den kod som behövdes för att skapa den.</fig-caption>
+				</figure>
+				<p><strong>Struktur-taggar</strong></p>
+				<p><b><code>&lt;body&gt;</code></b><br>Innehåller sådant som syns i själva webbläsaren, som till exempel bilder, tabeller, text med mera.</p>
+				<p><b><code>&lt;head&gt;</code></b><br>Är en behållare för alla huvudelementen. Vilka är: <code>&lt;title&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;noscript&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;base&gt;</code>, <code>&lt;meta&gt;</code>, där endast den första måste vara med.</p>
+				<p><b><code>&lt;html&gt;</code></b><br>Utgör basen och berättar för webbläsaren att dokumentet är ett HTML-dokument. Det är inom html-taggarna som alla andra HTML-element ligger.</p>
+				<p><b><code>&lt;title&gt;</code></b><br>Dokumentets titel. Det är denna text som syns på fliken i webbläsare, som titel vid sökning, och som default-titel om sidan sparas som favorit.</p>
+				<br>
+				<p><strong>Meta-taggar</strong></p>
+				<p>
+					Meta-taggarna innehåller information om html-dokumentet även kallat <q>metadata</q> det vill säga <q>data om data</q>.
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<figure>
+					<img src="../Resources/meta-tags.png" alt="meta-tags.png" />
+					<fig-caption><strong>Figur 2.</strong> Exempel på meta-taggar</fig-caption>
+				</figure>
+				<p>Några av de attribut som kan användas med meta-taggen är:</p>
+				<p><b>author</b><br>Här kan man skriva in den person eller organisation som har gjort webbsidan. Till skillnad från title, keywords, och description, så påverkar inte "author" sökresultatet.</p>
+				<p><b>description</b><br>Här beskrivs kortfattat webbsidans innehåll. De flesta sökmotorer använder denna information för att få fram sökresultat. Varje webbsida i ett projekt bör ha sin egen beskrivning.</p>
+				<p><b>generator</b><br>Här listas den programvara som använts för att skapa webbsidan</p>
+				<p><b>keywords</b><br>Här listas de nyckelord som man vill att ens webbsida ska hittas av. Om nyckelordet även återfinns i titeln och sidans innehåll så rankas dessa generellt högre av sökmotorn.</p>
+				<p><b>robots</b><br>Berättar för webbläsaren hur webbsidan ska indexeras. Man kan välja att indexera första sidan ("index/noindex") och restrerande (follow/nofollow"), och alla kombinationer av dessa två. Alternativt kan index och follow ersättas av "all" för att få att alla sidor indexeras.</p>
+				<p><b>http-equiv</b><br>Med http-equiv kan man bland annat sätta expire datum för webbsidan, välja att inget sparas till användarens cache, välja vilket värde bilderna ska ha på ens hemsida som till exempel "barntillåtet"</p>
+				<p><strong>Text-taggar</strong></p>
+				<p><b><code>&lt;abbr&gt;</code></b><br>Används för akronym för att lägga till ett tooltip med fullständig betydelse. Exempelvis de tre komponenter som ingår i denna kurs. <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> och <abbr title="JavaScript">JS</abbr>.</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					<b><code>&lt;address&gt;</code></b>
+					<br>
+					I adress-taggen läggs kontaktinformation (adress, email, eller någon annan form av kontaktinformation) och kan läggas antingen direkt i <code>&lt;body&gt;</code>, <code>&lt;article&gt;</code> eller <code>&lt;footer&gt;</code>, med relevant information till det element det ligger i.
+				</p>
+				<p>
+					<b><code>&lt;blockquote&gt;</code></b><br>Används då man vill använda sig av ett längre citat. Webbläsare lägger vanligtvis till ett indrag på citatet.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						Exempel på ett citat från Stockholms universitets hemsida
+						<br>
+						<blockquote cite="https://www.su.se/om-oss">
+							Stockholms högskola grundades 1878 med ambitionen att förnya de traditionella universiteten i Sverige. Nära
+							kontakter och ett aktivt erfarenhets- och kunskapsutbyte med omvärlden präglar verksamheten sedan starten.
+							<footer>
+								— <a href="https://www.su.se/om-oss">www.su.se</a>
+							</footer>
+						</blockquote>
+					</div>
+					<div class="codepresenter-resultat">
+						Exempel på ett citat från Stockholms universitets hemsida
+						<br>
+						<blockquote cite="https://www.su.se/om-oss">
+							Stockholms högskola grundades 1878 med ambitionen att förnya de traditionella universiteten i Sverige. Nära kontakter och ett aktivt erfarenhets- och kunskapsutbyte med omvärlden präglar verksamheten sedan starten.
+							<footer>
+								— <a href="https://www.su.se/om-oss">www.su.se</a>
+							</footer>
+						</blockquote>
+					</div>
+				</div>
+				<p><b><code>&lt;br&gt;</code></b><br>br-taggen är en så kallad singleton tagg (kräver ingen stängningstagg) och används för radbrytning.</p>
+				<p><b><code>&lt;cite&gt;</code></b><br>Används för titlar för exempelvis böcker filmer artikler, källhänvisning med mera.</p>
+				<p><b><code>&lt;code&gt;</code></b><br>Stöds av de flesta webbläsare och sätter typsnittet på en text för att efterlikna datorkod, utan att man behöver använda CSS.</p>
+				<p><b><code>&lt;dfn&gt;</code></b><br>Används för att markera det som definieras i en mening eller fras. Man kan välja att lägga till en title tagg med eller utan abbr-tagg inuti dfn-taggen</p>
+				<p><b><code>&lt;div&gt;</code></b><br>Används för att gruppera element, och/ tillsammans med CSS för att styla en webbsida.</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p><b><code>&lt;em&gt;</code></b><br>Används för att <em>betona</em> (Emphasize) en text.</p>
+				<p><b><code>&lt;h1&gt;</code>,<code>&lt;h2&gt;</code>,<code>&lt;h3&gt;</code>,<code>&lt;h4&gt;</code>,<code>&lt;h5&gt;</code>,<code>&lt;h6&gt;</code></b><br>Används för att definiera rubriker. <code>&lt;h1&gt;</code> används för huvudrubrik och de övriga som underrubriker.</p>
+				<p>
+					<b><code>&lt;kbd&gt;</code></b><br>Används för att beskriva tangentbordskommandon.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						Till exempel kan man trycka
+						<kbd class="key">Shift</kbd> +
+						<kbd class="key">F5</kbd> för att uppdatera denna sida.
+					</div>
+					<div class="codepresenter-css">
+						.key {
+						border-radius: 3px;
+						padding: 1px 2px 0;
+						border: 1px solid black;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						Till exempel kan man trycka
+						<kbd class="key">Shift</kbd> + <kbd class="key">F5</kbd> för att uppdatera denna sida.
+					</div>
+				</div>
+				<p><b><code>&lt;p&gt;</code></b><br>Definierar en paragraf.</p>
+				<p><b><code>&lt;pre&gt;</code></b><br>Till skillnad mot <code>&lt;p&gt;</code> så behåller <code>&lt;pre&gt;</code> formattering som exempelvis flera mellanslag i rad.</p>
+				<p><b><code>&lt;q&gt;</code></b><br>Används vid kortare citat</p>
+				<p><b><code>&lt;samp&gt;</code></b><br>Används för att presentera resultatet av ett datorprogram.</p>
+				<p><b><code>&lt;strong&gt;</code></b><br>Används för att markera att ett ord är viktigt. Om inte CSS används renderas <code>&lt;strong&gt;</code> och <code>&lt;b&gt;</code> (bold) oftast lika av webbläsaren.</p>
+				<p><b><code>&lt;var&gt;</code></b><br>Definierar att texten inom taggen är en variabel.</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p><b><code>&lt;a&gt;</code></b><br>Används för att skapa hyperlänkar. På <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">mozilla.org</a> kan du läsa mer om a-taggen.</p>
+				<p><b><code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> och <code>&lt;dd&gt;</code></b><br>Används tillsammans för att skapa en definiationslista. Nedanstående lista är gjord med dessa taggar</p>
+				<dl>
+					<dt><code>&lt;dl&gt;&lt;/dl&gt;</code></dt>
+					<dd>Används för att omsluta hela listan</dd>
+					<dt><code>&lt;dt&gt;&lt;/dt&gt;</code></dt>
+					<dd>sätts ordet som skall förklaras</dd>
+					<dt><code>&lt;dd&gt;&lt;/dd&gt;</code></dt>
+					<dd>här sätts förklaringen</dd>
+				</dl>
+				<p><code><b>&lt;li&gt;</b></code><br>Definierar en komponent i en lista</p>
+				<p><code><b>&lt;ol&gt;</b></code><br> Om li-komponenten sätts inom ol-taggar (ordered list) så numreras dessa.</p>
+				<ol>
+					<li>Element A</li>
+					<li>Element B</li>
+					<li>Element C</li>
+				</ol>
+				<p><code><b>&lt;ul&gt;</b></code><br>Om li-komponenten sätts inom ul-taggar (unordered list) så dekoreras dessa med listpunkter</p>
+				<ul>
+					<li>Element A</li>
+					<li>Element B</li>
+					<li>Element C</li>
+				</ul>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<table>
+					<caption>Tabell 1. En html-tabells delkomponenter</caption>
+					<colgroup>
+						<col id="left-col" />
+						<col span="1" id="right-col" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>Tagg</th>
+							<th>Beskrivning</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>&lt;caption&gt;</code></td>
+							<td>Tabellens rubrik</td>
+						</tr>
+						<tr>
+							<td><code>&lt;col&gt;</code></td>
+							<td>Med hjälp av col-taggen i kombination med CSS kan man sätta en style för en hel kolumn i taget</td>
+						</tr>
+						<tr>
+							<td><code>&lt;colgroup&gt;</code></td>
+							<td>Används för att omsluta en eller flera col-taggar</td>
+						</tr>
+						<tr>
+							<td><code>&lt;table&gt;</code></td>
+							<td>Definierar en tabell. Inom dessa tagggar ligger alla andra element som associeras med tabellen</td>
+						</tr>
+						<tr>
+							<td><code>&lt;tbody&gt;</code></td>
+							<td>Inom denna tagg ligger alla celler förutom de celler som hör till rubrik eller sidfot</td>
+						</tr>
+						<tr>
+							<td><code>&lt;td&gt;</code></td>
+							<td>Utgör tabellens celler. I dessa placeras den data som tabellen skall visa</td>
+						</tr>
+						<tr>
+							<td><code>&lt;tfoot&gt;</code></td>
+							<td>Placeras innan tbody-taggen. Inom dessa taggar läggs de element som utgör tabellens sidfot.</td>
+						</tr>
+						<tr>
+							<td><code>&lt;th&gt;</code></td>
+							<td>Definierar en cell som associeras med en rubrik för en rad. </td>
+						</tr>
+						<tr>
+							<td><code>&lt;thead&gt;</code></td>
+							<td>Omsluter de rader som innehåller th-taggar</td>
+						</tr>
+						<tr>
+							<td><code>&lt;tr&gt;</code></td>
+							<td>tr-taggen skapar en rad i tabellen. Dessa rader kan sedan delas upp i celler</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<p>
+					Nedan är ett exempel hur <code>area</code> och <code>map</code> används. Klicka på planeterna för att få upp mer information.
+				</p>
+				<img src="../Resources/Planets2013.svg.png" alt="Planets" usemap="#planetmap" />
+				<map name="planetmap">
+					<area shape="circle" coords="-220,200,300" alt="Sun" href="https://sv.wikipedia.org/wiki/Solen" />
+					<area shape="circle" coords="131,162,2" alt="Mercury" href="https://sv.wikipedia.org/wiki/Merkurius" />
+					<area shape="circle" coords="157,162,3" alt="Venus" href="https://sv.wikipedia.org/wiki/Venus" />
+					<area shape="circle" coords="193,162,3" alt="Earth" href="https://sv.wikipedia.org/wiki/Jorden" />
+					<area shape="circle" coords="225,162,2" alt="Mars" href="https://sv.wikipedia.org/wiki/Mars_(planet)" />
+					<area shape="circle" coords="287,162,37" alt="Jupiter" href="https://sv.wikipedia.org/wiki/Jupiter" />
+					<area shape="circle" coords="396,162,32" alt="Saturn" href="https://sv.wikipedia.org/wiki/Saturnus" />
+					<area shape="circle" coords="467,162,13" alt="Uranus" href="https://sv.wikipedia.org/wiki/Uranus" />
+					<area shape="circle" coords="512,162,13" alt="Neptunus" href="https://sv.wikipedia.org/wiki/Neptunus" />
+				</map>
+				<strong>Figur3.</strong>&nbsp;Exempel på bild med area länk inspirerad från w3schools.com
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h3 id="in2-1-2">2.1.2 Semantiska element för struktur (U1.2)</h3>
+				<p><b><code>&lt;article&gt;</code></b><br>Omsluter en sammansättning som på egen hand kan återges utan att tappa innebörden. article-taggen kan innehålla andra article-taggar och section-taggar</p>
+				<p><b><code>&lt;nav&gt;</code></b><br>Används för att omsluta en grupp av navigationslänkar. Skillnaden mot en <code>&lt;div&gt;</code> är att nav-taggen berättar för programvara som hjälper funktionsnedsatta att detta område innehåller navigationslänkar.</p>
+				<p><b><code>&lt;header&gt;</code></b><br>Läggs inuti article-taggarna och omsluter inledande innehåll. Exempel på detta är h-taggar eller information om webbsidans utvecklare</p>
+				<p><b><code>&lt;footer&gt;</code></b><br>Läggs inuti article-taggarna och innehåller vanligtvis information om webbsidans utvecklare, äganderätt, kontaktinformation eller länk till toppen av sidan.</p>
+				<p>
+					<b><code>&lt;section&gt;</code></b><br>Innehåller ofta en header men är inget måste. Tumkravet för att använda en section-tagg brukar vara att om kraven för att använda en article-tagg ej är uppfyllda, men sektionen med dess header skulle bli en del av innehållsförteckningen så kan man använda section-taggen.
+					section-taggen kan nästlas inuti en article-tagg eller läggas som en fristående del. Om det enda syftet är utseendet, så används istället en vanlig div-tagg.
+				</p>
+				<p><b><code>&lt;figure&gt;</code></b><br>Används för att bland annat visa bilder, grafer med mera. figure-taggen är en del av huvudinnehållet men kan flyttas till exempelvis en bilaga utan att påverka flödet av huvudinnehållet.</p>
+				<p><b><code>&lt;figcaption&gt;</code></b><br>Används tillsammans med <code>&lt;figure&gt;</code> för att lägga till en rubrik eller inskrift till bilden som visas.</p>
+				<p><b><code>&lt;aside&gt;</code></b><br>Inom aside-taggarna läggs innehåll som inte hör till huvudinnehållet i det parent-element som den ligger i, men som ändå är relaterat till detta. aside kan läggas inuti exempelvis ett article-element eller direkt i body.</p>
+				<p><b><code>&lt;details&gt;</code></b><br>Skapar en Window gadget som består av en togglingsknapp som expanderar eller minimerar ett fält där ytterligare innehåll kan läggas.</p>
+				<p><b><code>&lt;summary&gt;</code></b><br>Läggs först inom details-taggarna, och kommer visas som rubrik på togglingsknappen i både stängt och öppet läge. Om ingen summary-tagg finns med, sätter webbläsaren själv ett defaultvärde (för Chrome är defaultvärdet <q>Info</q>).</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p><a href="/home/SemantiskaElement">Här </a>finns ett exempel på hur en sida kan delas upp med hjälp av semantiska element.</p>
+				<figure>
+					<img src="../Resources/semantiskabrowser.png" alt="semantiskabrowser.png" />
+					<fig-caption><b>Figur 4.</b> Exempel på hur en webbsida som använder sig av semantiska element kan vara strukturerad.</fig-caption>
+				</figure>
+				<h3 id="in2-1-3">2.1.3 Semantiska element för text (U1.3)</h3>
+				<p>
+					<b><code>&lt;mark&gt;</code></b><br>Sätter en texts bakgrund till gul utan att man behöver implementera CSS, och används för att markera text som för tillfället är relevant för användaren. Ett exempel på detta är
+					att dekorera ord som matchar en sökning med mark-elementet. Ett annat användningsområde är att markera en del inom en q-tagg eller blockquote, för att indikera något av extra intresse. I detta fall kan man
+					säga att mark-taggen fungerar som en överstrykningspenna.
+				</p>
+				<br />
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<p>
+							Det hä<mark>r</mark> ä<mark>r</mark> en mening dä<mark>r</mark> alla <q><mark>r</mark></q> ha<mark>r</mark> lagts inom ma<mark>r</mark>k-tagga<mark>r</mark>
+						</p>
+					</div>
+					<div class="codepresenter-css">
+						/* Ingen CSS har använts*/
+					</div>
+					<div class="codepresenter-resultat">
+						<p>Det hä<mark>r</mark> ä<mark>r</mark> en mening dä<mark>r</mark> alla <q><mark>r</mark></q> ha<mark>r</mark> lagts inom ma<mark>r</mark>k-tagga<mark>r</mark></p>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p><b><code>&lt;time&gt;</code></b><br>Används tillsammans med attributet <q>datetime</q> för att lägga till tid, datum, eller tidsperiod som är lättare för program att läsa av exempelvis sökmotorer.</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<time datetime="2018-W34">
+							Rättningen för det här årets sommarperiod börjar vecka 34
+						</time>
+					</div>
+					<div class="codepresenter-resultat">
+						<time datetime="2018-W34">
+							Rättningen för det här årets sommarperiod börjar vecka 34
+						</time>
+					</div>
+				</div>
+				<p>
+					<b><code>&lt;wbr&gt;</code></b><br><q>Word Break Opportunity</q> fungerar lite som ett <q>osynligt bindestreck</q>. Om utrymmet är för litet för en text så kommer raden att brytas på något av de ställen
+					där man lagt in en wbr-tagg.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<p>
+							Nedanstående <q>två</q> ord får en radbrytning efter första ordet eftersom det andra ordet är för långt för att få plats på det återstående utrymmet.
+							<br>
+							Hejsan CharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharChar
+							<br>
+							I exemplet nedan har wbr-taggar lagts in där det funnits passande att radbrytning kan göras vid behov
+							<br>
+							Hejsan CharCharCharCharChar<wbr>CharCharCharCharCharCharChar<wbr>CharCharCharCharCharCharCharCharCharCharCharChar
+						</p>
+					</div>
+					<div class="codepresenter-resultat">
+						<p>
+							Nedanstående <q>två</q> ord får en radbrytning efter första ordet eftersom det andra ordet är för långt för att få plats på det återstående utrymmet.
+							<br>
+							Hejsan CharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharCharChar
+							<br>
+							I exemplet nedan har wbr-taggar lagts in där det funnits passande att radbrytning kan göras vid behov
+							<br>
+							Hejsan CharCharCharCharChar<wbr>CharCharCharCharCharCharChar<wbr>CharCharCharCharCharCharCharCharCharCharCharChar
+						</p>
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h3 id="in2-1-4">2.1.4 Formulär (U1.4)</h3>
+				<figure>
+					<img src="../Resources/inputform.png" alt="inputform.png" />
+					<fig-caption><b>Figur 5.</b> Exempel på hur en webbsida som använder sig av semantiska element kan vara strukturerad.</fig-caption>
+				</figure>
+				<p>
+					Klicka <a href="Form.cshtml">här</a> för att komma till exemplet.
+				</p>
+				<h3 id="in2-1-5">2.1.5 Progressivt nerladdad media (U1.6.2)</h3>
+				<p>
+					§
+					Nedan är ett exempel på hur man kan använda <code>&lt;audio&gt;</code> och <code>&lt;video&gt;</code> för att spela upp ljud och video direkt i webbläsaren. Ljudexemplet är hämtat från
+					<a href="http://www.music.helsinki.fi/tmt/opetus/uusmedia/esim/index-e.html">University of Helsinki</a> och filmerna från <a href="http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5">Techslides</a>.
+				</p>
+				<p>
+					J.S.Bach; Partita E major, Gavotte en rondeau (excerpt) - Sirkka Väisänen, violin.
+					<audio controls="controls">
+						<source src="../Resources/soundsample.ogg" type="audio/ogg" />
+						<source src="../Resources/soundsample.mp3" type="audio/mpeg" />
+						Din webbläsare stöder varken .ogg eller .mp3
+					</audio>
+				</p>
+				<p>
+					Techslides samples
+					<video controls="controls">
+						<source src="../Resources/small.ogv" type="video/ogg" />
+						<source src="../Resources/small.mp4" type="video/mp4" />
+						Din webbläsare stöder varken .ogv eller .mp4
+					</video>
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h2 id="in2-2">2.2 Design med CSS 3</h2>
+				<h3 id="in2-2-1">2.2.1 Grunderna i CSS 3 (U2.1)</h3>
+				<p>
+					<b>Externt länkad CSS-fil och dess fördelar</b>
+					<br>
+					Det finns tre sätt att implementera CSS: External Style Sheet, Internal Style Sheet ovh Inline Style. Fördelen med den förstnämda är att man kan använda samma fil för att ändra
+					utseende på alla sidor som använder filen samtidigt, istället för att ändra varje sida var för sig. Detta underlättar då man vill ha ett enhetligt utseende på ett projekt med flera sidor.
+				</p>
+				<p>
+					<b>Arv</b>
+					<br>
+					Arv läggs till på en property för att sätta värdet till samma värde som elementet det ligger i har. Default värdet på olika properties varierar.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						/*background: Före: transparent. Efter: white*/
+						background: white;
+						/*color: Före: Samma som parent. Efter: blue*/
+						color: blue;
+						/*margin: Före: 0 Efter: Samma som parent*/
+						margin: inherit;
+					</div>
+				</div>
+				<p>
+					<b>Cascade</b><br>
+					<q>Cascade</q> är en algoritm som avgör vilken CSS som skall användas på en property då flera värden har blivit angivna.
+				</p>
+				<p>
+					<b>Selektorer (tagg-, attribut-, klass-, id- och barn-selektorer)</b><br>
+					Det finns olika sätt att definiera en selektor. Nedan återfinns några av dem.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						/*Tagg: Sätter CSS på alla h1 element*/
+						h1 {
+						color: red;
+						}
+						/*Attribut: Sätter CSS på alla element som har attributet target=su*/
+						[target=su] {
+						background: red;
+						}
+						/*Klass: Sätter CSS på alla element med klass-namnet "myClass"*/
+						.myClass {
+						color: red;
+						}
+						/*id: Sätter CSS på elementet med id=myId*/
+						#myId {
+						color: red;
+						}
+						/*barnelement: Sätter CSS på alla h1 som har en header som parent*/
+						header > h1{
+						color: green;
+						}
+						/*barnelement: Sätter CSS på alla h1 inuti en header*/
+						header h1 {
+						color: green;
+						}
+					</div>
+				</div>
+
+				<p>
+					<b>Enheter (absoluta: in, cm, mm, pt, pc, px och relativa: em, ex, %)</b><br>
+					Enheter kan delas in absoluta och relativa storlekar. De absoluta behåller samma storlek medan de relativa beror på hur stort browserfönstret är eller storleken på dess parent-element.
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						/*ABSOLUTA ENHETER*/
+						/*in: Sätter höjden på divar till 1 tum*/
+						div {
+						height: 1in;
+						}
+						/*cm: Sätter höjden på divar till 1 centimeter*/
+						div {
+						height: 1cm;
+						}
+						/*mm: Sätter höjden på divar till 1 millimeter*/
+						div {
+						height: 1mm;
+						}
+						/*pt: Sätter höjden på divar till 1 point (1 point = (1/72)tum))*/
+						div {
+						height: 1pt;
+						}
+						/*pc: Sätter höjden på divar till 1 picas (1 picas = (1/12)tum)*/
+						div {
+						height: 1pc;
+						}
+						/*px: Sätter höjden på divar till 1 bildpunkt (1 bildpunkt = (1/96)tum)*/
+						/*skärmar med hög upplösning har fler bildpunkter definierad som 1 pixel*/
+						div {
+						height: 1px;
+						}
+
+						/*RELATIVA ENHETER*/
+						/*em: Sätter höjden på divar till samma storlek som storleken på typsnittet för det aktuella elementet*/
+						div {
+						height: 1em;
+						}
+						/*ex: Sätter höjden på divar till storleken på hur hög ett gemen "x" är för typsnittet för det aktuella elementet*/
+						div{
+						height: 1ex;
+						}
+						/*%: Sätter höjden på divar till 1% av hur högt dess parent-element är*/
+						div {
+						height: 1%;
+						}
+					</div>
+				</div>
+				<p>
+					<b>Hur ett CSS-dokument är uppbyggt</b><br>
+					Först i dokumentet skall eventuell teckenuppsättning anges, varefter importering av exempelvis andra CSS-dokument eller fonts ligger. Detta kan göras antingen genom att ange en string eller en url.
+					Sedan kommer selektorn som avgör vilket element som skall påverkas. Inom måsvingarna kan man ange alla de egenskaper man vill sätta ett värde på.
+				</p>
+				<figure>
+					<img src="../Resources/cssuppbyggnad.png" alt="cssuppbyggnad" />
+					<fig-caption><b>Figur 6.</b> Exempel på hur ett CSS dokumnet är uppbyggt.</fig-caption>
+				</figure>
+				<h3 id="in2-2-2">2.2.2 Text och listor (U2.2)</h3>
+				<p>
+					<b>Fontfamilj</b>
+					<br>
+					Serif är de klackar som finns på vissa typsnitt. Sans-serif innebär ett typsnitt utan dessa klackar. Monospace är ett typsnitt där varje tecken tar upp lika stor plats. I CSS-koden nedan innebär dessa tre
+					nyckelord att om webbläsaren inte hittar det angivna typsnittet så skall den välja ett liknande typsnitt som har detta nyckelord.
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						.fontSerif {
+						font-family: "Times New Roman", serif;
+						}
+						.fontSansSerif {
+						font-family: "Ariel", sans-serif;
+						}
+						.monospaceFont {
+						font-family: "Courier New", monospace;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<span class="fontSerif">Det här är en text med ett serif typsnitt</span>
+						<br>
+						<span class="fontSansSerif">Det här är en text med ett sans-serif typsnitt</span>
+						<br>
+						<span class="monospaceFont">Det här är en text med ett monospace typsnitt</span>
+					</div>
+				</div>
+				<br>
+				<p>
+					<b>Enheter</b><br>
+					För att sätta storleken på typsnittet kan olika enheter användas. <code>medium</code> definierar användarens default-värde på typsnittet. Relativt denna storlek
+					definieras storlekarna <code>xx&#8209;small</code>, <code>x&#8209;small</code>, <code> small</code>, <code>large</code>, <code>x&#8209;large</code>, <code>xx&#8209;large</code>. Ett annat sätt är
+					att ange % eller em. Dessa beror på vilken storlek typsnittet har på parent-elementet, där 1em motsvarar 100%, 2em motsvarar 200% och så vidare.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						.xxsmall {
+						font-size: xx-small;
+						}
+						.xsmall {
+						font-size: x-small;
+						}
+						.small {
+						font-size: small;
+						}
+						.medium{
+						font-size: medium;
+						}
+						.large {
+						font-size: large;
+						}
+						.xlarge {
+						font-size: x-large;
+						}
+						.xxlarge {
+						font-size: xx-large;
+						}
+						.emSize {
+						font-size: 1em;
+						}
+						.procentFont{
+						font-size: 50%;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<span class="xxsmall">Det här är en text i storlek xx-small</span>
+						<br>
+						<span class="xsmall">Det här är en text i storlek x-small</span>
+						<br>
+						<span class="small">Det här är en text i storlek small</span>
+						<br>
+						<span class="medium">Det här är en text i storlek medium</span>
+						<br>
+						<span class="large">Det här är en text i storlek large</span>
+						<br>
+						<span class="xlarge">Det här är en text i storlek x-large</span>
+						<br>
+						<span class="xxlarge">Det här är en text i storlek xx-large</span>
+						<br>
+						<span class="emSize">Det här är en text i storlek 1em</span>
+						<br>
+						<span class="procentFont">Det här är en text i storlek 150%</span>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					<b>CSS properties</b><br>
+					color: sätter färgen på texten. Man kan antingen använda fördefinierade färger eller skapa en egen.
+					font: används om man vill sätta fler än en textegenskap samtidigt. Exempelvis färg, storlek och typsnitt.
+					list-style: Används för att bestämma hur punkterna i en lista skall se ut.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						.mylistStyleAlpha {
+						list-style:lower-alpha;
+						}
+						.mylistStyleSquare {
+						list-style: lower-alpha;
+						}
+						.fontStyle {
+						font: bold 12px Arial, sans-serif;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<span class="fontStyle">
+							Denna text ligger i ett span där font propertyn har satts till fet, 12px textstorlek, Arial, med fallback-värde <q>sans-serif</q>
+							Nedan är en lista med list-style <q>lower-alpha</q> det vill säga en lista som använder a, b, c... istället för punkter som i sin tur ligger i en lista med kvadrater som punkter.
+						</span>
+						<ul class="mylistStyleSquare">
+							<li>
+								Några exempel på list-style värden
+								<ul class="mylistStyleAlpha">
+									<li>lower-alpha</li>
+									<li>circle</li>
+									<li>square</li>
+									<li>decimal</li>
+									<li>none</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-2-3">2.2.3 Marginaler kantlinjer och padding (U2.3)</h3>
+				<p>
+					<b>Boxmodell</b><br>
+					Varje element kan ha ett innehåll som har en kantlinje omkring sig. Området mellan kantlinjen och innehåll kallas padding, och området utanför kantlinjen till nästa element kallas för margin.
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<div class="boxModell">
+							Innehåll
+						</div>
+					</div>
+					<div class="codepresenter-css">
+						.boxModell {
+						padding: 15px;
+						border: 15px;
+						margin: 15px;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<div class="boxmodellMargin">
+							Margin
+							<div class="boxmodellBorder">
+								Border
+								<div class="boxmodellPadding">
+									Padding
+									<div class="boxmodellContent">
+										Innehåll
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<p>
+					<code>border-color:</code> sätter färgen på kantlinjen
+					<br>
+					<code>border-style:</code> Här kan man sätta utseendet på kantlinjen, exempelvis solid, dubbel linje, prickar med mera
+					<br>
+					<code>border-width:</code> sätter tjockleken på kantlinjen
+					<br>
+					<code>border:</code> kan användas för att sätta värden på alla ovanstående properties på samma rad
+					<br>
+					<code>outline:</code> skillnaden mellan outline och border är att outline inte tar upp något utrymme. Ett användningsområde är att lägga in outlines vid debugging för att lättare
+					se var olika element slutar
+					<br>
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<div class="borderExample">
+							div med en kantlinje i svart och outline i rött
+						</div>
+					</div>
+					<div class="codepresenter-css">
+						.borderExample {
+						border: solid 2px black;
+						outline: dotted  2px red;
+						}
+					</div>
+				</div>
+				<br>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<div class="codepresenter">
+					<div class="codepresenter-resultat">
+						<div class="borderExample">
+							div med en kantlinje i svart och outline i rött
+						</div>
+					</div>
+				</div>
+				<p>
+					<code>visibility</code>: Kan bland annat sättas till <q>visible</q> (elementet är synligt), <q>hidden</q> (elementet synns inte men tar upp plats), <q>collapse</q> (elementet varken syns eller tar upp plats)
+					om elementet är av typen <q>table</q> annars fungerar collapse på samma sätt som <q>hidden</q>. För att få collapse-effekt på övriga element används <code>display: none</code>.
+					<br>
+					<code>clip-path</code>: Definierar ett område av ett element som skall vara synligt. Exempelvis kan man definiera en cirkel, ellipse eller polygon.
+					<br>
+					<code>display</code>: avgör hur ett element skall visas upp (renderas). Några vanliga värden är inline, block, inline-block, flex, och table.
+				</p>
+				<p>
+					Nedanstående exempel består av varannan bild och varannan kvadrat totalt fyra stycken vardera. Bildera har (i turordning) egenskaperna 1. Normal, 2. clip-path, 3. Visibility hidden, 4. Display none.
+					Medan bilderna har 3. overflow hidden, 4. overflow scroll.
+					Notera att bild 3 ej syns men tar upp plats, medan bild 4 varken syns eller tar upp plats.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						&lt;img id="kallebild" src="../Resources/kalle.jpg" alt="kallbild.jpg" />
+						&lt;div class="square">&lt;/div>
+						&lt;img id="kallebildClipPath" src="../Resources/kalle.jpg" alt="kallbild.jpg" />
+						&lt;div class="square">&lt;/div>
+						&lt;img class="hiddenImage" id="kallebild" src="../Resources/kalle.jpg" alt="kallbild.jpg" />
+						&lt;div class="square">&lt;/div>
+						&lt;img class="collapsedImage" src="../Resources/kalle.jpg" alt="kallbild.jpg" />
+						&lt;div class="square">
+					</div>
+					<div class="codepresenter-css">
+						#kallebild, #kallebildClipPath {
+						float: left;
+						width: 50px;
+						height: 50px;
+						}
+
+						#kallebildClipPath {
+						clip-path: circle(50%);
+						}
+						.square {
+						width: 50px;
+						height: 50px;
+						background: red;
+						float: left;
+						}
+						.hiddenImage {
+						visibility: hidden;
+						}
+						.collapsedImage {
+						display: none;
+						}
+						#squareHidden {
+						overflow: hidden;
+						}
+						#squareScroll {
+						overflow: scroll;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<img id="kallebild" src="../Resources/kalle.jpg" alt="kallbild.jpg" />
+						<div class="square"></div>
+						<img id="kallebildClipPath" src="../Resources/kalle.jpg" alt="kallbild.jpg" />
+						<div class="square"></div>
+						<img class="hiddenImage" id="kallebild2" src="../Resources/kalle.jpg" alt="kallbild.jpg" />
+						<div class="square" id="squareHidden">Den här kvadraten har overflow satt till hidden</div>
+						<img class="collapsedImage" src="../Resources/kalle.jpg" alt="kallbild.jpg" />
+						<div class="square" id="squareScroll">Den här kvadraten har overflow satt till scroll</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+
+	<div class="paper-A4" id="window-style">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin whitebackground"></div>
+			<div class="article">
+				<div class="whitebackground" id="window-top">
+					<p>
+						Istället för att sätta färg  med hexadecimalt värde eller reserverat ord, kan man ange rgba där man sätter numeriskt värde på
+						röd, grön, blå och opacity där den sistnämda avgör graden av genomskinlighet.
+						<br>
+						Nedan är ett exempel på en bild där paint.net har använts för att skapa transparenta områden, med en div med blå bakgrundsfärg och opacity 30%.
+						<br>
+						<br>
+					</p>
+				</div>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						&lt;div class="windowdiv"&gt;
+						&lt;img id="windowImage" src="../Resources/window.png" alt="window.png" &gt;
+						&lt;/div&gt;
+					</div>
+					<div class="codepresenter-css">
+						.windowdiv {
+						background-color: rgba(0, 150, 100, 0.1);
+						}
+						#windowImage {
+						width: 100%;
+						height: 10cm;
+						}
+					</div>
+				</div>
+
+				<div class="codepresenter-menu">
+					<div class="Resultat-example" id="window-example">Resultat</div>
+				</div>
+				<div class="windowdiv">
+					<img id="windowImage" src="../Resources/window.png" alt="window.png" />
+				</div>
+			</div>
+			<div class="right-margin whitebackground"></div>
+		</div>
+		<div class="footer-A4 whitebackground"></div>
+	</div>
+
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Nedan är ett exempel på två kvadratiska divar med box-shadow, där kantlinje-radien har satts till halva bredden. Den ena med en bakgrund som är linjär gradient, och den andra med en bakgrund som är radiell
+					Bakgrunden har två bilder. En med ett repeterande mönster och en insticksbild ovanpå detta lager.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<div class="codepresenter-resultat">
+							&lt;div class="bigSquare" id="gradientColor">&lt;/div>
+							&lt;div class="bigSquare" id="radialColor">
+							&lt;/div>
+						</div>
+					</div>
+					<div class="codepresenter-css">
+						.bigSquare {
+						float: left;
+						width: 80px;
+						height: 80px;
+						margin-top: 10px;
+						margin-left: 50px;
+						border: 2px solid #0f5514;
+						border-radius: 40px;
+						box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+						}
+						#gradientColor {
+						background: linear-gradient(to bottom right, #024e16, #6afb64);
+						}
+						#radialColor {
+						background: radial-gradient(#6afb64, #024e16);
+						}
+						.multipleImages {
+						background: url('../resources/multiplebackgroundfront.png') right bottom no-repeat, url('/resources/wavebackground.png');
+						background-size: 80px, 130px, auto;
+						width: 100%;
+						height: 100px;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<div class="multipleImages">
+							<div class="bigSquare" id="gradientColor"></div>
+							<div class="bigSquare" id="radialColor"></div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-2-4">2.2.4 Bilder och bakgrunder (U2.4)</h3>
+				<p>
+					Med CSS propertyn <q>background</q> kan man sätta värden för egenskaperna:
+					<br>
+					<code>attachment</code>: Avgör hur bakgrundsbilden beter sig relativt övriga element. Om värdet sätts till <q>fixed</q> scrollar inte bakgrundsbilden med övriga element.
+					<br>
+					<code>color</code>: Sätter färgen på bakgrunden.
+					<br>
+					<code>image</code>: Sätter en bakgrundsbild.
+					<br>
+					<code>position</code>: Sätter var bilden skall positioneras.
+					<br>
+					<code>repeat</code>: Om bakgrunden är större än bakgrundsbilden, kan man välja att låta samma bild repeteras för att fylla hela utrymmet.
+					<br>
+					I exemplet nedan så har en <code>div</code> fått egenskapen att alla element flöder åt vänster. Om det kommer ett h1-element så tas flödet bort med hjälp av
+					<code>clear</code> för h1-elementet och de kommande elementen. h1- och li-elementen har givits en bakgrundsbild med repeteringsegenskap.
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<img src="../Resources/monkey.png" alt="monkey.png" />
+						<p>Alla element i denna div har en float-left egenskap.</p>
+						<p>Om elementet är ett h1-element så tas float-left</p>
+						<p> egenskapen bort med hjälp av CSS-propertyn clear.</p>
+						<h1>Detta är en h1 med bakgrundsbild</h1>
+						<ul>
+							<li>Detta är ett li-element med bakgrundsbild</li>
+						</ul>
+					</div>
+					<div class="codepresenter-css">
+						.img {
+						width: 100px;
+						height: 100px;
+						float:left;
+						margin:15px;
+						}
+						.img::after {
+						float: left;
+						margin: 15px;
+						padding-right: 15px;
+						}
+						h1, h1::after {
+						clear: both;
+						}
+						h1, li {
+						background-image: url('../Resources/wavebackground.png');
+						color: white;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<div class="floatleft">
+							<img class="floatingImage" src="../Resources/monkey.png" alt="monkey.png" />
+							<p>Alla element i denna div har en float-left egenskap.</p>
+							<p>Om elementet är ett h1-element så tas float-left</p>
+							<p>egenskapen bort med hjälp av CSS-propertyn clear.</p>
+							<h1 class="imagesAndBackgrounds">Detta är en header 1</h1>
+							<ul>
+								<li class="imagesAndBackgrounds">Detta är ett li-element</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-2-5">2.2.5 Navigering (U2.5)</h3>
+				<p>
+					Med länktillstånd menas de properties man kan ändra värden  på länkar som:
+					<br>
+					<code>a:link</code>: Selektor för länkar som man ej har besökt.
+					<code>a:active</code>: Selektor för om man trycker på länken (tills man släpper nertryckningen)
+					<code>a:visited</code>: Selektor för en länk vars länkning har besökts tidigare
+					<code>a:hover</code>: Selektor för hur länken skall se ut när man har muspekaren på länken
+					<br>
+					Nedan är ett exempel på ett a-element som har stylats som en knapp med CSS, och en bildlänk.
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<a class="a-button" title="CSS&nbsp;is&nbsp;awesome!" target="_blank" href="http://i.imgur.com/VKyzoOz.gif">Imgur</a>
+						<a class="a-imgButton" title="www.wwf.com" href="https://www.worldwildlife.org/stories/a-plan-to-save-the-great-apes-of-central-africa"><img src="../Resources/monkey.png" alt="monkey.png" /></a>
+					</div>
+					<div class="codepresenter-css">
+						.a-button {
+						padding: 5px 10px;
+						background: red;
+						text-decoration: none;
+						font-family: Arial;
+						font-weight: bold;
+						margin: 2px;
+						border: 2px solid #c41515;
+						border-radius: 5px;
+						box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+						cursor: crosshair;
+						}
+						.a-button:hover {
+						background: #c21e1e;
+						}
+						.a-button:link, .a-button:visited {
+						color: white;
+						}
+						.a-button:active {
+						background-color: #6d1616;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<a class="a-button" title="CSS is awesome!" target="_blank" href="http://i.imgur.com/VKyzoOz.gif">Imgur</a>
+						<a class="a-imgButton" title="www.wwf.com" href="https://www.worldwildlife.org/stories/a-plan-to-save-the-great-apes-of-central-africa">
+							<img src="../Resources/monkey.png" alt="monkey.png" />
+						</a>
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-2-6">2.2.6 Tabeller och formulär (U2.6)</h3>
+				<p>
+					<b><code>table-layout</code></b><br>
+					Avgör vilken algoritm som skall användas när tabellen ritas ut. De två huvudsakliga värdena är:
+					<code>fixed</code> definierar bredden i följande ordning: 1. Om en kolumn har en definierad bredd får den denna. 2. Om en cell i första raden har en definierad bredd sätts alla celler till detta värde.
+					3. Om punkt 2 saknas fördelas bredden jämt över alla celler för de celler som ej har en definierad bredd.
+					<br>
+					<code>auto</code>: Innehållet styr hur bred varje cell blir. Om tabellens bredd är större, fördelas restrerande utrymme jämt över alla celler.
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Tryck på nedanstående knapp för att prova skillnaden mellan auto och fixed.
+				</p>
+				<div class="div-button" id="buttonCSS" title="Ändra layout">Fixed</div>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						&lt;table class="table-layout-auto" id="toggle-table-layout">
+						&lt;caption>Table med table-layout auto&lt;/caption>
+						&lt;thead>
+						&lt;tr>
+						&lt;th>Land&lt;/th>
+						&lt;th>Huvudstad&lt;/th>
+						&lt;th>Befolkningsmängd&lt;/th>
+						&lt;th>Valuta&lt;/th>
+						&lt;/tr>
+						&lt;/thead>
+						&lt;tbody>
+						&lt;tr>
+						&lt;td>Sverige&lt;/td>
+						&lt;td>Stockholm&lt;/td>
+						&lt;td>10,1 miljoner&lt;/td>
+						&lt;td>SEK&lt;/td>
+						&lt;/tr>
+						&lt;/tbody>
+						&lt;/table>
+					</div>
+					<div class="codepresenter-js">
+						//Lägger till click-funktion till div
+						$('.div-button').click(function () {
+						var table = document.getElementById('toggle-table-layout');
+						var button = document.getElementById('buttonCSS');
+						var buttonlabel = button.innerHTML;
+
+						//Togglar vilken class som ska sättas på table
+						if (buttonlabel === 'Fixed') {
+						//Ersätter nuvarande class som har CSS kopplat till sig med en ny class
+						table.className = table.className.replace('table-layout-auto', 'table-layout-fixed');
+						table.caption.innerHTML = 'Table med table-layout fixed';
+						button.innerHTML = 'Auto';
+						}
+						else {
+						table.className = table.className.replace('table-layout-fixed', 'table-layout-auto');
+						table.caption.innerHTML = 'Table med table-layout auto';
+						button.innerHTML = 'Fixed';
+						}
+						});
+					</div>
+					<div class="codepresenter-css">
+						.table-layout-fixed {
+						table-layout: fixed;
+						}
+						.table-layout-auto {
+						table-layout: auto;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<table class="table-layout-auto" id="toggle-table-layout">
+							<caption>Table med table-layout auto</caption>
+							<thead>
+								<tr>
+									<th>Land</th>
+									<th>Huvudstad</th>
+									<th>Befolkningsmängd</th>
+									<th>Valuta</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Sverige</td>
+									<td>Stockholm</td>
+									<td>10,1 miljoner</td>
+									<td>SEK</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					<b>Form med CSS</b><br>
+					Exempel på hur man kan styla <code>&lt;form&gt;</code> med CSS.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<form>
+							<label>Namn</label>
+							<br>
+							<input type="text" placeholder="Namn" />
+							<br>
+							<br>
+							<label>Lösenord</label>
+							<br>
+							<input type="password" placeholder="Lösenord" />
+							<br>
+							<br>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+					<div class="codepresenter-css">
+						form {
+						width: 205px;
+						background: #0070BA;
+						padding: 10px;
+						border-radius: 15px;
+						}
+						label {
+						font-family: Arial;
+						font-size: 14px;
+						font-weight: bold;
+						color: white;
+						}
+						input[type=submit] {
+						color: white;
+						padding: 5px;
+						background: black;
+						margin: 2px;
+						border: 2px solid #c41515;
+						border-radius: 5px;
+						box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+						}
+						input {
+						width: 200px;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<form class="form-example">
+							<label>Namn</label>
+							<br>
+							<input type="text" placeholder="Namn" />
+							<br>
+							<br>
+							<label>Lösenord</label>
+							<br>
+							<input type="password" placeholder="Lösenord" />
+							<br>
+							<br>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-2-7">2.2.7 Sidlayout (U2.7)</h3>
+				<p>
+					<b>Webbsideslayout</b><br>
+					fixed: Innebär att man ger storleken ett statiskt värde som inte beror på storleken på fönstret.
+					fluid: Innebär att storleken inte har ett statiskt värde. De kan antingen bero på storleken på behållaren de ligger i, användarens inställningar, eller de komponenter de innehåller.
+					elastic: Innebär att elementets storlek sätts i <i>em</i> som är proportionell mot teckenstorleken.
+					<br>
+					Anledningen till att använda CSS istället för tables vid webbsideslayout är att man får mer kontroll och flexibilitet med CSS. Man slipper lägga massa kod i html-en och får därmed sidor som laddas snabbare.
+					Man kan återanvända CSS kod vilket ger kortare kod [CSS1].
+
+				</p>
+				<p>
+					<b>Position</b><br>
+					Några av de värden positionen kan sättas till är:
+					<br>
+					absolute - positionen sätts relativt till närmaste förfader element som inte har värdet static
+					<br>
+					fixed - positionen sätts relativt webbläsaren, och påverkar inte det normala flödet
+					<br>
+					relative - elementet positioneras relativt det normala flödet.
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Även om offset värden (<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>) adderas, kommer detta ej påverka andra elements position
+					<br>
+					static - elementet renderas i den ordning de kommer i koden och fyller på flödet
+					<br>
+					<br>
+					Nedan är ett exempel på hur en sida som har en fixed header och 3 kolumner. Sidokolumnerna har ett högre z-index än headern och hamnar därmed framför denna vid scrollning, medan mittenkolumnen och bilden hamnar bakom headern. Alla bredder har en
+					fixerad bredd så deras inbördes relativa storlek ändras ej vid inzoomning. <a target="_blank" href="../../Gesällprov/Views/LayoutFixed.html">Här</a> finns sidan i fullskaligt exempel
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<header>
+							<h1>Fixed Sidlayout</h1>
+						</header>
+						<div class="columnContainer">
+							<div class="sideColumn"></div>
+							<div class="centerColumn"></div>
+							<div class="sideColumn"></div>
+							<div class="photoContainer">
+								<img src="../Resources/Nod_Kista.jpg" alt="Kista.jpg" />
+							</div>
+						</div>
+					</div>
+					<div class="codepresenter-css">
+						header {
+						width: 1400px;
+						text-align: center;
+						position: fixed;
+						z-index: 1;
+						background: red;
+						left: 0;
+						margin: auto;
+						right: 0;
+						}
+
+						.columnContainer {
+						width: 1400px;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						padding-top: 200px;
+						}
+
+						.sideColumn {
+						float: left;
+						width: 400px;
+						z-index: 2;
+						height: 500px;
+						background: #00ff90;
+						position:relative;
+
+						}
+
+						.centerColumn {
+						float: left;
+						width: 600px;
+						height: 500px;
+						background: #00ffff;
+						}
+
+						.photoContainer {
+						width: 1400px;
+						}
+
+						img {
+						width:1400px;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<div class="posContainer">
+							<div class="fixedHeader">
+								<h1>Fixed Sidlayout</h1>
+							</div>
+							<div class="columnContainer">
+								<div class="sideColumn"></div>
+								<div class="centerColumn"></div>
+								<div class="sideColumn"></div>
+								<div class="photoContainer">
+									<img class="fixedimg" src="../Resources/Nod_Kista.jpg" alt="Kista.jpg" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Exemplet nedan använder istället flytande storlekar. Alla barn av <code>&lt;body&gt;</code> har fått en max-/min- höjd och bredd.
+
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<header>
+							<h1>Floating Sidlayout</h1>
+						</header>
+						<div class="columnContainer">
+							<div class="sideColumn"></div>
+							<div class="centerColumn"></div>
+							<div class="sideColumn"></div>
+							<div class="photoContainer">
+								<img src="../Resources/Nod_Kista.jpg" alt="Kista.jpg" />
+							</div>
+						</div>
+					</div>
+					<div class="codepresenter-css">
+						body{
+						font-size: 100%;
+						}
+						body > * {
+						max-width: 1000px;
+						max-height: 700px;
+						min-width: 300px;
+						min-height: 100px;
+						}
+						header {
+						width: 80%;
+						text-align: center;
+						position: fixed;
+						z-index: 1;
+						background: blue;
+						left: 0;
+						margin: auto;
+						right: 0;
+						}
+						h1{
+						font-size:200%;
+						}
+						.columnContainer {
+						width: 80%;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						margin-top: 200px;
+						position: absolute;
+						}
+						.sideColumn {
+						float: left;
+						width: 28%;
+						z-index: 2;
+						height: 500px;
+						background: #00ff90;
+						position: relative;
+						}
+						.centerColumn {
+						float: left;
+						width: 44%;
+						height: 500px;
+						background: #00ffff;
+						}
+						.photoContainer, img {
+						width: 100%;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						Eftersom denna behållare har en fixed bredd uteblir funktionaliteten.
+						<a target="_blank" href="../../Gesällprov/Views/LayoutFloat.html">Här</a> visas istället sidan i fullt format.
+					</div>
+				</div>
+				<p>
+					Exemplet nedan visar en sida som använder elastisk storlek (em).
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<header>
+							<h1>Elastisk Sidlayout</h1>
+						</header>
+						<div class="columnContainer">
+							<div class="sideColumn"></div>
+							<div class="centerColumn"></div>
+							<div class="sideColumn"></div>
+							<div class="photoContainer">
+								<img src="../Resources/Nod_Kista.jpg" alt="Kista.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						header {
+						width: 160em;
+						text-align: center;
+						position: fixed;
+						z-index: 1;
+						background: green;
+						left: 0;
+						margin: auto;
+						right: 0;
+						}
+						h1 {
+						font-size: 3em;
+						}
+						.columnContainer {
+						width: 160em;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+						margin-top: 20em;
+						position: absolute;
+						}
+						.sideColumn {
+						float: left;
+						width: 40em;
+						z-index: 2;
+						height:50em;
+						background: #00ff90;
+						position: relative;
+						}
+						.centerColumn {
+						float: left;
+						width: 80em;
+						height: 50em;
+						background: #00ffff;
+						}
+						.photoContainer, img {
+						width: 160em;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<a target="_blank" href="../../Gesällprov/Views/LayoutElastic.html">Här</a> finns sidan i fullt format.
+					</div>
+				</div>
+
+				<br>
+				<p>
+					Istället för att använda flera <code>&lt;div&gt;</code>ar som kolumner kan detta definieras direkt med CSS om alla kolumner skall vara lika stora. Fördelen med detta är att texten flöder över till nästa kolumn automatiskt.
+					Bredden har satts till <q>auto</q> som även är default värdet vilket fördelar bredden jämt för att fylla parent.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<div class="columns">
+							<b>Vad är Lorem Ipsum?</b>
+							<br>
+							<!--Här ligger texten (har valts att ej visas här)-->
+						</div>
+					</div>
+					<div class="codepresenter-css">
+						.columns {
+						width: 500px;
+						column-count: 3;
+						-webkit-column-count: 3;
+						-moz-column-count: 3;
+						column-width: auto;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<div class="columns">
+							<b>Vad är Lorem Ipsum?</b>
+							<br>
+							<br>
+							Lorem Ipsum är en utfyllnads-text från tryck- och förlags-industrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>Med <code>vertical-align</code> kan man sätta om man vill ha upphöjt, nedsänkt med mera</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						Dessa fotbollar har <code>vertical-align</code> upphöjt, överkant av text, normal, underkant av text och nedsänkt:
+						&lt;img class="icon" id="super" src="../Resources/football.ico" alt="football.ico"/&gt;
+						&lt;img class="icon" id="text-top" src="../Resources/football.ico" alt="football.ico"/&gt;
+						&lt;img class="icon" id="baseline" src="../Resources/football.ico" alt="football.ico"/&gt;
+						&lt;img class="icon" id="text-bottom" src="../Resources/football.ico" alt="football.ico"/&gt;
+						&lt;img class="icon" id="sub" src="../Resources/football.ico" alt="football.ico"/&gt;
+					</div>
+					<div class="codepresenter-css">
+						#super {
+						vertical-align: super;
+						}
+						#text-top {
+						vertical-align: text-top;
+						}
+						#baseline {
+						vertical-align: baseline;
+						}
+						#text-bottom {
+						vertical-align: text-bottom;
+						}
+						#sub {
+						vertical-align: sub;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						Dessa fotbollar har <code>vertical-align</code> upphöjt, överkant av text, normal, underkant av text och nedsänkt:
+						<img class="icon" id="super" src="../Resources/football.ico" alt="football.ico" />
+						<img class="icon" id="text-top" src="../Resources/football.ico" alt="football.ico" />
+						<img class="icon" id="baseline" src="../Resources/football.ico" alt="football.ico" />
+						<img class="icon" id="text-bottom" src="../Resources/football.ico" alt="football.ico" />
+						<img class="icon" id="sub" src="../Resources/football.ico" alt="football.ico" />
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h3 id="in2-2-8">2.2.8 Anpassning till olika enheter (U2.8)</h3>
+				<p>
+					<a href="//home/EnhetsBeroende">Exempel</a> på en sida som får olika utseende beroende på enhet och läge. Nedan visas de olika
+					CSS-filer som laddas in beroende på vad för enhet som används.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						/*Generell CSS som anropar olika CSS-filer beroende på enhet/mode*/
+						&#64;import url('devices/printmode.css') print;
+						&#64;import url('devices/stationarydevice.css') screen;
+						&#64;import url('devices/mobiledevice.css') (min-resolution: 2dppx);
+					</div>
+					<div class="codepresenter-css">
+						/*printmode.css*/
+						/*Om man befinner sig i utskriftsmode sätts textfärgen till blå*/
+						body {
+						color: blue;
+						}
+					</div>
+					<div class="codepresenter-css">
+						/*stationarydevice.css*/
+						/*Allmän CSS, sätter 3 columner om fönstret är tillräckligt stort och bakgrundsfärgen till rosa*/
+						body {
+						background: pink;
+						columns: 100px 3;
+						}
+					</div>
+					<div class="codepresenter-css">
+						/*mobiledevice.css*/
+						/*Css för telefon som aktiveras på skärmupplösning. CSSen beror på om man håller telefonen i landskap eller poträtt läge*/
+						&#64;media (orientation: portrait) {
+						body {
+						background: yellow;
+						columns: 100px 1;
+						font-size: 2em;
+						}
+						}
+						&#64;media (orientation: landscape) {
+						body {
+						background: red;
+						columns: 100px 2;
+						font-size: 2em;
+						}
+						}
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h3 id="in2-2-9">2.2.9 Nerladdad font (U2.9)</h3>
+				<p>
+					Föregående exempel använder ett nerladdat typsnitt från <a href="https://www.fontsquirrel.com">https://www.fontsquirrel.com</a> på sidan för stationära enheter.
+					Och ett typsnitt från <a href="https://fonts.google.com">https://fonts.google.com</a> för mobila enheter.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						&#64;font-face {
+						font-family: 'amaticsc-regular';
+						src: url('../resources/fonts/amaticsc-regular.ttf') format('truetype');
+						}
+						body {
+						font-family: amaticsc-regular;
+						}
+					</div>
+					<div class="codepresenter-css">
+						&#64;import url('https://fonts.googleapis.com/css?family=Life+Savers|Open+Sans');
+						body {
+						font-family: 'Open Sans';
+						font-family: 'Life Savers';
+						}
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h3 id="in2-2-10">2.2.10 Övergångar (U2.10)</h3>
+				<p>
+					Med transition kan man med CSS lägga till en animerad effekt.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<div class="codepresenter-resultat">
+							<div class="transitionDiv">
+								<p>Hoovra över mig!</p>
+							</div>
+						</div>
+					</div>
+					<div class="codepresenter-css">
+						.transitionDiv {
+						width: 100px;
+						height: 100px;
+						color: white;
+						text-align: center;
+						background: #312e2e;
+						transition: width 3s;
+						}
+						.transitionDiv:hover {
+						width: 400px;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<div class="transitionDiv">
+							<p>Hoovra över mig!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h2 id="id2-3">2.3 DYNAMIK MED JAVASCRIPT</h2>
+				<h3 id="id2-3-1">2.3.1 Grunderna i JavaScript (U3.1)</h3>
+				<p>
+					Nedan är ett kort exempel som med hjälp av en JavaScripts funktion beräknar uphöjt till av två tal som matas in av användaren.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//global variabel
+						var global;
+						$(window).bind("load", function () {
+						//Skriver ut dagens datum
+						var date = new Date();
+						document.getElementById('displayDate').innerText = date;
+						//När användaren matar in någon i textboxarna anropas beräkningsfunktionen
+						$('.additionBox').keyup(function () {
+						calculate();
+						});
+						});
+						//Kontrollerar inmatningen och beräknar upphöjt till av de två inmatade värdena
+						function calculate() {
+						var number1 = document.getElementById('number1').value;
+						var number2 = document.getElementById('number2').value;
+						global = [number1, number2];
+						//Kontrollerar att global[] endast innehåller siffror
+						for (var i = 0; i &lt; global.length; i++) {
+						global[i] = global[i].match(/[0-9]/g);
+						}
+						//Skriver tillbaks den tvättade strängen till textboxarna
+						document.getElementById('number1').value = global[0];
+						document.getElementById('number2').value = global[1];
+						power();
+						}
+						function power() {
+						//beräknar global[0] upphöjt till global[1]
+						var result = Math.pow(global[0], global[1]);
+						document.getElementById('sum').value = result;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<label id="displayDate"></label>
+						<br>
+						<input class="additionBox" type="text" id="number1" /> ^
+						<input class="additionBox" type="text" id="number2" /> =
+						<input class="additionBox" type="text" id="sum" disabled />
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-3-2">2.3.2 DOM-objekt och jQuery (U3.2)</h3>
+				<p>
+					Nedan är ett exempel som lägger till nytt innehåll till ett html-element, tar bort ett html element, tar bort en class och lägger till en class,
+					har en click-function, och en resize funktion, plockar ur information från ett html-element.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						$(document).ready(function () {
+						//Om Fönstret bredd ändras
+						$(window).resize(function () {
+						var w = window.innerWidth;
+						//Skriver endast ut bredden om p-elementet innehåller ordet 'bredden'
+						if (document.getElementById('instructions').innerText.includes('bredden')===true) {
+						document.getElementById('resized').innerText = 'Fönsterbredd:' + w;
+						}
+						});
+						});
+						$(window).bind("load", function () {
+						//Skriver ut dagens datum
+						var date = new Date();
+						document.getElementById('displayDate').innerText = date;
+						//När användaren matar in någon i textboxarna anropas beräkningsfunktionen
+						$('.additionBox').keyup(function () {
+						calculate();
+						});
+						//click-function med hjälp av jQuery
+						$('#clickableDiv').click(function () {
+						//Tar bort gamla classen
+						document.getElementById('instructions').classList.remove('tempClass');
+						//Lägger till en ny class
+						document.getElementById('instructions').classList.add('newClass');
+						//Tar bort ett element
+						$('#clickableDiv').remove();
+						//Ändrar texten i p elementet
+						document.getElementById('instructions').innerText = 'Ändra bredden på fönstret';
+						});
+						});
+					</div>
+					<div class="codepresenter-resultat">
+						<p class="tempClass" id="instructions">Klicka på diven nedan</p>
+						<br>
+						<div class="beforeClick" id="clickableDiv">Click me!</div>
+						<span id="resized"></span>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Exemplet för hur man fokuserar en a-tag och tar bort fokuseringen, keyup, event.target, preventDefault, .off.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//global variabel
+						var global;
+						$(document).ready(function () {
+						//Om Fönstret bredd ändras
+						$(window).resize(function () {
+						var w = window.innerWidth;
+						//Skriver endast ut bredden om p-elementet innehåller ordet 'bredden'
+						if (document.getElementById('instructions').innerText.includes('bredden') === true) {
+						document.getElementById('resized').innerText = 'Fönsterbredd:' + w;
+						}
+						});
+						});
+						$(window).bind("load", function () {
+						//Skriver ut dagens datum
+						var date = new Date();
+						document.getElementById('displayDate').innerText = date;
+						//Ger ett felmeddelande om matar in något i fältet
+						$('#textBoxCaps').keyup(function () {
+						alert('Detta fält är ej till för inmatning');
+						});
+						//click-function med hjälp av jQuery
+						$('#clickableDiv').click(function () {
+						//Tar bort gamla classen
+						document.getElementById('instructions').classList.remove('tempClass');
+						//Lägger till en ny class
+						document.getElementById('instructions').classList.add('newClass');
+						//Tar bort ett element
+						$('#clickableDiv').remove();
+						//Ändrar texten i p elementet
+						document.getElementById('instructions').innerText = 'Ändra bredden på fönstret';
+						});
+
+						//Tar bort klickmöjligheten på a-elementet
+						$('#linkWithPreventDefault').click(function (event) {
+						event.preventDefault();
+						});
+
+						$('#alert').click(function () {
+						alert('You clicked me!');
+						});
+
+						$('#activateOff').click(function () {
+						$('#alert').off('click');
+						});
+
+						});
+
+						function blurfunction() {
+
+						document.getElementById('focused').blur();
+						}
+						function focusfunction() {
+
+						document.getElementById('focused').focus();
+						}
+
+						//Ändrar bakgrundsfärgen om man hoovrar över textfältet
+						$('#textBoxCaps').hover(function () {
+						$(this).css("background-color", 'red');
+						}, function () {
+						$(this).css("background-color", 'white');
+						});
+					</div>
+					<div class="codepresenter-resultat">
+						<a id="focused" href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb331614(v=vs.85).aspx">https://msdn.microsoft.com</a>
+						<br>
+						<input type="button" onclick="focusfunction()" value="fokusera" />
+						<br>
+						<input type="button" onclick="blurfunction()" value="ta bort fokus" />
+						<br>
+						<br>
+						<label>Prova att mata in något i textfältet nedan</label>
+						<br>
+						<input type="text" id="textBoxCaps" />
+						<br>
+						<br>
+						<label>Nedan är ett span som alertar vilket element som aktiverade funktionen</label>
+						<br>
+						<span id="alertSpan" onclick="eventAlert(event)">Click me!</span>
+						<br>
+						<br>
+						<label>Nedan är en länk med preventDefault som tar bort länkningsfunktionen </label>
+						<br>
+						<a id="linkWithPreventDefault" href="https://www.su.se/">www.su.se</a>
+						<br>
+						<br>
+						<label>
+							Om man klickar på <code>&lt;span&gt;</code>:et nedan får man ett pop-up fönster tills man trycker på knappen
+							som tar bort klickeventet från <code>&lt;span&gt;</code>:et
+						</label>
+						<br>
+						<span id="alert">Click me!</span>
+						<br>
+						<button id="activateOff">Ta bort klickfunktion</button>
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-3-3">2.3.3 Webbläsar-objekt (U3.3)</h3>
+				<p>Exempel på hur man kan använda <code>alert</code>, <code>confirm</code>, <code>promt</code>, <code>open</code> och <code>close</code></p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//öpnnar ett ja/avbryt fönster
+						function confirmButton() {
+						var answer = confirm('Is CSS Awesome?!');
+						if (answer) {
+						alert('Your answer is correct!');
+						}
+						else {
+						alert('Your answer is wrong!');
+						}
+						}
+
+						//Öppnar ett inmatningsfält
+						function nameButton() {
+						var name = prompt('What is your name?', 'Name')
+						if (name != 'Alex') {
+						alert('Wrong!');
+						}
+						else {
+						alert('Correct!');
+						}
+						}
+
+						//globgal variabel för att kunna användas av både openButton och closeButton
+						var newWindow;
+
+						//Öppnar en ny tab med adressen www.su.se
+						function openButton() {
+						newWindow = window.open('https://www.su.se', 'newWindow' ,'width=500, height=600');
+						}
+
+						//Stänger fönstret om det existerar
+						function closeButton() {
+						if (newWindow!=='undefined') {
+						newWindow.close();
+						}
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<label>Prompt popup</label>
+						<br>
+						<button onclick="nameButton()">Question1</button>
+						<br><br>
+						<label>confirm pop-up</label>
+						<br>
+						<button onclick="confirmButton()">Question2</button>
+						<br><br>
+						<label>Öppnar/Stänger ett nytt fönster</label>
+						<br>
+						<button onclick="openButton()">Open</button>
+						<button onclick="closeButton()">Close</button>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Exempel på <code>setInterval</code>, <code>clearInterval</code>, <code>setTimeout</code> och <code>clearTimeout</code>.
+					När räknaren startas uppdateras siffran varje sekund. Vid 5 sekunder kommer en varning vilket kan undvikas om man trycker på <q>varna inte</q>.
+					Uppräkningen kan stoppas med <q>Stop</q>.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						var counter;
+						var warning;
+						//Räknar upp varje sekund
+						function interval() {
+						var iteration = 0;
+						counter = setInterval(function () {
+						iteration++;
+						document.getElementById('iterationP').innerText = iteration;
+						}, 1000);
+						//När 5 sekunder passerat kommer en varning
+						warning = setTimeout(function () { alert('5 sekunder har passerat'); }, 5000);
+						}
+
+						//Stoppar uppräkningen
+						function stopCounter() {
+						clearInterval(counter);
+						}
+						//Tar bort varningen vid 5 sekunder
+						function clearWarning() {
+						clearTimeout(warning);
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<label>Startar klockan</label><br>
+						<button onclick="interval()">Start</button>
+						<br>
+						<br>
+						<label>Stoppa klockan</label>
+						<br>
+						<button onclick="stopCounter()">Stop</button>
+						<br>
+						<br>
+						<label>Tar bort varningen vid 5 sekunder</label>
+						<br>
+						<button onclick="clearWarning()">Varna inte</button>
+						<p id="iterationP">0</p>
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-3-4">2.3.4 Effekter och navigering (U3.4.1)</h3>
+				<p>Nedanstpende knappar visar(Show), gömmer(Hide) och gömmer eller visar (beroende på nuvarande status) en <code>&lt;div&gt;</code></p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Visar elementet
+						function showElement() {
+						$('#hideShowDiv').show();
+						}
+						//Gömmer elementet
+						function hideElement() {
+						$('#hideShowDiv').hide();
+						}
+						//Visar eller gömmer elementet beroende på nuvarande status
+						function toggleElement() {
+						$('#hideShowDiv').toggle();
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<button onclick="showElement()">Show</button>
+						<button onclick="hideElement()">Hide</button>
+						<button onclick="toggleElement()">Toggle</button>
+						<div class="squareExample" id=hideShowDiv></div>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Exempel på hur man kan använda <code>fadeIn</code>, <code>fadeOut</code>, <code>fadeToggle</code> och <code>fateTo</code>.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Gör ett element stegvis synligt
+						function fadeInExample() {
+						$('#fadeDiv').fadeIn(4000);
+						}
+
+						//Tonar ut ett element
+						function fadeOutExample() {
+						$('#fadeDiv').fadeOut(4000);
+						}
+
+						//Gör ett element synligt eller tonar ut det beroende på nuvarande status
+						function fadeToggleExample() {
+						$('#fadeDiv').fadeToggle(4000);
+						}
+
+						//Tonar ut ett element till en viss gräns
+						function fadeToExample() {
+						$('#fadeDiv').fadeTo(2000,0.5);
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<button onclick="fadeInExample()">Fade in</button>
+						<button onclick="fadeOutExample()">Fade out</button>
+						<button onclick="fadeToggleExample()">Fade Toggle</button>
+						<button onclick="fadeToExample()">Fade to</button>
+						<div class="squareExample" id="fadeDiv"></div>
+					</div>
+				</div>
+				<br>
+				<p>
+					Exempel av animation. Tryck på knappen för att starta divens rörelse.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Flyttar diven om man aktiverar funktionen
+						function startAnimation() {
+						var element = document.getElementById('animateObject');
+						var i = 0;
+						//Lägger in en fördröjning så man hinner se diven röra på sig
+						var animation = setInterval(move, 8);
+						function move() {
+						//Om diven har nått slutet ska den stanna
+						if (i === 490) {
+						clearInterval(animation);
+						}
+						//Ökar positionen på diven med en pixel i taget
+						i++;
+						element.style.left = i + 'px';
+						}
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<button id="startAnimationButton" onclick="startAnimation()">Starta</button>
+						<button onclick="resetAnimation()">Reset</button>
+						<div id="animateContainer">
+							<div id="animateObject"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Nedanstående exempel använder istället jQuery animate med easing=swing och en callback-funktion som alertar att animeringen är klar.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Animering med jQuery som använder swing och har en callback-funktion
+						function startAnimationSwing() {
+						//Syntax: (selector).animate({styles},speed,easing,callback)
+						$('#animateObjectSwing').animate({ width: "530px" }, 1000, 'swing', function () {alert('Animeringen är klar')});
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<button class="startAnimationButton" onclick="startAnimationSwing()">Starta</button>
+						<div id="animateObjectSwing"></div>
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-3-5">2.3.5 Bildhantering (U3.4.2)</h3>
+				<p>
+					Byter bild med hjälp av jQuery attr() om man hoovrar över den.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Byter ut bilden om man hoovrar över den
+						$('#imageSwitchImage').hover(function () {
+						$(this).attr('src', '../Resources/monkey.png');
+						}, function () {
+						$(this).attr('src', '../Resources/Planets2013.svg.png');
+						});
+					</div>
+					<div class="codepresenter-resultat">
+						<img id="imageSwitchImage" src="../Resources/Planets2013.svg.png" alt="Planets2013.png" />
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					Dynamisk grafik med HTML5-elementet canvas:Rita raka linjer och kurvlinjer, Rita bézier-kurvor och former ifyllda med både färg, mönster och gradienter, Rita text (exempelvis dagens datum/tid)
+					, Använda transparens och skuggor, Lägga till en eller flera bitmappad bilder, Använda en teknik för att spara bilden
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Ritar en bild med hjälp av line, arc och bezier
+						function canvasDrawing() {
+						var c = document.getElementById('canvasExample');
+						var ctx = c.getContext('2d');
+						ctx.lineWidth = 2;
+						ctx.beginPath();
+						ctx.moveTo(0, 40);
+						ctx.lineTo(50, 40);
+						ctx.moveTo(130, 40);
+						ctx.lineTo(180, 40);
+						ctx.font = "20px Arial";
+						ctx.fillStyle = "black";
+						ctx.fillText("Hej", 75, 60);
+						ctx.moveTo(0, 40);
+						ctx.bezierCurveTo(0, 120, 180, 120, 180, 40);
+						ctx.arc(90, 40, 40, 0, 2 * Math.PI);
+						ctx.globalAlpha = 0.5;
+						ctx.shadowBlur = 20;
+						ctx.shadowColor = "black";
+						var gradient = ctx.createLinearGradient(0, 0, 100, 0);
+						gradient.addColorStop(0, "red");
+						gradient.addColorStop(1, "white");
+						ctx.fillStyle = gradient;
+						ctx.fill();
+						var img = new Image();
+						img.src = '../Resources/monkey.png';
+						ctx.drawImage(img, 10, 10);
+						ctx.stroke();
+						}
+						//Sparar cavas som en png bild
+						function saveImage() {
+						var canvas = document.getElementById("canvasExample");
+						//https://stackoverflow.com/questions/10673122/how-to-save-canvas-as-an-image-with-canvas-todataurl
+						// Multipurpose Internet Mail Extensions (MIME) type , octet stream (representerar binär data)
+						var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+						window.location.href = image;
+						}
+					</div>
+					<div class="codepresenter-resultat">
+						<button onclick="canvasDrawing()">Start</button><button onclick="saveImage()">Spara bild</button>
+						<br>
+						<canvas id="canvasExample"></canvas>
+					</div>
+				</div>
+				<br>
+				<h3 id="in2-3-6">2.3.6 Navigering (U3.4.3)</h3>
+				<p>
+					Genom att lägga till <code>target="_blank"</code> öppnas länkar i en ny flik istället för att öppna i samma fönster. I menyn högst upp på sidan finns ett exempel på en dropdown meny.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<a href="https://www.su.se/" target="_blank">www.su.se</a>
+					</div>
+					<div class="codepresenter-resultat">
+						<a href="https://www.su.se/" target="_blank">www.su.se</a>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+
+				<h3 id="in2-3-7">2.3.7 Utvidgbara gränssnitt (U3.4.4)</h3>
+				<br>
+				<p>
+					Exempel som använder länkad jQueryUI style för att skapa en tab-panel.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						&lt;link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"&gt;
+					</div>
+					<div class="codepresenter-js">
+						//https://jqueryui.com/tabs/ Skapar tab-funktion med hjälp av jQuery
+						$(function() {
+						$("#tabs").tabs();
+						});
+					</div>
+					<div class="codepresenter-resultat">
+						<div id="tabs">
+							<ul>
+								<li><a title="Klicka på de olika tabbarna" href="#tabs-1">Doctype!</a></li>
+								<li><a title="Klicka på de olika tabbarna" href="#tabs-2">Teckenkod</a></li>
+								<li><a title="Klicka på de olika tabbarna" href="#tabs-3">Validering</a></li>
+							</ul>
+							<div id="tabs-1">
+								<p><b>Doctype</b><br>Är en förkortning av "Document type decleration", och är en instruktion till webbläsaren vilket markup language som skall användas. För att använda sig av HTML5 används taggen <code>&lt;!DOCTYPE html&gt;</code></p>
+							</div>
+							<div id="tabs-2">
+								<p><b>Teckenkod</b><br>Teckenkod avgör hur t.ex en byte skall tolkas av webbläsaren. Själva värdet på byten ändras inte när den överförs mellan två enheter, men det är upp till teckenkodningen att avgöra hur värdet skall tolkas.</p>
+							</div>
+							<div id="tabs-3">
+								<p><b>Validering</b><br>Precis som ett vanligt språk som har en uppsättning av regler gällande grammatik och vokabulär, så förväntas även datorprogram och webbsidor att följa de uppsatta reglerna som gäller för det språket eller ramverket. Att ett program är validerat är dock ingen garanti för att programmet är väl konstruerat.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h3 id="in2-3-8">2.3.8 Formulärhantering (U3.4.5)</h3>
+				<br>
+				<div class="codepresenter">
+					<div class="codepresenter-css">
+						#modal {
+						display: none;
+						position: fixed;
+						z-index: 12;
+						width: 100%;
+						height: 100%;
+						background: rgba(0, 0, 0, 0.8);
+						top:0;
+						left:0;
+						align-content: center;
+						}
+						#modalcontent {
+						margin: -400px 0 0 -250px;
+						position: absolute;
+						width: 500px;
+						background: white;
+						border-radius: 10px;
+						padding: 10px;
+						top: 50%;
+						left: 50%;
+						font-size: 16px;
+						font-family: Arial;
+						}
+
+						#quizForm {
+						padding: 30px;
+						}
+
+						#quizForm >input:focus {
+						border: 4px;
+						border-color:#136203;
+						}
+
+						.requiredStar{
+						color: red;
+						}
+						#programmingQ, #mathQ{
+						display:none;
+						}
+
+						input:invalid {
+						border: 1px solid red;
+						}
+
+						input:valid {
+						border: 1px solid #4ce228;
+						}
+					</div>
+					<div class="codepresenter-js">
+						//Visar frågeformuläret
+						function startQuiz() {
+						document.getElementById('modal').style.display = 'block';
+						}
+
+						//Beroende på vilken typ av fråga man väljer visas motsvarande div
+						function radioClick(typOfQuestion) {
+						if (typOfQuestion === 'math') {
+						document.getElementById('mathQ').style.display = 'block';
+						document.getElementById('programmingQ').style.display = 'none';
+						}
+						else {
+						document.getElementById('mathQ').style.display = 'none';
+						document.getElementById('programmingQ').style.display = 'block';
+						}
+						}
+
+						//Stänger ner form
+						function closeFormQuiz() {
+						document.getElementById('modal').style.display = 'none';
+						}
+
+
+						//Om all inmatning är validerad skrivs det hur många rätt man fick
+						$('#quizForm').submit(function (evt) {
+						evt.preventDefault();
+						if ($('#quizForm').valid()) {
+						var name = document.getElementById('userName').value;
+						var email = document.getElementById('email').value;
+						var radioQuestion = document.getElementById('radioQuestion');
+						var matteQ1 = document.getElementById('matteQ1');
+						var matteQ2 = document.getElementById('matteQ2');
+						var proQ1 = document.getElementById('proQ1');
+						var proQ2 = document.getElementById('proQ2');
+
+						var numberOfPoints = 0;
+						//Kontrollerar svaret om man valde en matte-fråga
+						if (radioQuestion.checked === false) {
+						radioQuestion = 'Matte-';
+						if (matteQ1.checked == true && matteQ2.checked == false) {
+						numberOfPoints++;
+						}
+						}
+						//Kontrollerar svaret om man valde en programmeringsfråga
+						else {
+						radioQuestion = 'Programmerings-';
+						if (proQ1.checked === true && proQ2.checked === false) {
+						numberOfPoints++;
+						}
+						}
+						//Skriver ut resultatet
+						alert(name + '(' + email + ')' + ' fick ' + numberOfPoints + ' rätt!');
+						//Stänger ner formen
+						closeFormQuiz();
+						}
+						});
+
+					</div>
+					<div class="codepresenter-resultat">
+						<button id="startQuizButton" onclick="startQuiz()">Starta quizet!</button>
+					</div>
+				</div>
+				<div id="modal">
+					<div id="modalcontent">
+						<form id="quizForm">
+							<span class="requiredStar"> *</span> Required
+							<br>
+							<br>
+							<label>Namn</label><br>
+							<input id="userName" type="text" name="user" required placeholder="Användarnamn" pattern="[A-z]{6,10}" autofocus /><span class="requiredStar"> *</span> 6-10 tecken långt [A-z]<br><br>
+							<label>Email</label><br>
+							<input id="email" type="email" name="email" placeholder="E-mail" required /><span class="requiredStar"> *</span><br><br>
+							<label>Vilken typ av fråga vill du svara på?</label><span class="requiredStar"> *</span><br>
+							<input id="mathQuestion" type="radio" onclick="radioClick(this.value)" required name="typeOfQuestions" value="math">Matte<br>
+							<input id="radioQuestion" type="radio" onclick="radioClick(this.value)" required name="typeOfQuestions" value="programming">Programmering<br>
+							<br><br>
+							<div id="mathQ">
+								<label>lim x->inf(1+1/x)^x > 2,71828182845904523</label><br>
+								<input id="matteQ1" type="checkbox" />sant<br>
+								<input id="matteQ2" type="checkbox" />falskt<br>
+							</div>
+							<div id="programmingQ">
+								<label>JavaScripts motsvarighet till C# <q>null coalescing</q> är att använda sig av <q>logical OR</q></label><br>
+								<input id="proQ1" type="checkbox" value="true" />sant<br>
+								<input id="proQ2" type="checkbox" value="false" />falskt<br>
+							</div>
+							<br><br>
+							<input type="button" onclick="closeFormQuiz()" value="Avbryt" /><br>
+							<button type="submit">Submit</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h2 id="in3">3. SCRIPT</h2>
+				<h3 id="in3-1">3.1 Codepresenter.js</h3>
+				<p>
+					Script för att lättare kunna presentera kod på ett mer tilltalande sätt utan att behöva skriva allt för mycket kod. Scriptet gör om inmatad text för att efterlikna hur den ser ut i en utvecklingsmiljö.
+					Beroende på hur CSS-filen ser ut kan man efterlikna olika programvaror. I detta exempel har färger använts för att efterlikna Microsoft Visual Studio 2017 Dark Theme. Nedan är ett kort exempel som använder scriptet för att beskriva
+					hur man skapar en <code>&lt;div&gt;</code> och stylar denna med CSS.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<div class="square">Click me!</div>
+					</div>
+					<div class="codepresenter-css">
+						.square {
+						width: 70px;
+						height: 70px;
+						background: red;
+						float: left;
+						border: solid 1px black;
+						}
+					</div>
+					<div class="codepresenter-js">
+						$('.square').click(function () {
+						alert('Hej!');
+						});
+					</div>
+					<div class="codepresenter-resultat">
+						<div class="square2">Click me!</div>
+					</div>
+				</div>
+				<br>
+				<h3 id="in3-1-1">3.1.1 Implementation</h3>
+				<p>
+					För att kunna använda scriptet behövs förutom själva scriptet och tillhörande CSS även att jQuery implementeras. Och scriptet måste köras efter att hela dokumentet har lästs in.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						&lt;link href="/Styles/CodepresenterStyle.css" rel="stylesheet" /&gt;
+						&lt;script src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+						&lt;script src="Scripts/CodepresenterScript.js"&gt;&lt;/script&gt;
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h3 id="in3-1-2">3.1.2 Användning</h3>
+				<p>
+					För att använda klass-biblioteket skapar man en <code>&lt;div&gt;</code> med class-namnet <q>codepresenter</q>. I denna kan man lägga divar som ska innehålla den kod som skall presenteras.
+					Generellt kan man klistrta in kod direkt från källan utan modifiering bortsett från några undantag av html-element (generellt element som inte ligger i <code>&lt;body&gt;</code>).
+					<br>
+					<br>
+					De fyra olika alternativen är:
+					<br><br>
+					<code>&lt;div class="codepresenter-html"&gt;</code><br>
+					Här läggs html-kod. Man kan klistra in koden i grundform- med taggar och allt, dock anropas scriptet först efter att hela DOM-en och bilder har laddats så vissa typer av element kommer ej att validera
+					som till exempel <code>&lt;body&gt;</code>, vilket kräver att man använder entity istället för taggar på dessa så att de inte tolkas som html-element när sidan laddas.
+					<br><br>
+					<code>&lt;div class="codepresenter-css"&gt;</code><br>
+					Här läggs text som representerar CSS-kod.
+					<br><br>
+					<code>&lt;div class="codepresenter-js"&gt;</code><br>
+					Här läggs text som representerar javascript-kod.
+					<br><br>
+					<code>&lt;div class="codepresenter-resultat"&gt;</code><br>
+					Här läggs koden i grundform och behandlas ej för att behålla funktion.
+					<br>
+					<br>
+					Ordningen de fyra ovanstående alternativen står i saknar betydelse (utan de ritas upp i den ordning som de är inskrivna), utan dessa kan blandas hur som helst. Man kan välja att ha flera divar
+					av samma typ eller välja att inte ha med någon alls. Höjden på varje behållare är satt till 7 rader med text plus padding. Om Antalet rader överskrider detta appliceras en scroll på behållaren.
+				</p>
+				<p>
+					Exempel hur resultatet ser ut om man vill visa hur ett exempel på hur man skriver kod för en <code>&lt;div&gt;</code> som har en class i html
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<div class="square"></div>
+					</div>
+				</div>
+				<p>
+					för att få ovanstående resultat skriver man: <br>
+					<br>
+					<code>
+						&lt;div class="codepresenter"&gt;<br>
+						<span class="tab"></span>&lt;div class="codepresenter-html"&gt;<br>
+						<span class="tab1"></span>&lt;div class="square"&gt;&lt;/div&gt;<br>
+						<span class="tab"></span>&lt;/div&gt;<br>
+						&lt;/div&gt;<br>
+					</code>
+				</p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>Efter att scriptet har körts kommer ovanstående kod att skrivas om till</p>
+				<code>
+					&lt;div class="codepresenter-container"&gt;<br>
+					<span class="tab"></span>&lt;div class="codepresenter-menu"&gt;<br>
+					<span class="tab1"></span>&lt;div class="HTML-example"&gt;HTML&lt;/div&gt;<br>
+					<span class="tab"></span>&lt;/div&gt;<br>
+					<span class="tab"></span>&lt;div class="codepresenter-source"&gt;<br>
+					<span class="tab1"></span>&lt;div class="codepresenter-HTML"&gt;<br>
+					<span class="tab2"></span>&lt;code&gt;<br>
+					<span class="tab3"></span>&lt;span class="HtmlBracket"&gt;&amp;lt; &lt;/span&gt;<br>
+					<span class="tab3"></span>&lt;span class="HtmlElementColor"&gt;div&lt;/span&gt;<br>
+					<span class="tab3"></span>&lt;span class="HtmlAttributeColor"&gt; class&lt;/span&gt;<br>
+					<span class="tab3"></span>&lt;span class="HtmlTextColor">="square"&lt;/span&gt;<br>
+					<span class="tab3"></span>&lt;span class="HtmlBracket"&gt;&amp;gt; &lt;/span&gt;<br>
+					<span class="tab3"></span>&lt;span class="HtmlBracket"&gt;&amp;lt; &lt;/span&gt;<br>
+					<span class="tab3"></span>&lt;span class="HtmlElementColor"&gt;div&lt;/span&gt;<br>
+					<span class="tab3"></span>&lt;span class="HtmlBracket"&gt;&amp;gt; &lt;/span&gt;<br>
+					<span class="tab2"></span>&lt;/code&gt;<br>
+					<span class="tab1"></span>&lt;/div&gt;<br>
+					<span class="tab"></span>&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				</code>
+				<p>
+					Nedan är ett exempel på hur scriptet anropas med en behållare för varje kod-typ där endast en kommentar har angivits.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-html">
+						<div class="codepresenter">
+							<div class="codepresenter-html">
+								<!--Här läggs HTML-kod-->
+							</div>
+							<div class="codepresenter-css">
+								/*Här läggs CSS-kod*/
+							</div>
+							<div class="codepresenter-js">
+								//Här läggs js-kod
+							</div>
+							<div class="codepresenter-resultat">
+							</div>
+						</div>
+					</div>
+					<div class="codepresenter-resultat">
+						<div class="codepresenter">
+							<div class="codepresenter-html">
+								&lt;!--Här läggs HTML-kod--&gt;
+							</div>
+							<div class="codepresenter-css">
+								/*Här läggs CSS-kod*/
+							</div>
+							<div class="codepresenter-js">
+								//Här läggs js-kod
+							</div>
+							<div class="codepresenter-resultat">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h3 id="in3-1-3">3.1.3 Funktioner</h3>
+				<p>
+					I Bilaga 2 finns schema för hur funktionerna integrerar med varandra.
+				</p>
+				<p>
+					<code>window.addEventListener(<span class="JsStringColor">'load'</span>, <span class="JsKeyWordColor">function</span> ()</code><br>
+					Körs när all html-kod har laddats in inklusive bilder. Anropar createCodepresenterContainer() och parseCode(string), som ändrar utseende på text så att denna efterliknar en IDE.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Körs när sidan har laddats klart
+						window.addEventListener('load', function () {
+						//Bygger behållaren för som innehåller de olika kodsektionerna
+						createCodepresenterContainer();
+						//Anropar funktioner där divar vars innehåll skall omvandlas till kodutseende
+						parseCode('codepresenter-HTML');
+						parseCode('codepresenter-CSS');
+						parseCode('codepresenter-JavaScript');
+						});
+					</div>
+				</div>
+				<br>
+				<p>
+					<code><span class="JsKeyWordColor">function</span> createCodepresenterContainer()</code><br>
+					När all html-kod har lästs in anropas createCodepresenterContainer som letar upp alla <code>&lt;div&gt;</code>ar med classen <q>codepresenter</q> och bygger behållarna med utseende efter vad för class som angivits.
+					Text och färg på bannern sätts beroende på om classen anger om det är HTML-, CSS-, JavaScript, eller ett resultat. Lägger till denna HTML-kod till DOMen.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Letar upp alla divar med class "codepresenter" och skapar ett grundutseende på dessa
+						function createCodepresenterContainer() {
+						var parent = document.getElementsByClassName('codepresenter');
+						for (var i = 0; i < parent.length; i++) {
+						var node = parent[i];
+						var parentcode = '';
+						var childelements = node.children;
+						var labeltext = '';
+						var elementType;
+						var resultBackground;
+						//Skapar nya divar beroende på vilken sorts kod som har angivits
+
+						var collectionDiv = document.createElement("div");
+						for (var j = 0; j < childelements.length; j++) {
+						switch (childelements[j].className) {
+						case 'codepresenter-html':
+						labeltext = 'HTML';
+						break;
+						case 'codepresenter-resultat':
+						labeltext = 'Resultat';
+						break;
+						case 'codepresenter-css':
+						labeltext = 'CSS';
+						break;
+						case 'codepresenter-js':
+						labeltext = 'JavaScript';
+						break;
+						default:
+						labeltext = '';
+						break;
+						}
+						var text = childelements[j].innerHTML;
+						//Tar bort taggar som ska skrivas ut som tecken och inte som kod i html. Resultatrutan ska behålla taggarna
+						if (labeltext !== 'Resultat') {
+						text = replaceAll(text, '<', '&amp;lt;');
+						text = replaceAll(text, '>', '&amp;gt;');
+						resultBackground = '';
+						}
+						//class för resultat så en egen CSS egenskap anropas
+						else {
+						resultBackground = 'Res';
+						}
+
+						//Bygger utseendet på den nya behållaren för koden (skapar nya divar med olika class-namn som anropar CSS)
+
+						var name = "codepresenter-container";
+						if (resultBackground != '') {
+						name += resultBackground;
+						}
+
+						var outerDiv = createElement("div", name, "");
+						var middleDiv = createElement("div", "codepresenter-menu", "");
+						var innerDiv = createElement("div", labeltext + "-example", labeltext);
+
+						middleDiv.appendChild(innerDiv);
+						outerDiv.appendChild(middleDiv);
+
+						var sourceDiv = createElement("div", "codepresenter-source", "");
+						var typeDiv = createElement("div", "codepresenter-" + labeltext, text);
+
+						sourceDiv.appendChild(typeDiv);
+						outerDiv.appendChild(sourceDiv);
+
+						collectionDiv.appendChild(outerDiv);
+
+						}
+						node.innerHTML = ""; //Tar bort det gamla innehållet
+						node.appendChild(collectionDiv); //Lägger till de nya elementen
+						}
+						}
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					<code><span class="JsKeyWordColor">function</span> parseCode(className)</code><br>
+					parseCode letar igenom all html-kod efter element med det classnamn som skickades med. Alla dessa element lagras i variabeln <q>node</q> som är en <code>HTMLCollectionOf&lt;Elements&gt;</code>.
+					För varje element i <q>node</q> splittas inre HTML per rad som lagras i en array som skickas till den funktion som matchar classnamnet (d.v.s html-, css- eller js-kod) varefter DOMen uppdateras.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Plockar ut allt innehåll för divar med ett specifikt namn. Beroende på namnet anropas funktioner som sätter olika färger
+						//på innehållet
+						function parseCode(className) {
+						var node = document.getElementsByClassName(className);
+						//Utförs för alla divar med classen "className"
+						for (var i = 0; i < node.length; i++) {
+						//Plockar ut all kod som finns i diven
+						var text = node[i].innerHTML;
+						//Lagrar varje rad text som finns i diven i en array
+						var arr = text.split('\n');
+						//Lägger till den uppdaterade texten till html-dokumentet och
+						node[i].innerHTML = ""; //Tar bort det gamla innehållet
+
+						//Skriver tillbaks det behandlade innehållet till diven.
+						//Beroende på om det rör sig om HTML, CSS eller JS anropas olika funktioner
+						switch (className) {
+						case 'codepresenter-HTML':
+						node[i].appendChild(IdeAppearanceHTML(arr));
+						break;
+						case 'codepresenter-CSS':
+						node[i].appendChild(IdeAppearanceCSS(arr));
+						break;
+						case 'codepresenter-JavaScript':
+						node[i].appendChild(IdeAppearanceJavaScript(arr));
+						break;
+						default:
+						break;
+						}
+						}
+						}
+					</div>
+				</div>
+				<br>
+				<p>
+					<code><span class="JsKeyWordColor">function</span> IdeAppearanceHTML(string[])</code><br>
+					Får in en string array där hela arrayen motsvarar innehållet i en div som har classnamnet ”codepresenter-HTML” och varje element i arrayen motsvarar en rad av divens innehåll.
+					Först skapas ett tomt <code>&lt;code&gt;</code>-element och arrayen tvättas på ogiltiga tecken. Sedan loopas hela arrayen igenom. Mellan varje rad läggs en radbrytning till. För varje rad beräknas hur stort indraget skall vara. Indraget läggs till <code>&lt;code&gt;</code>-elementet som ett icke radbrytande mellanrum. Om raden är en kommentar så skapas ett span med grön text, annars delas raden upp med ett regexuttryck som delar texten per html-tagg. Taggarna tas sedan bort och läggs till <code>&lt;code&gt;</code>-elementet som ett span med mörkgrå textfärg. Innehållet i taggen delas sedan upp så att attribut och värde sätts i olika span. Text som ligger mellan taggar läggs till som vanlig text. Till sist returneras <code>&lt;code&gt;</code>-elementet som nu innehåller hela raden fast där all text ligger inuti olika spans beroende på vilket färg som skall sättas.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Function för att dela upp texten i olika &lt;span&gt; med olika textfärg, för att efterlikna Visual Studio dark theme för HTML
+						function IdeAppearanceHTML(arr) {
+						var container = createElement("code", "", "");
+						if (arr !== null) {
+						var comment = false;
+						var indent = 0;
+						//Tar bort ogiltiga tecken
+						arr = cleanArray(arr);
+						for (var i = 0; i < arr.length; i++) {
+
+
+						if (i < arr.length && i != 0) {
+						container.appendChild(createElement("br", "", ""));
+						}
+
+						//Räknar ut hur mycket indent raden skall ha. Om raden innehåller "{" skall NÄSTA rad indrag indrag ökas
+						//om raden innehåller "}" skall NUVARANDE rad indrag minskas
+						var tempIndent = calculateIndent(arr[i]);
+						if (tempIndent < 0) {
+						indent--;
+						tempIndent = 0;
+						}
+						else if (tempIndent > 0) {
+						tempIndent = 1;
+						}
+						container.innerHTML += nbspTab(indent);
+
+						//Om raden är en kommentar sätts koden i ett &lt;span&gt; med grön färg
+						if (arr[i].includes('&lt;!--')) {
+						container.appendChild(createElement("span", "HtmlCommentColor", arr[i]));
+						}
+						else {
+						//Tar bort ="" som läggs till automatiskt av browsern för attribut som inte innehåller detta t.ex. required sätts till required=""
+						arr[i] = replaceAll(arr[i], '=""', '');
+
+						//RegEx 1. Splittar på allt inom och inklusiva '&lt;' och '&gt;'    2. Tar fram till  '&lt;'    3. Tar allt efter sista  '&gt;'
+						//Exempel: Hej &lt;p&gt; mitten &lt;/p&gt; då!  splittas i 5 delar: 1. "Hej ", 2. "&lt;p&gt;", 3. " mitten " 4. &lt;/p&gt;, 5. " då!"
+						var brackets = arr[i].match(/(&lt;).*?(&gt;)|.+?(?=&lt;)|.+/g);
+
+						for (var j = 0; j < brackets.length; j++) {
+						// //Om ett ord är en tagg
+
+						if (brackets[j].startsWith('&lt;') && brackets[j].endsWith('&gt;')) {
+						var endTag = '';
+						// //Ersätter '</' med '<' för att läggas till i slutet för att lägga utanför <span>
+							för taggar
+							if (brackets[j].includes('&lt;/') || brackets[j].includes('/&gt;')) {
+							endTag = '/';
+							brackets[j] = brackets[j].replace('/', '');
+							}
+
+							// //Tvättar bort taggar eftersom dessa skall ha en egen färg
+							brackets[j] = brackets[j].replace('&lt;', '');
+							brackets[j] = brackets[j].replace('&gt;', '');
+
+							//Lägger till "mindre än" symbol i mörkgrått
+							container.appendChild(createElement("span", "HtmlBracket", "&lt;"));
+
+							//Delar upp taggar i elementnamn, attribut och value
+							var bracketWords = brackets[j].match(/("[^"]*")|[^" ]+/g);
+							//Första positionen innehåller alltid element-namn
+							container.appendChild(createElement("span", "HtmlElementColor", bracketWords[0]));
+
+							//Skriver ut attribut-namn och value i respektive färger
+							for (var k = 1; k < bracketWords.length; k++) {
+							if (bracketWords[k].includes('"') === true) {
+							container.appendChild(createElement("span", "HtmlTextColor", "=" + bracketWords[k]));
+							}
+							else {
+							bracketWords[k] = bracketWords[k].replace('=', '');
+							container.appendChild(createElement("span", "HtmlAttributeColor", " " + bracketWords[k]));
+							}
+							}
+							//Lägger till "större än"-symbol i mörkgrått
+							container.appendChild(createElement("span", "HtmlBracket", "&gt;"));
+							}
+							else {
+							//Lägger till vanlig text
+							container.appendChild(createElement("span", "HtmlTextColor", brackets[j]));
+							}
+							// arr[i] = brackets.join('');
+							// arr[i] = nbspTab(indent) + arr[i];
+							indent += tempIndent;
+							}
+							}
+							}
+							}
+							return container;
+							}
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					<code><span class="JsKeyWordColor">function</span> calculateIndent(string)</code><br>
+					Tar emot en string som motsvarar en kodrad i html och kontrollerar vad denna innehåller för tecken för att beräkna hur stort indraget på raden skall vara.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Metod som returnerar om raden innehåller fler öppningstaggar än stängningstaggar eller vice
+						//versa (används för att beräkna indragning för HTML)
+						function calculateIndent(row) {
+						var tagDifference = 0;
+						if (row !== null) {
+						var singletonTagsArr = ['&amp;lt;br&amp;gt;', '&amp;lt;wbr&amp;gt;'];
+
+						var woSingletonString;
+						var totalTags = 0;
+						var selfClosingTag = 0;
+						var closingTag = 0;
+						woSingletonString = row;
+						//Tvättar bort alla singleton-taggar eftersom dessa ej påverkar indent
+						for (var index = 0; index &lt; singletonTagsArr.length; index++) {
+						woSingletonString = replaceAll(woSingletonString, singletonTagsArr[index], '###');
+						}
+
+						//Om det inte finns några singletontaggar sätts variabeln till hela raden
+						if (woSingletonString === undefined) {
+						woSingletonString = row;
+						}
+
+						//Räknar antalet totala '&lt;'
+						var totalTags = woSingletonString.match(/&lt;.*?&gt;/g);
+						if (totalTags !== null) {
+						totalTags = totalTags.length;
+						}
+
+						//Räknar antalet &lt;* /&gt;
+						var selfClosingTag = woSingletonString.match(/&lt;.*?\/&gt;/g);
+						if (selfClosingTag !== null) {
+						selfClosingTag = selfClosingTag.length;
+						}
+
+						//Räknar antalet &lt;/*&gt;
+						var closingTag = woSingletonString.match(/&lt;\/.*?&gt;/g);
+						if (closingTag !== null) {
+						closingTag = closingTag.length;
+						}
+
+						//Räknar differansen mellan start- och sluttaggar
+						tagDifference = totalTags - 2 * selfClosingTag - 2 * closingTag;
+
+						//Kontrollerar om indraget skall ökas eller minskas
+						if (tagDifference &lt; -1) {
+						tagDifference = -1;
+						}
+						else if (tagDifference > 1) {
+						tagDifference = 1;
+						}
+						}
+						return tagDifference;
+						}
+					</div>
+				</div>
+				<br>
+				<p>
+					<code><span class="JsKeyWordColor">function</span> IdeAppearanceCSS(string[])</code><br>
+					Får in en string array där hela arrayen motsvarar innehållet i en div som har classnamnet ”codepresenter-CSS” och varje element i arrayen motsvarar en rad av divens innehåll.
+					Först skapas ett tomt <code>&lt;code&gt;</code>-element och arrayen tvättas på ogiltiga tecken. Sedan loopas hela arrayen igenom. Mellan varje rad läggs en radbrytning till. För varje rad beräknas hur stort indraget skall vara. Indraget läggs till <code>&lt;code&gt;</code>-elementet som ett icke radbrytande mellanrum. Om raden är en kommentar kontrolleras om raden innehåller ett CSS nyckelord. Resten av raden kontrolleras ifall färgen för varje del skall vara property, string eller text. Annars kontrolleras om raden innehåller selector eller property och text. Om raden har ett sluttecken adderas en radbrytning. Till slut returneras hela <code>&lt;code&gt;</code>-elementet med alla spans där texten ligger.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Function för att dela upp texten i olika &lt;span&gt; med olika textfärg, för att efterlikna Visual Studio dark theme för CSS
+						function IdeAppearanceCSS(arr) {
+						var comment = false;
+						var row = '';
+						var indent = 0;
+						//Tar bort ej utskrivbara tecken förutom space
+						arr = cleanArray(arr);
+
+						var container = createElement("code", "", "");
+
+						for (var i = 0; i &lt; arr.length; i++) {
+						var indentTemp = 0;
+
+
+						if (i &lt; arr.length && i != 0) {
+						container.appendChild(createElement("br", "", ""));
+						}
+						//Kontrollerar om det finns en  kommentar
+						if (arr[i].includes('/*') || arr[i].includes('*/') || comment === true) {
+						var commentSpan = createElement("span", "CssCommentColor", arr[i]);
+						if (arr[i].includes('/*')) {
+						comment = true;
+						}
+						if (arr[i].includes('*/')) {
+						comment = false;
+						}
+
+						container.appendChild(commentSpan);
+						}
+
+						// //Om raden inte är en kommentar
+						else if (comment === false) {
+
+						//Sätter värdet på indraget
+						if (arr[i].includes('{')) {
+						indentTemp = 1;
+						}
+						if (arr[i].includes('}')) {
+						indent--;
+						indentTemp = 0;
+						}
+						container.innerHTML += nbspTab(indent);
+						indent += indentTemp;
+						arr[i] = arr[i].replace(';', '');
+						//Om raden innehåller ett nyckelord som tex @media eller @import
+						if (arr[i].includes('@') || arr[i].includes('&amp;#64;')) {
+						row = arr[i].split(' ');
+
+						for (var j = 0; j < row.length; j++) {
+						if (row[j].includes('@') || row[j].includes('&amp;#64;')) {
+						container.appendChild(createElement("span", "CssKeywordColor", row[j] + " "))
+						}
+						else if (row[j].startsWith('(') === true) {
+						row[j] = row[j].replace('(', '');
+						row[j] = row[j].replace(':', '');
+						container.appendChild(createElement("span", "CssTextColor", "("));
+						container.appendChild(createElement("span", "CssPropertyColor", row[j]));
+						container.appendChild(createText(":"));
+						}
+						else if (row[j] === "{") {
+						container.appendChild(createText("{"));
+						}
+						else {
+						row[j] = row[j].replace(';', '');
+						container.appendChild(createElement("span", "CssTextColor", row[j]));
+						}
+						if (j < row.length - 1) {
+						container.appendChild(createText(" "));
+						}
+						else if (row[j] != "{") {
+						container.appendChild(createText(";"));
+						}
+						}
+						}
+
+						//Sätter färg för rad med property
+						else {
+						if (arr[i].includes('{') === false && arr[i].includes('}') === false) {
+						arr[i] = arr[i].replace(';', '');
+						row = arr[i].split(':');
+						//Använder string-färg på fonter som angetts som string annars sätts färgen till CSSText-färg
+						var colorClassName = row[0].includes('font-family') && row[1].includes("'") ? 'CssStringColor' : 'CssTextColor';
+
+						container.appendChild(createElement("span", "CssPropertyColor", row[0]));
+						container.appendChild(createText(":"));
+						container.appendChild(createElement("span", colorClassName, row[1]));
+						container.appendChild(createText(";"));
+						}
+						//sätter färg på rad med selektor
+						else if (arr[i].includes('{') === true) {
+						arr[i] = arr[i].replace('{', '');
+						row = arr[i].split(',');
+						for (k = 0; k < row.length; k++) {
+						container.appendChild(createElement("span", "CssSelectorColor", row[k]));
+						if (k < row.length - 1) {
+						container.appendChild(createText(","));
+						}
+						}
+						container.appendChild(createText(" {"));
+						}
+						else {
+						container.appendChild(createText("}"));
+						if (i < arr.length - 1) {
+						container.appendChild(createElement("br", "", ""));
+						}
+						}
+						}
+						}
+						}
+						return container;
+						}
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<br>
+				<p>
+					<code><span class="JsKeyWordColor">function</span> IdeAppearanceJavaScript(string[])</code><br>
+					Får in en string array där hela arrayen motsvarar innehållet i en div som har classnamnet ”codepresenter-JavaScript” och varje element i arrayen motsvarar en rad av divens innehåll.
+					Först skapas ett tomt <code>&lt;code&gt;</code>-element och arrayen tvättas på ogiltiga tecken. Sedan loopas hela arrayen igenom. Mellan varje rad läggs en radbrytning till. Först delas raden upp i kod-respektive kommentarsdel. Om det finns en koddel delas denna upp i string (text mellan '' eller ""), RegEx uttryck och övrigt. Programmet tolkar RegEx inuti strings som strings och string inuti RegEx som RegEx. Om Raden innehåller RegEx kontrolleras om det finns tillhörande flaggor (dvs g,m eller i) då dessa skall sättas i en egen färg. Den del som inte klassas under någon av de föregående delas upp för varje alphanumerical eftersom "function" är reserverat men inte "function1". Dessa ord kontrolleras mot en array som innehåller reserverade ord. Sedan kontrolleras fristående siffror som även de skall sättas  i en egen färg. Varje del lagras som ett element i en array som sedan loopas igenom och hamnar i ett span motsvarande den textfärg som skall sättas. Alla span läggs till  <code>&lt;code&gt;</code>-elementet som returneras.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Function för att dela upp texten i olika &lt;span&gt; med olika textfärg, för att efterlikna Visual Studio dark theme för JavaScript
+						function IdeAppearanceJavaScript(arr) {
+						arr = cleanArray(arr);
+						var container = createElement("code", "", "");
+
+						var indent = 0;
+
+						for (var i = 0; i < arr.length; i++) {
+						//Lägger till radbrytning mellan varje rad
+						if (i < arr.length && i != 0) {
+						container.appendChild(createElement("br", "", ""));
+						}
+
+						//Delar upp raden i kod- respektive kommentars-del
+						var codeAndComment = arr[i].match(/.+?(?=\/\/)|.+/g);
+						var commentPart = '';
+						var codePart = '';
+
+						if (codeAndComment.length > 1) {
+						codePart = codeAndComment[0];
+						commentPart = codeAndComment[1];
+						}
+						else {
+						if (!codeAndComment[0].startsWith('&#47;')) {
+						codePart = codeAndComment[0];
+						}
+						else {
+						commentPart = codeAndComment[0];
+						}
+						}
+
+						//Plockar ut strängar (oberoende av " eller ') och regex uttryck från koden
+						var part = '';
+						var sign = '';
+						var stringOrRegex = false;
+						var array = new Array();
+
+						if (codePart != '') {
+						codePart = replaceAll(codePart, '&lt;','<');
+						codePart = replaceAll(codePart, '&gt;','>');
+						//Kontrollerar varje tecken i raden
+						for (x = 0; x < codePart.length; x++) {
+						//delar upp raden i string, regex och övrigt (obs! string kan antingen startas med " eller ')
+						if (stringOrRegex === false) {
+						if (codePart[x] == '\/' || codePart[x] == "'" || codePart[x] == '"') {
+						if (part != '') {
+						part = part.match(/[^\W_]+|[\W_]+|[&]/g);
+						array = array.concat(part);
+						}
+						part = codePart[x];
+						sign = codePart[x];
+						stringOrRegex = true;
+						}
+						else {
+						part += codePart[x];
+						}
+						}
+						else {
+						part += codePart[x];
+						//Om man träffade på en likadan char som startade en string dvs antingen " eller ', eller ett regexuttryck
+						if (codePart[x] == sign) {
+						//Kontrollerar om man träffade på ett likadant tecken som startade uttrycket och att det inte rör sig
+						//om escape-uttryck i regex
+						if ((sign == '"' || sign == "'") || (sign == '/' && codePart[x - 1] != '\\')) {
+						stringOrRegex = false;
+						//Lägger till string/regex till arrayen
+						if (part != '') {
+						array.push(part);
+						}
+						part = '';
+						}
+
+						//Om det är ett regexuttryck så bryts även flaggorna ut i en egen array-del
+						if (sign == '/' && codePart[x - 1] != '\\') {
+						var run = true;
+						x++;
+						while (run) {
+						if (x < codePart.length) {
+						if (codePart[x] == 'g' || codePart[x] == 'm' || codePart[x] == 'i') {
+						part += codePart[x];
+						x++;
+						}
+						else {
+						run = false;
+						x--;
+						}
+						}
+						else {
+						run = false;
+						x--;
+						}
+						}
+						//Lägger till regex-flaggorna, adderar en string så att flaggan kan skrivas ut i rätt färg
+						//senare och inte blandas ihop med variabelnamn
+						if (part != '') {
+						array.push('/flag/' + part);
+						part = '';
+						}
+						}
+						}
+						}
+						}
+
+						//Lägger till slutet av raden
+						if (part != '') {
+						part = part.match(/[^\W_]+|[\W_]+/g);
+						array = array.concat(part);
+						}
+
+						//Avgör hur indraget skall se ut, om raden innehåller avslutningstecken skall indraget för nuvarande rad minskas. Om raden innehåller starttecken
+						//skall indraget vara oförändrat för nuvarande rad men ökas för nästa.
+						var tempIndent = 0;
+						if (codePart != 'undefined') {
+						if (codePart.includes('{')) {
+						tempIndent = 1;
+						}
+						else if (codePart.includes('}')) {
+						indent--;
+						}
+						}
+						//Lägger till indraget till raden
+						container.innerHTML += nbspTab(indent);
+
+						for (j = 0; j < array.length; j++) {
+						var classColorName = '';
+						var reservedWords = ['function', 'var', 'if', 'else', 'for', 'null', 'return', 'false', 'true', 'new', 'case', 'break', 'switch'];
+						var regexFlags = ['g',];
+						if (array[j] != 'undefined') {
+						if (array[j].startsWith('"') || array[j].startsWith("'")) {
+						classColorName = 'JsStringColor';
+						}
+
+						else if (array[j].startsWith('/')) {
+						if (array[j].startsWith('/flag/') === true) {
+						array[j] = array[j].replace('/flag/', '');
+						classColorName = 'JsKeyWordColor';
+						}
+						else {
+						classColorName = 'JsRegExColor';
+						}
+						}
+
+						else if (reservedWords.indexOf(array[j]) > -1) {
+						classColorName = 'JsKeyWordColor';
+						}
+
+						//Om ordet endast består av siffror (ej infinity) sätts textfärgen till ljusgrön
+						else if (isNumber(array[j])) {
+						classColorName = 'JsNumberColor';
+						}
+						container.appendChild(createElement("span", classColorName, array[j]));
+						}
+						}
+						indent += tempIndent;
+						}
+						else {
+						container.innerHTML += nbspTab(indent);
+						}
+						container.appendChild(createElement("span", "JsCommentColor", commentPart));
+						}
+						return container;
+						}
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<p>
+					<code><span class="JsKeyWordColor">function</span> isNumber(string)</code><br>
+					Tar in en string och kontrollerar om denna är en siffra. Anropas vid färgsättning av JavaScript som skiljer på text och siffror.
+					Returnerar -1, 0, 1 beroende på om indraget skall minskas, ökas, eller vara oförändrat.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Kontrollerar om den medskickade strängen endast innehåller tecken mellan space och tilde och åäö
+						function containsChars(string) {
+						return string.match(/[^\x20-\x7E-äöå]/g);
+						}
+					</div>
+				</div>
+				<br>
+				<p>
+					<code><span class="JsKeyWordColor">function</span> replaceAll(string text, string find, string replacement)</code><br>
+					Ersätter <em>alla</em> förekomster av en sträng i en text med en definierad sträng.
+					Returnerar den nya texten där alla ord av en viss typ har bytts ut mot ett annat ord.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Tar emot en string(text) där alla ord(find) i en medskickad string(text) ersätts med den string(replace)  man skickat med
+						function replaceAll(text, find, replacement) {
+						return text.replace(new RegExp(find, 'g'), replacement); // g = global match
+						}
+					</div>
+				</div>
+				<br>
+				<p>
+					<code><span class="JsKeyWordColor">function</span> cleanArray(string[])</code><br>
+					Tar in en string array och tvättar denna på alla specialtecken. Det vill säga tecken som ligger utanför allt mellan space och tilde och åäö.
+					Anledningen av detta är att förhindra oönskade radbrytningen och andra specialtecken som sätts av Visual Studio vid automatisk indragning.
+					Returnerar string arrayen utan specialtecken.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						function cleanArray(arr) {
+						var newArr = [];
+						for (var i = 0; i &lt; arr.length; i++) {
+						arr[i] = arr[i].replace(/[^\x20-\x7E-äöå]/g, ''); //Tecken föutom de från space till tilde och åäö behålls
+						if (arr[i] !== '') {
+						newArr.push(arr[i]);
+						}
+						}
+						return newArr;
+						}
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<br>
+				<p>
+					<code><span class="JsKeyWordColor">function</span> nbspTab(int)</code><br>
+					Tar in en int som avgör hur många gånger tre entity för ett icke radbrytande mellanslag skall läggas till för att motsvara ett indrag.
+					Returnerar en string som motsvarar html-kod för tre mellanslag gånger valt antal.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Lägger till nbsp för att simulera ett tab-indrag
+						function nbspTab(times) {
+						var stringTab = '';
+						for (var i = 0; i &lt; times; i++) {
+						stringTab += '&amp;nbsp;&amp;nbsp;&amp;nbsp;';
+						}
+						return stringTab;
+						}
+					</div>
+				</div>
+				<br>
+				<p>
+					<code><span class="JsKeyWordColor">function</span> createElement(type, cName, content)</code><br>
+					Tar in tre strängar. Skapar ett element av typen "type" med class-namnet "cName och innehållet "content". Returnerar hela elementet.
+				</p>
+				<div class="codepresenter">
+					<div class="codepresenter-js">
+						//Skapar ett element av typen "type" med class-namnet "cName och innehållet "content"
+						function createElement(type, cName, content) {
+						var element = document.createElement(type);
+						if (cName != "") {
+						element.className = cName;
+						}
+						if (content != "") {
+						element.innerHTML += content;
+						}
+						return element;
+						}
+					</div>
+				</div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<h1 id="source">4. REFERENSER</h1>
+				<p>[1] MacDonald, M (2013). <q>HTML5_ The Missing Manual, 2nd Edition.pdf</q> Sebastopol:  O’Reilly Media, Inc.</p>
+				<p>[2] <a href="https://www.w3.org/">https://www.w3.org/</a></p>
+				<p>[3] <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLHtmlElement">https://developer.mozilla.org</a></p>
+				<p>[4] <a href="https://www.w3schools.com/">w3schools, Sökt 2018-02-14</a></p>
+				<p>[5] <a href="https://en.wikipedia.org/wiki/Document_type_declaration">Wikipedia (Doctype), Sökt 2018-05-14</a></p>
+				<p>[6] <a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">Mozilla (Doctype), Sökt 2018-05-14</a></p>
+				<p>[7] <a href="https://webdesignskolan.se/html/teckenkoder/teckenkoder_charset.php"> Webdesignskolan, Sökt 2018-02-14</a></p>
+				<p>[8] <a href="https://www.w3.org/International/tutorials/tutorial-char-enc/"> www.w3.org/International/tutorials, Sökt 2018-02-14</a></p>
+				<p>[9] <a href="https://validator.w3.org/docs/help.html#validation_basics"> validator.w3.org, Sökt 2018-02-14</a></p>
+				<p>[10] <a href="https://www.metatags.org/meta_name_keywords"> www.metatags.org, Sökt 2018-02-14</a></p>
+				<p>[11] <a href="http://webbdesigna.se/listor.php">webbdesigna.se, Sökt 2018-02-14</a></p>
+				<p>[12] <a href="https://www.os-templates.com/journal/cascading-style-sheets/why-use-css-instead-of-tables"> www.os-templates.com, Sökt 2018-06-26</a></p>
+				<p>[13] <a href="https://www.draw.io/">https://www.draw.io/</a></p>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<div class="mxgraph" id="attachment1" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36\&quot; version=\&quot;8.9.3\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;6a731a19-8d31-9384-78a2-239565b7b9f0\&quot; name=\&quot;Page-1\&quot;&gt;7V3bcuK4Fv0aqs48dEqW74+Bbs5MV3Kqp0nP5VEBBdQxFscWgczXj2RLGFuG0MEWlzaVSlmyfFtrSdrakrd79mC+/m+CFrN7OsFRD4LJumd/7EEYBjb/LzJe8wwn9POMaUImeZZVZIzIP1hmApm7JBOclgoySiNGFuXMMY1jPGalPJQkdFUu9kSj8lUXaIq1jNEYRXrun2TCZnluAP0i/1dMpjN1ZcsL8z2PaPw8TegyltfrQfsp++W750idSz5oOkMTutrKsj/17EFCKcu35usBjgS0Crb8uOGOvZv7TnDMDjogBPLOU/aqnh5POBgySRM2o1Mao+hTkdvPnhCLcwCemrF5xDctvonXhP21tf23KHLjilTMkte/5BFZotj3HTP2KlWAlozyrOK6d5Qu5BmfaMxkMcuR6QGNaJLdtw2yH8/Pn0g8xk5YZFZKl8lYlfIDpTWUTLEqGABvQwzXO6ZzzG+el0pwhBh5KV8DSeVNN+UK9PmGJGAHGZsbeEHRUp73Dr3SJRtGFDGNqIIGgc5qRhgeLVD2PCteL8vUTCOUpgpIEkUl4PzhcFgDsLwbnDC83g+lDo88wPHc/BDVFAAnT6+KimWp6jDbqlQeaADRULUonby5umCdvGFgTt5wl7zJmsN9FfIOjMobBJ28N+qya1vv0Jy87R3y/sS1ycj4KgRu28Bo+21pqLUi8LMRsVMrYt+ciB1NxEOazK9Cu65n37hG1Qt/MvW6teo1aGG4mnpHeI7ia2l9Pces9dyKeSFNCqlgq2ReFNbG3/IEZ6Ntr07blmNO256m7W8xYR/xAnO84+sYHgZBaFDgfuBrmH5ao/mCQ3gVaALfKJrBztb3Aa+vQ6A+9IxCGmqQfv99ieVp2gBzwH9ZQ9kCmL5XwtJRgjGCZQB075rCEnz7jf/rDWCvr/tDLxBZ05ZuAHTXzgbbP1BEJrw3pLF5aDcOdtAKzp4DjaKsexg+jx5Q+py2hixvWIdtiRaqaZOTOM8CoA91P49+46itLxNNH5TRBCY9NXKapOw4ELMW+bCgva4/DNsC1PNgBVCz8tRtU+GJuR48zXdSu+3T60HVrIsgALqBKt3d1wOpWZ93oOYsT2Wnet4OY2q/S+U4u8q9qQ5djcrY0scG9/SRXImAg9A2CqZupn5JSMzEOqGrwDP0TToBQoVnN8urHK6aG9au5695N2yobqAjYycZOypTG2S4HRlvkAFNkbG5gRNMULTX9Ff9v2ab/gBC3S7B8fJybWvohTfVOU1oFFF9WD3gdskiwSl/BJxcKqolTH0IzQ6toT60zhb1Xa5QNe+PWeck1MfVmWvycgGt+ifNTk6Gtt+GqbBvLcP5mgqqtSiZCnKu8QhTITv0NknQ61aBBeUjv3TrzF9ERiELyy5Pqdhe5ZWFSnn3qOKuXNJSyCa/30JEmwc/VFfG18hcmK7kvOuV60p6WBrUVSsv5lyVro4d2lyArjwfNqwrp5UV1VelK2Nr+kI19OnI2EnGsZ69Riq5Y++vtdAGR5V3pe+kwWreipvympQFz6L7aFtZLXQgrfhcr0pZx76ucxHK8t3GldUN0d8aopub53K6ce1bZFzEuNapVNsfLe/YjZsm3cj2LWWdhWnStrKaN3rdbmz7lrLcn0FZnt+4slpZgnNVyjoLo7dtZQVyGqlBZXUD9beUdWwApotQVmiFDStLvTDcKWunso719L5TWa5RZblh071h0A3U9ysrBCeysyrRqNp2WzevrM7rsF9ZcmHQtSureTsr7MaGbyjLAqdRlsn59KBxb1YIO13t7wvDn0BXvtv0+p/wPV7SdIYWYm9E4udDZNbemw5DNCeRAOeBzDGnCfwPr/j/r3SO4ooSoTklmoqjBwG4sO7mHPmSAYXOveU4dnzmuw3bOhs0q4vHNUleQgSmSsiVjaVo6F1WqEE5YlkwG9RiECajLwerd58NhSw20DCCUsN4tjEFN8if7P1J0NK0BtzDBjxbOlR8kFOFL5VeoxO8m2YyLpHxKLyeHtvBfEfYYuwMrzr7qaNrQx1c2Ay4umRbA9f5uKNXNAhuaBRc/V3V1sA9RdSXKrgWNIqu/s6q+QbWJLquUXT1MUhr6O4M/2gS3cAkuqpPNaXdU/dp0DKKrh7JYjAaaQAzEdS4hGLKEvqMFSYxjXEFTpmFIjKNeXKcm3V2X4BFxii6lTvmZDLJjO062soGeCnEqaJRbI/pnIx77zGdj6NOobe7x3RqbL2GmNPNkV8f7u866g6krhxGosaSbJE6PYBoVunAfzhXOIl/6Ug8kMSyw6zOqFKToS2wqJusn9ELGo0TstAjAHUMHlINLbVGcItBvz0GdbN4m8GuOh5JZm0cmfbY1M3wz6JRfVrG49qQ7B2Lhxg1dfZo0BqJNR/l0ngr47cNU86f+pCtmL3D8eRWfCaXJx8jOn5+mJG4zHlpSnCQnQyCEYrFzOD9SGEvr271Dve56ghvIejWGBcq78fm/LRJN21AUfUt5q5geVRBjn4i740T5d5j7UTvWw6nm7O3cUIX/Mi73sDu3Trxc1eD32UWQUf/+EiLNbjOG+JFGU/8ot5UbPVJhKaIl7Ju+L8hiYTHPy/Er1CUa5DxlFNI4inPcIvUQzbj8gGCHURTTsRTlJE744LA8dmTr322Q6PeVgsct7m3miE/1J01LyRbXpFF8t4o4TFRDK9Wq5tJglY3hOo79zT9LbnRmmCgGuDbdIjCMNSjUm+qoF2U9P6/FF9f75PY/gA/OEVGCXOVKZD6kGZQ3YqKCxfr7SMkYTJeO7iNX2SrPREdKSPZLS4Xiyl5El0MvOHXA9/YC5lMH1EimoJpIo9I05gwtt0e2C20B6oHiPATM9z+71tWdOgKJQkBaECwFqj4d4GS4XarYdXI1WlGrnU2nzm5Ql2uTyLR9xLxaEKJICFMSPSb8K8Nh7xDGM9Q0kn0hBINdYnWegoakqhunX7FuR2tf5AqXZF5hHJSSzhwuGckmuSfyuY5KUPjZ5Xqz2hC/uHlUSETrjFJCPTqJVIcNBInk5dJsFD+FwWvVcm6R+tSwTuUso0eoggtUvK4Ge7MuZFP4j5ljM6VmuQDDsud6lP2O0RtQKsE79HXwYs0j1vUEVakV+Plt+p8xZb6rseR0tOdxdx6ntQskZENTUOtCxOmsbKT77IyH50i56t8UGenlcwQQ48b5culqPxG3T7/43gNxHI1l9/4gKetIs3/RPGEExrzZ0Ek4wlzja5wyg4mVdZZndfNaPYwGlW5I1nUncV335cT0ZuQSP/meEflj1ApwzOZolL3Gj+8LqTN2vF4BI9+zUdS2+IRAqCPVfWuXL5lgsZM8PTWiPOgji9Cjzjq8856mtlotR3o7r5xx4KFaYImBBedoNLYWXWlllWZrztw1lWt5vkBvnkyocLWLxySnK2Z+C6TKPEv&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+	<div class="paper-A4">
+		<div class="header-A4"></div>
+		<div class="writing-area">
+			<div class="left-margin"></div>
+			<div class="article">
+				<div class="mxgraph" id="attachment2" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36\&quot; version=\&quot;8.9.3\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;4c8e3866-4619-fd9e-5961-d3e9723af5a8\&quot; name=\&quot;Page-1\&quot;&gt;7Vpdc+MmFP01mm0fmrHAkuzHxJtttpPtdMaZafcRS0QixqBB2E7664sksD6Q89HEsldrPyRwBQjOObr3IuHA2erxd4HS5BuPMHXAKHp04GcHAACDQP3LLU+lBbplPRYkKi01w5z8i7VxpK1rEuGs0VByTiVJm8aQM4ZD2bAhIfi22eye0+ZdUxRjyzAPEbWtf5NIJqV1AoLKfoNJnJg7u/60vLJA4TIWfM30/RwA74tfeXmFzFh6oVmCIr6tmeC1A2eCc1mWVo8zTHNoDWxlvy97ru7mLTCTr+rg6XnIJ7N2HCkodJULmfCYM0SvK+tVsT6cjzBStUSuqCq6qogfifwnN194uvbdXGFSPNUu5dXveoAHLOWT1gBaS65M1X1vOU/1GPecSd3MHev6jFMuinnDUfFT9nJF+TL2gqJNGV+LULcCWmZIxFi3gjtClM4xX2E1adVEYIok2TRHR1px8a5dhboqaOD3kOCfSdhLwrgvEoIzCXtJ8PoiYdIPCScLtN8T0PrWG0TXetAtYSoSXaAout6oSd+STGKGhQN8quZ2tchLcV765RPlKPrkgFkeWdcslISzX+12FpNNnrYJkXieogKMrcoimtzFFGWZbnpPKK2h/qX4vZmdDRYSPz7Pj428yWgCjZjOZ1zo6Qi+rfIDMNG2pJYb+KMPYGtkgfmT+iZoPzJBT48MtB6ZUGAk8Uwlv6nAmZo2FiohlYgUz82A1D+eNMU/9jvE7x5I/O70LP5aKtQUvzvqJu7D1T+21K8mm+Gbu2+3g5K6GuxlrbvAO4zWvW6UZ/P5oEAeB8cE2Xjys0PxOxzKHuY+3KH43VL/A23QPBQklYNSvA/BhXdEzZv3b2fNB7bm4XuDaNH1Ugj0VGuQcsJkVhv5r9xQScIFLSfoe613da0O43HwbAdVKOdQKWK3mNfF+ANlWuAZlYAfRyaTnjxjYHnGrxFGaYqRQCwcXsrV3l14XY5xDA/jGCcW2CGi4VpRir8qRNmwwlAban8KTVjqIwpNLbBJ9ud6tRjYdtkfBe1g70/6DPbgHOyd2vb4FKI99OGJRXuDzb44M7RNJ5i6R4wz5gXKz/FlwzUf7WvP3bSn9Mk/0Cft57LYU3V/HTQcx/150/Zmp30w4aUOweiN/rLV4f3+0n3eXw70zYU3sd5cdDrO4EDJjAss2AVOqULvMm83JKQ90MR54vYYoFz7+xZbZOkdWgwKZBhYcu4XZvtDSkgxYtqhDghpd+IfFWlo57fvw3d3Vm/UAjvkKxLqciYFX+IuSOuUMM7yrCMWKCK4YkCb+yQpaG1Lgo6NqmdCa52i3evLd33vsjm6eXBm0Lkc03SZQ9zxakCtVraYaYBuULTxRpTETFXD4lu9MuTYkRDRS31hRaKoyAe7pNAUy6vUcGpMmqSqTuSH8GjnRuZAUOKaA0FXhKIYqVbgQv1pHJu4eMhMe3WrqosxRmSzMyl1TH0FVUaWefqX16/yulOcRlrmp5GKCg8T9TfCihiT3XJWu0t9zJcPL/1/0WVKRYTFyuBVtbtiB/Ab2Od2uFrQPS30lShNYnby+mu/WgQdvh6aU1QNR+K+XYCqWp2RLnP56hw6vP4P&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+
+			</div>
+			<div class="right-margin"></div>
+		</div>
+		<div class="footer-A4"></div>
+	</div>
+
+	<script src="https://www.draw.io/js/viewer.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="../Scripts/jquery-ui.js"></script>
+	<script src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+	<script src="../Scripts/Codepresenter.js"></script>
+	<script src="../Scripts/JSIndex.js"></script>
+	<script src="../Scripts/JSTask.js"></script>
+</body>
+</html>

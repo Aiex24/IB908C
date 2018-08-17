@@ -1,0 +1,12 @@
+﻿@font-face {
+	font-family: 'amaticsc-regular';
+	src: url('/resources/fonts/amaticsc-regular.ttf') format('truetype');
+}
+
+
+body {
+	background: pink;
+	columns: 100px 3;
+	font-size: 4em;
+	font-family: amaticsc-regular;
+}

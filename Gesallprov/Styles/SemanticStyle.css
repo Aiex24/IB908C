@@ -1,0 +1,124 @@
+﻿@import url('menustyle.css');
+
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 100px;
+	margin: 10px;
+}
+
+.container {
+	padding: 10px;
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+article {
+	width: 70%;
+	margin: 10px;
+	padding: 10px;
+	overflow: auto;
+	overflow-wrap: normal;
+	height: auto;
+}
+
+section, details, .nested-article {
+	margin: 10px;
+	overflow: auto;
+	padding: 10px;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	vertical-align: central;
+	color: white;
+}
+
+details {
+	background: #b6ff00;
+}
+
+aside {
+	width: 10%;
+	height: 80%;
+	overflow: hidden;
+}
+
+figure {
+	width: 40%;
+}
+
+body, #body {
+	background: #4ce06e;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+}
+
+header, #header {
+	background: #00b9ff;
+}
+
+#nav{
+	background: #0d7eb0
+}
+
+aside, #aside {
+	background: white;
+}
+
+article, #article {
+	background: tomato;
+}
+
+#nested-article{
+	background: #e1378a;
+}
+
+section, #section {
+	background: gold;
+}
+
+details, #details {
+	background: #a7a4a0;
+}
+
+footer, #footer {
+	background: #171616;
+}
+
+.color-legend {
+	width: 12px;
+	height: 12px;
+	border: 1px solid black;
+	float: left;
+	margin-top: 3px;
+	margin-right: 4px;
+}
+
+p {
+	margin: 4px;
+}
+
+#top {
+	float: right;
+}
+
+a, :visited {
+	color: white;
+}
+
+img{
+	width: 700px;
+}

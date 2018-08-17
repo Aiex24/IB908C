@@ -1,0 +1,762 @@
+﻿body {
+	margin: 0;
+	background-image: url('../Resources/Nod_Kista.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.paper-A4, .paper-A4-part-shadow {
+	height: 29.7cm;
+	background: white;
+	width: 21cm;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+}
+
+.paper-A4-part-shadow {
+	background: none;
+}
+
+#paper-A4-bottom, #paper-A4-top {
+	background: white;
+	width: 21cm;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+}
+
+.header-A4, .footer-A4 {
+	width: 100%;
+	height: 2.7cm;
+	text-align: center;
+	background: white;
+}
+
+.paper-A4-part {
+	width: 21cm;
+	height: 10cm;
+	background-color: rgba(0, 0, 255, 0.3);
+}
+
+	.paper-A4-part .left-margin, .paper-A4-part .right-margin {
+		background: white;
+		height: 10cm;
+	}
+
+.h1-fp, h1, h2, h3, h4, h5, h6 {
+	font-family: "Verdana";
+	margin: 0;
+	font-style: normal;
+	color: #4079d6;
+}
+
+.h1-fp {
+	font-size: 36px;
+}
+
+.whitebackground{
+	background: white;
+}
+
+#window-top > p{
+	margin: 0;
+	padding:0;
+}
+
+.white-text {
+	color: white;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+p {
+	font-family: "Times New Roman";
+	font-style: normal;
+}
+
+.top-divider {
+	height: 50px;
+	width: 100%;
+}
+
+#frontpage {
+	color: Red;
+}
+
+	#frontpage > h, text {
+		color: white;
+	}
+
+.square-wrapper {
+	background: gold;
+	display: flex;
+	height: 100%;
+	flex-direction: row;
+}
+
+.key {
+	border-radius: 3px;
+	padding: 1px 2px 0;
+	border: 1px solid black;
+}
+
+.writing-area {
+	display: flex;
+	height: 82%;
+	width: 100%;
+	flex-direction: row;
+}
+
+.article {
+	width: 74%;
+	height: 100%;
+	position: relative;
+}
+
+#top-article {
+	height: 600px;
+}
+
+.left-margin, .right-margin {
+	width: 13%;
+	height: 100%;
+}
+
+
+.fp-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+
+table {
+	width: 100%;
+	height: 20px;
+	overflow: auto;
+}
+
+table, th, td {
+	border: 1px solid white;
+	border-collapse: collapse;
+	position: relative;
+}
+
+th {
+	padding: 8px;
+	text-align: left;
+}
+
+td {
+	padding: 4px;
+	text-align: left;
+}
+
+table tr:nth-child(even) {
+	background-color: #dae4e8;
+}
+
+table tr:nth-child(odd) {
+	background-color: white;
+}
+
+table th {
+	background-color: #3dd1ff;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#left-col {
+	width: 20%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.tab {
+	padding-left: 20px;
+}
+
+.tab1 {
+	padding-left: 40px;
+}
+
+.tab2 {
+	padding-left: 60px;
+}
+
+.tab3 {
+	padding-left: 80px;
+}
+
+.tab4 {
+	padding-left: 100px;
+}
+
+.tab5 {
+	padding-left: 120px;
+}
+
+.tab6 {
+	padding-left: 140px;
+}
+
+.tab7 {
+	padding-left: 160px;
+}
+
+/*#window-resultat{
+	height: 6cm;
+}*/
+/*#endregion RegionName*/
+
+#window-example{
+	color: white;
+	font-weight:bold;
+	font-family: Arial;
+	padding: 3px 0 3px 3px;
+}
+
+#window-style, #window-containerRes {
+	background: none;
+}
+
+.fontSerif {
+	font-family: "Times New Roman", serif;
+}
+
+.fontSansSerif {
+	font-family: "Ariel", sans-serif;
+}
+
+.monospaceFont {
+	font-family: "Courier New", monospace;
+}
+
+.xxsmall {
+	font-size: xx-small;
+}
+
+.xsmall {
+	font-size: x-small;
+}
+
+.small {
+	font-size: small;
+}
+
+.medium {
+	font-size: medium;
+}
+
+.large {
+	font-size: large;
+}
+
+.xlarge {
+	font-size: x-large;
+}
+
+.xxlarge {
+	font-size: xx-large;
+}
+
+.emSize {
+	font-size: 1em;
+}
+
+.procentFont {
+	font-size: 150%;
+}
+
+.mylistStyleAlpha {
+	list-style: lower-alpha;
+}
+
+.mylistStyleSquare {
+	list-style: square;
+}
+
+.fontStyle {
+	font: bold 12px Arial, sans-serif;
+}
+
+.boxmodellMargin {
+	background: #336850;
+	padding: 0 15px 15px 15px;
+	width: 113px;
+	color: white;
+}
+
+.boxmodellBorder {
+	background: #348a75;
+	padding: 0 15px 15px 15px;
+	width: 83px;
+}
+
+.boxmodellPadding {
+	background: #2db75f;
+	padding: 0 15px 15px 15px;
+	width: 53px;
+}
+
+.boxmodellContent {
+	background: white;
+	padding: 0;
+	width: 53px;
+	color: black;
+}
+
+.borderExample {
+	border: solid 2px black;
+	outline: dotted 2px red;
+}
+
+
+
+#kallebild, #kallebild2, #kallebildClipPath {
+	float: left;
+	width: 70px;
+	height: 70px;
+}
+
+#kallebildClipPath {
+	clip-path: circle(50%);
+}
+
+.square, .square2 {
+	width: 70px;
+	height: 70px;
+	background: red;
+	float: left;
+	border: solid 1px black;
+}
+
+.hiddenImage {
+	visibility: hidden;
+}
+
+.collapsedImage {
+	display: none;
+}
+
+#squareHidden {
+	overflow: hidden;
+}
+
+#squareScroll {
+	overflow: scroll;
+}
+
+.paper-margin {
+	float: left;
+	background: white;
+	width: 30%;
+	height: 6cm;
+	margin: 0;
+}
+.windowdiv {
+
+
+	background-color: rgba(0, 150, 100, 0.1);
+}
+#windowImage {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:507px;
+}
+
+.bigSquare {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 50px;
+	border: 2px solid #0f5514;
+	border-radius: 40px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#gradientColor {
+	background: linear-gradient(to bottom right, #024e16, #6afb64);
+}
+
+#radialColor {
+	background: radial-gradient(#6afb64, #024e16);
+}
+
+.multipleImages {
+	background: url('../Resources/monkey.png') right bottom no-repeat, url('../resources/wavebackground.png');
+	background-size: 80px, 130px, auto;
+	width: 100%;
+	height: 100px;
+}
+
+.floatingImage {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 15px;
+}
+
+	.floatingImage::after {
+		float: left;
+		margin: 15px;
+		padding-right: 15px;
+	}
+
+h1.imagesAndBackgrounds, h1.imagesAndBackgrounds::after {
+	clear: both;
+}
+
+.imagesAndBackgrounds {
+	background-image: url('../Resources/wavebackground.png');
+	color: white;
+}
+
+.a-button, .change-table-layout, .div-button {
+	padding: 5px 10px;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+	.a-button:hover, .a-imgButton:hover {
+		background: #c21e1e;
+	}
+
+	.a-button:link, .a-button:visited, .change-table-layout {
+		color: white;
+	}
+
+	.a-button:active, .a-imgButton:active, .change-table-layout {
+		background-color: #6d1616;
+	}
+
+.a-button, .a-imgButton, .div-button {
+	background: red;
+	margin: 2px;
+	border: 2px solid #c41515;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.a-imgButton {
+	display: inline-block;
+	padding: 5px;
+	cursor: crosshair;
+}
+
+	.a-imgButton img {
+		width: 30px;
+		height: 30px;
+	}
+
+.div-button {
+	width: 70px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	background: #000;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently */
+}
+
+	.div-button:hover {
+		background: #312e2e;
+	}
+
+.table-layout-fixed {
+	table-layout: fixed;
+}
+
+.table-layout-auto {
+	table-layout: auto;
+}
+
+.form-example {
+	width: 205px;
+	background: #0070BA;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+	.form-example > label {
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: bold;
+		color: white;
+	}
+
+	.form-example > input[type=submit] {
+		width: 200px;
+		color: white;
+		padding: 5px;
+		background: black;
+		margin: 2px;
+		border: 2px solid #c41515;
+		border-radius: 5px;
+		box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	}
+
+	.form-example > input {
+		width: 200px;
+	}
+
+
+
+.posContainer {
+	width: 400px;
+	position: static;
+}
+
+.fixedHeader {
+	position: absolute;
+	width: 400px;
+	text-align: center;
+	z-index: 10;
+	background: red;
+	padding: 0;
+	left: 17px;
+}
+
+	.fixedHeader > h1 {
+		color: black;
+		padding: 0;
+		margin: 0;
+	}
+
+.columnContainer {
+	width: 400px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.sideColumn {
+	float: left;
+	width: 100px;
+	z-index: 11;
+	height: 150px;
+	background: #00ff90;
+	position: relative;
+}
+
+.centerColumn {
+	float: left;
+	width: 200px;
+	height: 150px;
+	background: #00ffff;
+}
+
+.photoContainer, .fixedimg {
+	width: 400px;
+}
+
+.icon {
+	width: 10px;
+	height: 10px;
+}
+
+#super {
+	vertical-align: super;
+}
+
+#text-top {
+	vertical-align: text-top;
+}
+
+#baseline {
+	vertical-align: baseline;
+}
+
+#text-bottom {
+	vertical-align: text-bottom;
+}
+
+#sub {
+	vertical-align: sub;
+}
+
+.columns {
+	width: 500px;
+	column-count: 3;
+}
+
+.transitionDiv {
+	width: 100px;
+	height: 100px;
+	color: white;
+	text-align: center;
+	background: #312e2e;
+	transition: width 3s;
+}
+
+	.transitionDiv:hover {
+		width: 400px;
+	}
+
+/*JavaScripts uppgifter*/
+.additionBox {
+	width: 60px;
+}
+
+.beforeClick {
+	width: 80px;
+	height: 80px;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+.tempClass {
+	background: green;
+	color: white;
+}
+
+.newClass {
+	background: red;
+	color: white;
+}
+
+#alert {
+	padding-right: 10px;
+	padding-left: 10px;
+	background: red;
+	text-align: center;
+	color: white;
+}
+
+#alertSpan {
+	background: red;
+	color: white;
+}
+
+.squareExample {
+	width: 60px;
+	height: 60px;
+	background: black;
+	margin: 10px;
+}
+
+#fadeDiv {
+	display: none;
+}
+
+#animateObject, #animateObjectSwing {
+	width: 40px;
+	height: 40px;
+	background: black;
+	position: absolute;
+}
+
+#animateObjectSwing {
+	margin: 10px;
+	position: relative;
+}
+
+#animateContainer {
+	margin: 10px;
+	width: 530px;
+	height: 40px;
+	background: #0070BA;
+	position: relative;
+}
+
+#canvasExample {
+	/*width: 530px;
+	height: 530px;*/
+}
+
+#modal {
+	display: none;
+	position: fixed;
+	z-index: 12;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	align-content: center;
+}
+
+#modalcontent {
+	margin: -400px 0 0 -250px;
+	position: absolute;
+	width: 500px;
+	background: white;
+	border-radius: 10px;
+	padding: 10px;
+	top: 50%;
+	left: 50%;
+	font-size: 16px;
+	font-family: Arial;
+}
+
+#quizForm {
+	padding: 30px;
+}
+
+	#quizForm > input:focus {
+		border: 4px;
+		border-color: #136203;
+	}
+
+.requiredStar {
+	color: red;
+}
+
+#programmingQ, #mathQ {
+	display: none;
+}
+
+input:invalid {
+	border: 1px solid red;
+}
+
+input:valid {
+	border: 1px solid #4ce228;
+}
+
+#attachment1, #attachment2 {
+	max-width: 100%;
+	border: 1px solid transparent;
+}
+
+#tableOfContent, #tableOfContent > li > a {
+	list-style-type: none;
+	text-decoration: none;
+}
