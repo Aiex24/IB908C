@@ -1,19 +1,15 @@
 IB908C Webbutveckling - Klientsidan
-Gesällprov och Uppgifter
+GesÃ¤llprov och Uppgifter
 
-Anpassat för: Chrome
-* Gesällprovet startas via "IB908C\Gesallprov\Views\Index.html"
+Anpassat fÃ¶r: Chrome
+* GesÃ¤llprovet startas via "IB908C\Gesallprov\Views\Index.html"
 * 2 extrauppgifter
 
-Övrigt:
-*Bilder och andra resurser till uppgifterna är hämtade från katalogen "Resources" från Gesällprovet
-för att spara diskutrymme och inte ha duplicerade filer.  
+Ã–vrigt:
+*Bilder och andra resurser till uppgifterna Ã¤r hÃ¤mtade frÃ¥n katalogen "Resources" frÃ¥n GesÃ¤llprovet
+fÃ¶r att spara diskutrymme och inte ha duplicerade filer.  
 
-* Projektet finns även att ladda ner från 
+* Projektet finns Ã¤ven att ladda ner frÃ¥n 
 https://github.com/Aiex24/IB908C
 
-Kontakt: 
-Alexander Krasse
-Pnr: 820624-0478
-Tel: 0704915221
 Email: alekra76@kth.se
