@@ -1,0 +1,11 @@
+.transitionDiv {
+	width: 100px;
+	height: 100px;
+	color: white;
+	text-align: center;
+	background: #312e2e;
+	transition: width 3s;
+}
+.transitionDiv:hover {
+	width: 400px;
+}

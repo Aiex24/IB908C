@@ -1,0 +1,33 @@
+#super{
+   vertical-align: super;
+}
+
+#text-top {
+   vertical-align: text-top;
+}
+
+#baseline {
+   vertical-align: baseline;
+}
+
+#text-bottom {
+   vertical-align: text-bottom;
+}
+
+#sub {
+   vertical-align: sub;
+}
+
+.columns {
+   width: 500px;
+   column-count: 3;
+   -webkit-column-count: 3;
+   -moz-column-count: 3;
+   column-width: auto;
+   background: red;
+}
+
+.icon {
+	width: 10px;
+	height: 10px;
+}

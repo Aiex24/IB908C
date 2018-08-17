@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>3.4.5 Formulärhantering</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="3-4-5StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>3.4.5 Formulärhantering</h1>
+
+	<button id="startQuizButton" onclick="startQuiz()">Starta quizet!</button>
+
+	<div id="modal">
+		<div id="modalcontent">
+			<form id="quizForm">
+				<span class="requiredStar"> *</span> Required
+				<br>
+				<br>
+				<label>Namn</label><br>
+				<input id="userName" type="text" name="user" required placeholder="Användarnamn" pattern="[A-z]{6,10}" autofocus /><span class="requiredStar"> *</span> 6-10 tecken långt [A-z]<br><br>
+				<label>Email</label><br>
+				<input id="email" type="email" name="email" placeholder="E-mail" required /><span class="requiredStar"> *</span><br><br>
+				<label>Vilken typ av fråga vill du svara på?</label><span class="requiredStar"> *</span><br>
+				<input id="mathQuestion" type="radio" onclick="radioClick(this.value)" required name="typeOfQuestions" value="math">Matte<br>
+				<input id="radioQuestion" type="radio" onclick="radioClick(this.value)" required name="typeOfQuestions" value="programming">Programmering<br>
+				<br><br>
+				<div id="mathQ">
+					<label>lim x->inf(1+1/x)^x > 2,71828182845904523</label><br>
+					<input id="matteQ1" type="checkbox" />sant<br>
+					<input id="matteQ2" type="checkbox" />falskt<br>
+				</div>
+				<div id="programmingQ">
+					<label>JavaScripts motsvarighet till C# <q>null coalescing</q> är att använda sig av <q>logical OR</q></label><br>
+					<input id="proQ1" type="checkbox" value="true" />sant<br>
+					<input id="proQ2" type="checkbox" value="false" />falskt<br>
+				</div>
+				<br><br>
+				<input type="button" onclick="closeFormQuiz()" value="Avbryt" /><br>
+				<button type="submit">Submit</button>
+			</form>
+
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+	<script src="3-4-5Script.js"></script>
+</body>
+</html>

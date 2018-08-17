@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>3.4.2 Bildhantering</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="../../Gesallprov/Styles/Codepresenter.css" rel="stylesheet" />
+	<style>
+		.canvas__container {
+			height: 100%;
+			position: relative;
+			width: 100%;
+		}
+
+		.canvas__canvas {
+			height: 100%;
+			position: relative;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.canvas__mirror {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<h1>3.4.2 Bildhantering</h1>
+	<p>
+		Byter bild med hjälp av jQuery attr() om man hoovrar över den.
+	</p>
+
+	<img id="imageSwitchImage" src="../../Gesallprov/Resources/Planets2013.svg.png" alt="Planets2013.png" />
+	<p>
+		Dynamisk grafik med HTML5-elementet canvas:Rita raka linjer och kurvlinjer, Rita bézier-kurvor och former ifyllda med både färg, mönster och gradienter,
+		Rita text (exempelvis dagens datum/tid), Använda transparens och skuggor, Lägga till en eller flera bitmappad bilder, Använda en teknik för att spara bilden
+	</p>
+
+	<button onclick="canvasDrawing()">Start</button><button onclick="saveImage()">Spara bild</button>
+	<br>
+	<canvas id="canvasExample"></canvas>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="3-4-2Script.js"></script>
+</body>
+</html>

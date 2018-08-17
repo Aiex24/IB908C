@@ -1,0 +1,84 @@
+
+
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>2.2 Text och listor</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="2-2StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+<h1>2.2 Text och listor</h1>
+	<p>
+		<b>Fontfamilj</b>
+		<br>
+		Serif är de klackar som finns på vissa typsnitt. Sans-serif innebär ett typsnitt utan dessa klackar. Monospace är ett typsnitt där varje tecken tar upp lika stor plats. I CSS-koden nedan innebär dessa tre
+		nyckelord att om webbläsaren inte hittar det angivna typsnittet så skall den välja ett liknande typsnitt som har detta nyckelord.
+	</p>
+
+	<span class="fontSerif">Det här är en text med ett serif typsnitt</span>
+	<br>
+	<span class="fontSansSerif">Det här är en text med ett sans-serif typsnitt</span>
+	<br>
+	<span class="monospaceFont">Det här är en text med ett monospace typsnitt</span>
+
+	<br>
+	<p>
+		<b>Enheter</b><br>
+		För att sätta storleken på typsnittet kan olika enheter användas. <code>medium</code> definierar användarens default-värde på typsnittet. Relativt denna storlek
+		definieras storlekarna <code>xx&#8209;small</code>, <code>x&#8209;small</code>, <code> small</code>, <code>large</code>, <code>x&#8209;large</code>, <code>xx&#8209;large</code>. Ett annat sätt är
+		att ange % eller em. Dessa beror på vilken storlek typsnittet har på parent-elementet, där 1em motsvarar 100%, 2em motsvarar 200% och så vidare.
+	</p>
+
+
+	<span class="xxsmall">Det här är en text i storlek xx-small</span>
+	<br>
+	<span class="xsmall">Det här är en text i storlek x-small</span>
+	<br>
+	<span class="small">Det här är en text i storlek small</span>
+	<br>
+	<span class="medium">Det här är en text i storlek medium</span>
+	<br>
+	<span class="large">Det här är en text i storlek large</span>
+	<br>
+	<span class="xlarge">Det här är en text i storlek x-large</span>
+	<br>
+	<span class="xxlarge">Det här är en text i storlek xx-large</span>
+	<br>
+	<span class="emSize">Det här är en text i storlek 1em</span>
+	<br>
+	<span class="procentFont">Det här är en text i storlek 150%</span>
+
+	<p>
+		<b>CSS properties</b><br>
+		color: sätter färgen på texten. Man kan antingen använda fördefinierade färger eller skapa en egen.
+		font: används om man vill sätta fler än en textegenskap samtidigt. Exempelvis färg, storlek och typsnitt.
+		list-style: Används för att bestämma hur punkterna i en lista skall se ut.
+	</p>
+
+
+	<span class="fontStyle">
+		Denna text ligger i ett span där font propertyn har satts till fet, 12px textstorlek, Arial, med fallback-värde <q>sans-serif</q>
+		Nedan är en lista med list-style <q>lower-alpha</q> det vill säga en lista som använder a, b, c... istället för punkter som i sin tur ligger i en lista med 
+		kvadrater som punkter. Textfärgen har satts till röd.
+	</span>
+	<ul class="mylistStyleSquare">
+		<li>
+			Några exempel på list-style värden
+			<ul class="mylistStyleAlpha">
+				<li>lower-alpha</li>
+				<li>circle</li>
+				<li>square</li>
+				<li>decimal</li>
+				<li>none</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

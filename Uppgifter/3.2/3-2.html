@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>3.2 DOM-objekt och jQuery</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="3-2StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>3.2 DOM-objekt och jQuery</h1>
+	<p>
+		Nedan är ett exempel som lägger till nytt innehåll till ett html-element, tar bort ett html element, tar bort en class och lägger till en class,
+		har en click-function, och en resize funktion, plockar ur information från ett html-element.
+	</p>
+
+	<p class="tempClass" id="instructions">Klicka på diven nedan</p>
+	<br>
+	<div class="beforeClick" id="clickableDiv">Click me!</div>
+	<span id="resized"></span>
+	<br><br><br>
+
+
+	<p>
+		Exemplet för hur man fokuserar en a-tag och tar bort fokuseringen, keyup, event.target, preventDefault, .off.
+	</p>
+
+
+	<a id="focused" href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb331614(v=vs.85).aspx">https://msdn.microsoft.com</a>
+	<br>
+	<input type="button" onclick="focusfunction()" value="fokusera" />
+	<br>
+	<input type="button" onclick="blurfunction()" value="ta bort fokus" />
+	<br>
+	<br>
+	<label>Prova att mata in något i textfältet nedan</label>
+	<br>
+	<input type="text" id="textBoxCaps" />
+	<br>
+	<br>
+	<label>Nedan är ett span som alertar vilket element som aktiverade funktionen</label>
+	<br>
+	<span id="alertSpan" onclick="eventAlert(event)">Click me!</span>
+	<br>
+	<br>
+	<label>Nedan är en länk med preventDefault som tar bort länkningsfunktionen </label>
+	<br>
+	<a id="linkWithPreventDefault" href="https://www.su.se/">www.su.se</a>
+	<br>
+	<br>
+	<label>
+		Om man klickar på <code>&lt;span&gt;</code>:et nedan får man ett pop-up fönster tills man trycker på knappen
+		som tar bort klickeventet från <code>&lt;span&gt;</code>:et
+	</label>
+	<br>
+	<span id="alert">Click me!</span>
+	<br>
+	<button id="activateOff">Ta bort klickfunktion</button>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="3-2Script.js"></script>
+
+</body>
+</html>

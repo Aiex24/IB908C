@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>2.7 Sidlayout</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="2-7StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>2.7 Sidlayout</h1>
+	<p>
+		<b>Webbsideslayout</b><br>
+		fixed: Innebär att man ger storleken ett statiskt värde som inte beror på storleken på fönstret.
+		fluid: Innebär att storleken inte har ett statiskt värde. De kan antingen bero på storleken på behållaren de ligger i, användarens inställningar, eller de komponenter de innehåller.
+		elastic: Innebär att elementets storlek sätts i <i>em</i> som är proportionell mot teckenstorleken.
+		<br>
+		Anledningen till att använda CSS istället för tables vid webbsideslayout är att man får mer kontroll och flexibilitet med CSS. Man slipper lägga massa kod i html-en och får därmed sidor som laddas snabbare.
+		Man kan återanvända CSS kod vilket ger kortare kod [CSS1].
+
+	</p>
+	<p>
+		<b>Position</b><br>
+		Några av de värden positionen kan sättas till är:
+		<br>
+		absolute - positionen sätts relativt till närmaste förfader element som inte har värdet static
+		<br>
+		fixed - positionen sätts relativt webbläsaren, och påverkar inte det normala flödet
+		<br>
+		relative - elementet positioneras relativt det normala flödet
+		<br>
+		width - sätter bredden på ett element
+		<br>
+		height - sätter höjden på ett element
+		<br>
+		max-width - största bredden ett element kan sättas till
+		<br>
+		max-height - största höjden ett element kan sättas till
+		<br>
+		min-width - minsta bredden ett element kan sättas till
+		<br>
+		min-height - minsta höjden ett element kan sättas till.
+	</p>
+
+	<p>
+		Även om offset värden (<code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>) adderas, kommer detta ej påverka andra elements position
+		<br>
+		static - elementet renderas i den ordning de kommer i koden och fyller på flödet
+		<br>
+		<br>
+		<a target="_blank" href="../../Gesallprov/Views/LayoutFixed.html">Detta</a> är ett exempel på hur en sida som har en fixed header och 3 kolumner. Sidokolumnerna har ett
+		högre z-index än headern och hamnar därmed framför denna vid scrollning, medan mittenkolumnen och bilden hamnar bakom headern. Alla bredder har en
+		fixerad bredd så deras inbördes relativa storlek ändras ej vid inzoomning.
+	</p>
+
+	<p>
+		<a target="_blank" href="../../Gesallprov/Views/LayoutFloat.html">Detta</a>
+		exempel använder istället flytande storlekar. Alla barn av <code>&lt;body&gt;</code> har fått en max-/min- höjd och bredd.
+
+	</p>
+	
+	<p>
+		<a target="_blank" href="../../Gesallprov/Views/LayoutElastic.html">Detta</a> exempel visar en sida som använder elastisk storlek (em).
+	</p>
+
+	<br>
+	<p>
+		Istället för att använda flera <code>&lt;div&gt;</code>ar som kolumner kan detta definieras direkt med CSS om alla kolumner skall vara lika stora. Fördelen med detta är att texten flöder över till nästa kolumn automatiskt.
+		Bredden har satts till <q>auto</q> som även är default värdet vilket fördelar bredden jämt för att fylla parent.
+	</p>
+
+	<div class="columns">
+		<b>Vad är Lorem Ipsum?</b>
+		<br>
+		<br>
+		Lorem Ipsum är en utfyllnads-text från tryck- och förlags-industrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.
+	</div>
+
+	<p>Med <code>vertical-align</code> kan man sätta om man vill ha upphöjt, nedsänkt med mera</p>
+
+	Dessa fotbollar har <code>vertical-align</code> upphöjt, överkant av text, normal, underkant av text och nedsänkt:
+	<img class="icon" id="super" src="../../Gesallprov/Resources/football.ico" alt="football.ico" />
+	<img class="icon" id="text-top" src="../../Gesallprov/Resources/football.ico" alt="football.ico" />
+	<img class="icon" id="baseline" src="../../Gesallprov/Resources/football.ico" alt="football.ico" />
+	<img class="icon" id="text-bottom" src="../../Gesallprov/Resources/football.ico" alt="football.ico" />
+	<img class="icon" id="sub" src="../../Gesallprov/Resources/football.ico" alt="football.ico" />
+
+	<br><br><br><br><br><br>
+</body>
+</html>

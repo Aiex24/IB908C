@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>2.4 Bilder och bakgrunder</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="2-4StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+<h1>2.4 Bilder och bakgrunder</h1>
+	<div class="container">
+		<p>
+			Med CSS propertyn <q>background</q> kan man sätta värden för egenskaperna:
+			<br>
+			<code>attachment</code>: Avgör hur bakgrundsbilden beter sig relativt övriga element. Om värdet sätts till <q>fixed</q> scrollar inte bakgrundsbilden med övriga element.
+			<br>
+			<code>color</code>: Sätter färgen på bakgrunden.
+			<br>
+			<code>image</code>: Sätter en bakgrundsbild.
+			<br>
+			<code>position</code>: Sätter var bilden skall positioneras.
+			<br>
+			<code>repeat</code>: Om bakgrunden är större än bakgrundsbilden, kan man välja att låta samma bild repeteras för att fylla hela utrymmet.
+			<br>
+			I exemplet nedan så har en <code>div</code> fått egenskapen att alla element flöder åt vänster. Om det kommer ett h1-element så tas flödet bort med hjälp av
+			<code>clear</code> för h1-elementet och de kommande elementen. h1- och li-elementen har givits en bakgrundsbild med repeteringsegenskap.
+		</p>
+
+		<div class="floatleft">
+			<img class="floatingImage" src="../../Gesallprov/Resources/monkey.png" alt="monkey.png" />
+			<p>Alla element i denna div har en float-left egenskap.</p>
+			<p>Om elementet är ett h1-element så tas float-left</p>
+			<p>egenskapen bort med hjälp av CSS-propertyn clear.</p>
+			<h1 class="imagesAndBackgrounds">Detta är en header 1</h1>
+			<ul>
+				<li class="imagesAndBackgrounds">Detta är ett li-element</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>

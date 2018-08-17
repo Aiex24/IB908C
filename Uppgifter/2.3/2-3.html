@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>2.3 Marginaler, kantlinjer och paddning</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="2-3StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+<h1>2.3 Marginaler, kantlinjer och paddning</h1>
+	<p>
+		<b>Boxmodell</b><br>
+		Varje element kan ha ett innehåll som har en kantlinje omkring sig. Området mellan kantlinjen och innehåll kallas padding, och området utanför kantlinjen till nästa element kallas för margin.
+	</p>
+
+	<div class="boxmodellMargin">
+		Margin
+		<div class="boxmodellBorder">
+			Border
+			<div class="boxmodellPadding">
+				Padding
+				<div class="boxmodellContent">
+					Innehåll
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<p>
+		<code>border-color:</code> sätter färgen på kantlinjen
+		<br>
+		<code>border-style:</code> Här kan man sätta utseendet på kantlinjen, exempelvis solid, dubbel linje, prickar med mera
+		<br>
+		<code>border-width:</code> sätter tjockleken på kantlinjen
+		<br>
+		<code>border:</code> kan användas för att sätta värden på alla ovanstående properties på samma rad
+		<br>
+		<code>outline:</code> skillnaden mellan outline och border är att outline inte tar upp något utrymme. Ett användningsområde är att lägga in outlines vid debugging för att lättare
+		se var olika element slutar
+		<br>
+	</p>
+
+
+	<br>
+
+
+	<div class="borderExample">
+		div med en kantlinje i svart och outline i rött
+	</div>
+
+	<p>
+		<code>visibility</code>: Kan bland annat sättas till <q>visible</q> (elementet är synligt), <q>hidden</q> (elementet synns inte men tar upp plats), <q>collapse</q> (elementet varken syns eller tar upp plats)
+		om elementet är av typen <q>table</q> annars fungerar collapse på samma sätt som <q>hidden</q>. För att få collapse-effekt på övriga element används <code>display: none</code>.
+		<br>
+		<code>clip-path</code>: Definierar ett område av ett element som skall vara synligt. Exempelvis kan man definiera en cirkel, ellipse eller polygon.
+		<br>
+		<code>display</code>: avgör hur ett element skall visas upp (renderas). Några vanliga värden är inline, block, inline-block, flex, och table.
+	</p>
+	<p>
+		Nedanstående exempel består av varannan bild och varannan kvadrat totalt fyra stycken vardera. Bildera har (i turordning) egenskaperna 1. Normal, 2. clip-path, 3. Visibility hidden, 4. Display none.
+		Medan bilderna har 3. overflow hidden, 4. overflow scroll.
+		Notera att bild 3 ej syns men tar upp plats, medan bild 4 varken syns eller tar upp plats.
+	</p>
+
+
+
+
+	<div class="bildexempel">
+		<img id="kallebild" src="../../Gesallprov/Resources/kalle.jpg" alt="kallebild.jpg" />
+		<div class="square"></div>
+		<img id="kallebildClipPath" src="../../Gesallprov/Resources/kalle.jpg" alt="kallebild.jpg" />
+		<div class="square"></div>
+		<img class="hiddenImage" id="kallebild2" src="../../Gesallprov/Resources/kalle.jpg" alt="kallebild.jpg" />
+		<div class="square" id="squareHidden">Den här kvadraten har overflow satt till hidden</div>
+		<img class="collapsedImage" src="../../Gesallprov/Resources/kalle.jpg" alt="kallebild.jpg" />
+		<div class="square" id="squareScroll">Den här kvadraten har overflow satt till scroll</div>
+	</div>
+	<br>
+<br>
+<br>
+	<div class="whitebackground" id="window-top">
+		<p>
+			Istället för att sätta färg  med hexadecimalt värde eller reserverat ord, kan man ange rgba där man sätter numeriskt värde på
+			röd, grön, blå och opacity där den sistnämda avgör graden av genomskinlighet.
+			<br>
+			Nedan är ett exempel på en bild där paint.net har använts för att skapa transparenta områden, med en div med blå bakgrundsfärg och opacity 30%.
+			<br>
+			<br>
+		</p>
+	</div>
+
+	<div class="windowdiv">
+		<img id="windowImage" src="../../Gesallprov/Resources/window.png" alt="window.png" />
+	</div>
+
+	<p>
+		Nedan är ett exempel på två kvadratiska divar med box-shadow, där kantlinje-radien har satts till halva bredden. Den ena med en bakgrund som är linjär gradient, och 
+		den andra med en bakgrund som är radiell bakgrunden har två bilder. En med ett repeterande mönster och en insticksbild ovanpå detta lager.
+	</p>
+
+
+	<div class="multipleImages">
+		<div class="bigSquare" id="gradientColor"></div>
+		<div class="bigSquare" id="radialColor"></div>
+	</div>
+
+
+	<br>
+
+</body>
+</html>

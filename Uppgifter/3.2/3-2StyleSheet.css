@@ -1,0 +1,41 @@
+.beforeClick {
+	width: 80px;
+	height: 80px;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+.tempClass {
+	background: green;
+	color: white;
+}
+
+.newClass {
+	background: red;
+	color: white;
+}
+
+#alert {
+	padding-right: 10px;
+	padding-left: 10px;
+	background: red;
+	text-align: center;
+	color: white;
+}
+
+#alertSpan {
+	background: red;
+	color: white;
+}
+
+.squareExample {
+	width: 60px;
+	height: 60px;
+	background: black;
+	margin: 10px;
+}
+
+#fadeDiv {
+	display: none;
+}

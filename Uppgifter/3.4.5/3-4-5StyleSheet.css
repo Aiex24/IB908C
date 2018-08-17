@@ -1,0 +1,49 @@
+#modal {
+	display: none;
+	position: fixed;
+	z-index: 12;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	align-content: center;
+}
+
+#modalcontent {
+	margin: -400px 0 0 -250px;
+	position: absolute;
+	width: 500px;
+	background: white;
+	border-radius: 10px;
+	padding: 10px;
+	top: 50%;
+	left: 50%;
+	font-size: 16px;
+	font-family: Arial;
+}
+
+#quizForm {
+	padding: 30px;
+}
+
+	#quizForm > input:focus {
+		border: 4px;
+		border-color: #136203;
+	}
+
+.requiredStar {
+	color: red;
+}
+
+#programmingQ, #mathQ {
+	display: none;
+}
+
+input:invalid {
+	border: 1px solid red;
+}
+
+input:valid {
+	border: 1px solid #4ce228;
+}

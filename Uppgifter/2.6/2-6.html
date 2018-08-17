@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>2.6 Tabeller och formulär</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="2-6StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>2.6 Tabeller och formulär</h1>
+	<p>
+		<b><code>table-layout</code></b><br>
+		Avgör vilken algoritm som skall användas när tabellen ritas ut. De två huvudsakliga värdena är:
+		<code>fixed</code> definierar bredden i följande ordning: 1. Om en kolumn har en definierad bredd får den denna. 2. Om en cell i första raden har en definierad bredd sätts alla celler till detta värde.
+		3. Om punkt 2 saknas fördelas bredden jämt över alla celler för de celler som ej har en definierad bredd.
+		<br>
+		<code>auto</code>: Innehållet styr hur bred varje cell blir. Om tabellens bredd är större, fördelas restrerande utrymme jämt över alla celler.
+		<br>
+		<br>
+		Tryck på nedanstående knapp för att prova skillnaden mellan auto och fixed.
+
+		<div class="div-button" id="buttonCSS" title="Ändra layout">Fixed</div>
+
+		<table class="table-layout-auto" id="toggle-table-layout">
+			<caption>Table med table-layout auto</caption>
+			<thead>
+				<tr>
+					<th>Land</th>
+					<th>Huvudstad</th>
+					<th>Befolkningsmängd</th>
+					<th>Valuta</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Sverige</td>
+					<td>Stockholm</td>
+					<td>10,1 miljoner</td>
+					<td>SEK</td>
+				</tr>
+			</tbody>
+		</table>
+	<p>
+		<b>Form med CSS</b><br>
+		Exempel på hur man kan styla <code>&lt;form&gt;</code> med CSS.
+	</p>
+
+	<form class="form-example">
+		<label>Namn</label>
+		<br>
+		<input type="text" placeholder="Namn" />
+		<br>
+		<br>
+		<label>Lösenord</label>
+		<br>
+		<input type="password" placeholder="Lösenord" />
+		<br>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="2-6Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	background-image: url('../../Gesallprov/Resources/Nod_Kista.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	background: white;
+}
+
+.img {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 15px;
+}
+
+	.img::after {
+		float: left;
+		margin: 15px;
+		padding-right: 15px;
+	}
+
+h1, h1::after {
+	clear: both;
+}
+
+h1, li {
+	background-image: url('../../Gesallprov/Resources/wavebackground.png');
+	color: white;
+}
+
+.floatingImage {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 15px;
+}
+
+	.floatingImage::after {
+		float: left;
+		margin: 15px;
+		padding-right: 15px;
+	}

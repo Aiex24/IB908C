@@ -1,0 +1,42 @@
+table {
+	width: 100%;
+	height: 20px;
+	overflow: auto;
+}
+
+table, th, td {
+	width: 700px;
+	border: 1px solid white;
+	border-collapse: collapse;
+	position: relative;
+}
+
+th {
+	padding: 8px;
+	text-align: left;
+}
+
+td {
+	padding: 4px;
+	text-align: left;
+}
+
+img {
+	width: 588px;
+	height: 347px;
+}
+
+table tr:nth-child(even) {
+	background-color: #dae4e8;
+}
+
+table tr:nth-child(odd) {
+	background-color: white;
+}
+
+table th {
+	background-color: #3dd1ff;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}

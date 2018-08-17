@@ -1,0 +1,46 @@
+.fontSerif {
+font-family: "Times New Roman", serif;
+}
+.fontSansSerif {
+font-family: "Ariel", sans-serif;
+}
+.monospaceFont {
+font-family: "Courier New", monospace;
+}
+.xxsmall {
+font-size: xx-small;
+}
+.xsmall {
+font-size: x-small;
+}
+.small {
+font-size: small;
+}
+.medium{
+font-size: medium;
+}
+.large {
+font-size: large;
+}
+.xlarge {
+font-size: x-large;
+}
+.xxlarge {
+font-size: xx-large;
+}
+.emSize {
+font-size: 1em;
+}
+.procentFont{
+font-size: 50%;
+}
+					.mylistStyleAlpha{
+list-style:lower-alpha;
+}
+.mylistStyleSquare {
+list-style: lower-alpha;
+}
+.fontStyle {
+font: bold 12px Arial, sans-serif;
+color: red;
+}

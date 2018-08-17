@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>3.3 Webbläsar-objekt</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+</head>
+<body>
+	<h1>3.3 Webbläsar-objekt</h1>
+	<p>Exempel på hur man kan använda <code>alert</code>, <code>confirm</code>, <code>promt</code>, <code>open</code> och <code>close</code></p>
+
+	<label>Prompt popup</label>
+	<br>
+	<button onclick="nameButton()">Question1</button>
+	<br><br>
+	<label>confirm pop-up</label>
+	<br>
+	<button onclick="confirmButton()">Question2</button>
+	<br><br>
+	<label>Öppnar/Stänger ett nytt fönster</label>
+	<br>
+	<button onclick="openButton()">Open</button>
+	<button onclick="closeButton()">Close</button>
+
+	<p>
+		Exempel på <code>setInterval</code>, <code>clearInterval</code>, <code>setTimeout</code> och <code>clearTimeout</code>.
+		När räknaren startas uppdateras siffran varje sekund. Vid 5 sekunder kommer en varning vilket kan undvikas om man trycker på <q>varna inte</q>.
+		Uppräkningen kan stoppas med <q>Stop</q>.
+	</p>
+
+
+	<label>Startar klockan</label><br>
+	<button onclick="interval()">Start</button>
+	<br>
+	<br>
+	<label>Stoppa klockan</label>
+	<br>
+	<button onclick="stopCounter()">Stop</button>
+	<br>
+	<br>
+	<label>Tar bort varningen vid 5 sekunder</label>
+	<br>
+	<button onclick="clearWarning()">Varna inte</button>
+	<p id="iterationP">0</p>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="3-3Script.js"></script>
+</body>
+</html>

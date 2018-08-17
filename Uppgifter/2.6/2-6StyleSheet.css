@@ -1,0 +1,110 @@
+form {
+	width: 205px;
+	background: #0070BA;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+label{
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+input[type=submit] {
+	color: white;
+	padding: 5px;
+	background: black;
+	margin: 2px;
+	border: 2px solid #c41515;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+input{
+	width: 200px;
+}
+
+.table-layout-fixed {
+	table-layout: fixed;
+}
+
+.table-layout-auto {
+	table-layout: auto;
+}
+
+.table-layout-fixed {
+	table-layout: fixed;
+}
+
+.table-layout-auto {
+	table-layout: auto;
+}
+table {
+	width: 100%;
+	height: 20px;
+	overflow: auto;
+}
+
+table, th, td {
+	border: 1px solid white;
+	border-collapse: collapse;
+	position: relative;
+}
+
+th {
+	padding: 8px;
+	text-align: left;
+}
+
+td {
+	padding: 4px;
+	text-align: left;
+}
+
+table tr:nth-child(even) {
+	background-color: #dae4e8;
+}
+
+table tr:nth-child(odd) {
+	background-color: white;
+}
+
+table th {
+	background-color: #3dd1ff;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.div-button {
+	padding: 5px 10px;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+}
+.div-button {
+	background: red;
+	margin: 2px;
+	border: 2px solid #c41515;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.div-button {
+	width: 70px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	background: #000;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	user-select: none; 
+}
+
+	.div-button:hover {
+		background: #312e2e;
+	}

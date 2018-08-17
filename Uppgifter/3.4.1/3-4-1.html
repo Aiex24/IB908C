@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>3.4.1 Effekter och animationer</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="3-4-1StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>3.4.1 Effekter och animationer</h1>
+	<p>Nedanstpende knappar visar(Show), gömmer(Hide) och gömmer eller visar (beroende på nuvarande status) en <code>&lt;div&gt;</code></p>
+
+
+	<button onclick="showElement()">Show</button>
+	<button onclick="hideElement()">Hide</button>
+	<button onclick="toggleElement()">Toggle</button>
+	<div class="squareExample" id=hideShowDiv></div>
+
+
+	<p>
+		Exempel på hur man kan använda <code>fadeIn</code>, <code>fadeOut</code>, <code>fadeToggle</code> och <code>fateTo</code>.
+	</p>
+	<br><br>
+	<button onclick="fadeInExample()">Fade in</button>
+	<button onclick="fadeOutExample()">Fade out</button>
+	<button onclick="fadeToggleExample()">Fade Toggle</button>
+	<button onclick="fadeToExample()">Fade to</button>
+	<div class="squareExample" id="fadeDiv"></div>
+
+	<br>
+	<p>
+		Exempel av animation. Tryck på knappen för att starta divens rörelse.
+	</p>
+
+
+	<button id="startAnimationButton" onclick="startAnimation()">Starta</button>
+	<button onclick="resetAnimation()">Reset</button>
+	<div id="animateContainer">
+		<div id="animateObject"></div>
+	</div>
+
+	<p>
+		Nedanstående exempel använder istället jQuery animate med easing=swing och en callback-funktion som alertar att animeringen är klar.
+	</p>
+
+
+	<button class="startAnimationButton" onclick="startAnimationSwing()">Starta</button>
+	<div id="animateObjectSwing"></div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="3-4-1Script.js"></script>
+</body>
+</html>

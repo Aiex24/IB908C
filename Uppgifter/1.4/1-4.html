@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>1.4 Formulär</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+</head>
+<body>
+<h1>1.4 Formulär</h1>
+	<form action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.1/perl/example.cgi" method="get">
+		<fieldset>
+			<legend>Ny användare:</legend>
+			<input type="text" name="user" placeholder="Användare" pattern="[A-Za-z]{6,10}" autofocus title="Användarnamnet måste vara minst 6, och max 10 tecken långt" /><label>Användarnamn</label>
+			<br>
+			<input type="password" name="password" placeholder="Password" /><label>Lösenord*</label>
+			<br>
+			<input type="email" name="e-mail" placeholder="E-mail" /><label>E-mail</label>
+			<br>
+			<input type="url" name="url" placeholder="Hemsida" /><label>Hemsida</label>
+			<br>
+			<input type="number" name="temperature" placeholder="Celsius" min="-50" max="150" step="10" /><label>Temperatur</label>
+			<br>
+			<input type="range" name="hours" min="0" max="24" step="1" id="selectedHourIn" oninput="selectedHourOut.value = selectedHourIn.value" /><output id="selectedHourOut">12</output><label> timmar</label>
+			<br>
+			<input type="datetime-local" name="datetime-local" /><label>Datum och tid</label>
+			<br>
+			<input type="date" name="date" /><label>Datum</label>
+			<br>
+			<input type="month" name=month /><label>Månad</label>
+			<br>
+			<input type="week" name="week" /><label>Vecka</label>
+			<br>
+			<input type="time" name="time" /><label>Tid</label>
+			<br>
+			<input type="radio" name="gender" value="female"> Female
+			<br>
+			<input type="radio" name="gender" value="male"> Male
+			<br>
+			<input type="radio" name="gender" value="övrigt"> Övrigt
+			<br>
+			<input type="checkbox" name="best page" value="true" required title="Denna ruta måste kryssas för!" /><label>Jag tycker det här är den bästa hemsidan jag sett!</label>
+			<br>
+			<select name="course">
+				<optgroup label="Internetprogrammering">
+					<option value="Stationära enheter">Stationära enheter</option>
+					<option value="Mobila enheter">Mobila enheter</option>
+				</optgroup>
+				<optgroup label="Webbutveckling">
+					<option value="Klientsidan">Klientsidan</option>
+					<option value="Serversidan">Serversidan</option>
+				</optgroup>
+			</select>
+			<br>
+			<input list="schools" name="school">
+			<datalist id="schools">
+				<option id="SU" value="Stockholm Universitet">
+				<option id="KTH" value="Kungliga Tekniska Högskolan">
+				<option id="KI" value="Karolinska Instituet">
+			</datalist>
+			<input type="submit" value="Submit" name="Submit-Kurs">
+			<br>
+			<input type="reset" value="Rensa allt">
+			<input type="submit" value="Submit" name="posted via">
+			<br>
+			<input type="image" src="../../Gesallprov/Resources/loginicon.png" name="posted via image with coordinate" alt="Submit">
+			<br>
+		</fieldset>
+	</form>
+
+	<form enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi" method="post">
+		<fieldset>
+			<legend>Skicka fil:</legend>
+			<input type="file" name="file">
+			<br>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+
+</body>
+</html>

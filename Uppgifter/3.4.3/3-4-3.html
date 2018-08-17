@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>3.4.3 Navigering</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="3-4-3StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>3.4.3 Navigering</h1>
+	<p>
+		Lägger till <code>target="_blank"</code> med javascript så att alla länkar öppnas i en ny flik istället för att öppnas i samma fönster. Nedan finns ett exempel på en dropdown meny.
+	</p>
+
+
+	<div class="dropdown">
+		<button onclick="toggleVisibility()" class="dropbtn">Meny</button>
+		<div id="dropdown-container" class="dropdown-content">
+			<a href="../../Gesallprov/Views/Semantic.html">Semantiska element</a>
+			<a href="../../Gesallprov/Views/LayoutFixed.html">Sidlayout Fixed</a>
+			<a href="../../Gesallprov/Views/LayoutFloat.html">Sidlayout Float</a>
+			<a href="../../Gesallprov/Views/UnitDependent.html">Enhetsberoende</a>
+			<a href="../../Gesallprov/Views/Form.html">Formulär</a>
+			<a href="../../Gesallprov/Views/SemanticText.html">Semantiska element: text</a>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="3-4-3.js"></script>
+</body>
+</html>

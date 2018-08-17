@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>1.1 Grunderna i HTML5</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+	<link href="1-1StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+
+	<h1>1.1 Grunderna i HTML5</h1>
+	<p>
+		<b>Doctype</b>
+		<br>
+		Är en förkortning av "Document type decleration", och är en instruktion till webbläsaren vilket markup language som skall användas. För att använda sig av HTML5
+		används taggen <code>&lt;!DOCTYPE&nbsp;html&gt;</code>
+	</p>
+	<p>
+		<b>Teckenkod</b>
+		<br>
+		Teckenkod avgör hur t.ex en byte skall tolkas av webbläsaren. Själva värdet på byten ändras inte när den överförs mellan två enheter, men det är upp till teckenkodningen
+		att avgöra hur värdet skall tolkas.
+	</p>
+	<p>
+		<b>Språk</b>
+		<br>
+		Programspråk är det sätt en människa använder för att skriva program med instruktioner som tolkas av datorns processor. En processor klarar bara av att tolka 1:or och 0:or,
+		vilket är extremt tidskrävande att direkt skriva program med. I programspråket kan instruktionerna skrivas på en nivå som är betydligt mer mer intuitivt. Denna kod översätts
+		sedan av ett annat program till maskinkod.
+	</p>
+	<p>
+		<b>Validering</b>
+		<br>
+		Precis som ett vanligt språk som har en uppsättning av regler gällande grammatik och vokabulär, så förväntas även datorprogram och webbsidor att följa de uppsatta reglerna
+		som gäller för det språket eller ramverket. Att ett program är validerat är dock ingen garanti för att programmet är väl konstruerat.
+	</p>
+	<p>
+		<b>Hur ett HTML-dokument är uppbyggt</b><br>
+		Ett HTML-dokument börjar med definieringen vilket markup language (märkspråk) som
+		skall användas. Exempelvis för att använda sig av HTML5 så inleds html dokumentet med
+		<q><code>&lt;!DOCTYPE html&gt;</code></q> vilket i sig självt inte är en html-tagg. Sedan kommer så kallade taggar, vilka börjar med <code>
+			&lt;<q><i>tagg-namn</i></q>
+			&gt;
+		</code> och har en avslutande del <code>&lt;/<q><i>tagg-namn</i></q>&gt;</code>.
+	</p>
+	<p>
+		Den första
+		taggen är <code>&lt;html&gt;</code> vilket utgör basen och berättar för webbläsaren att dokumentet är ett HTML-dokument. Det är inom html-taggarna som alla andra
+		HTML-element ligger. Efter html-taggen kommer head-taggen som är en behållare för alla huvudelementen. Exempelvis: <code>&lt;title&gt;</code>, <code>&lt;style&gt;</code>,
+		<code>&lt;script&gt;</code>, <code>&lt;noscript&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;base&gt;</code>, <code>&lt;meta&gt;</code>.
+		Därefter kommer body-taggen som innehåller sådant som syns i själva webbläsaren, som till exempel bilder, tabeller, text med mera.
+	</p>
+	<figure>
+		<img src="../../Gesallprov/Resources/Exempelsida.png" alt="Exempelsida.png" />
+		<br>
+		<fig-caption><strong>Figur 1.</strong> Enkelt exempel av ett html-dokument, som visar en bild på den kod som behövdes för att skapa den.</fig-caption>
+	</figure>
+	<br>
+	<h3>Struktur-taggar</h3>
+	<p>
+		<b><code>&lt;body&gt;</code></b><br>
+		Innehåller sådant som syns i själva webbläsaren, som till exempel bilder, tabeller, text med mera.
+	</p>
+	<p>
+		<b><code>&lt;head&gt;</code></b><br>
+		Är en behållare för alla huvudelementen. Vilka är: <code>&lt;title&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;noscript&gt;</code>,
+		<code>&lt;link&gt;</code>, <code>&lt;base&gt;</code>, <code>&lt;meta&gt;</code>, där endast den första måste vara med.
+	</p>
+	<p>
+		<b><code>&lt;html&gt;</code></b><br>
+		Utgör basen och berättar för webbläsaren att dokumentet är ett HTML-dokument. Det är inom html-taggarna som alla andra HTML-element ligger.
+	</p>
+	<p>
+		<b><code>&lt;title&gt;</code></b>
+		<br>
+		Dokumentets titel. Det är denna text som syns på fliken i webbläsare, som titel vid sökning, och som default-titel om sidan sparas som favorit.
+	</p>
+	<br>
+	<figure>
+		<img src="../../Gesallprov/Resources/meta-tags.png" alt="meta-tags.png" />
+		<br>
+		<fig-caption><strong>Figur 2.</strong> Exempel på meta-taggar</fig-caption>
+	</figure>
+	<p>Några av de attribut som kan användas med meta-taggen är:</p>
+	<p>
+		<b>author</b><br>Här kan man skriva in den person eller organisation som har gjort webbsidan. Till skillnad från title, keywords, och description, så påverkar inte "author"
+		sökresultatet.
+	</p>
+	<p>
+		<b>description</b><br>
+		Här beskrivs kortfattat webbsidans innehåll. De flesta sökmotorer använder denna information för att få fram sökresultat. Varje webbsida i ett projekt bör ha sin egen
+		beskrivning.
+	</p>
+	<p>
+		<b>generator</b>
+		<br>
+		Här listas den programvara som använts för att skapa webbsidan
+	</p>
+	<p>
+		<b>keywords</b><br>Här listas de nyckelord som man vill att ens webbsida ska hittas av. Om nyckelordet även återfinns i titeln och sidans innehåll så rankas dessa
+		generellt högre av sökmotorn.
+	</p>
+	<p>
+		<b>robots</b><br>
+		Berättar för webbläsaren hur webbsidan ska indexeras. Man kan välja att indexera första sidan ("index/noindex") och restrerande (follow/nofollow"), och alla kombinationer
+		av dessa två. Alternativt kan index och follow ersättas av "all" för att få att alla sidor indexeras.
+	</p>
+	<p>
+		<b>http-equiv</b>
+		<br>
+		Med http-equiv kan man bland annat sätta expire datum för webbsidan, välja att inget sparas till användarens cache, välja vilket värde bilderna ska ha på ens hemsida
+		som till exempel "barntillåtet"
+	</p>
+	<br>
+	<h3>Text-taggar</h3>
+	<p>
+		<b><code>&lt;abbr&gt;</code></b>
+		<br>
+		Används för akronym för att lägga till ett tooltip med fullständig betydelse. Exempelvis de tre komponenter som ingår i denna kurs.
+		<abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> och <abbr title="JavaScript">JS</abbr>.
+	</p>
+	<p>
+		<b><code>&lt;address&gt;</code></b>
+		<br>
+		I adress-taggen läggs kontaktinformation (adress, email, eller någon annan form av kontaktinformation) och kan läggas antingen direkt i <code>&lt;body&gt;</code>,
+		<code>&lt;article&gt;</code> eller <code>&lt;footer&gt;</code>, med relevant information till det element det ligger i.
+	</p>
+		<address>
+			Författare: Alexander Krasse
+			Adress: Körsbärssvägen 3
+		</address>
+	<p>
+		<b><code>&lt;blockquote&gt;</code></b><br>Används då man vill använda sig av ett längre citat. Webbläsare lägger vanligtvis till ett indrag på citatet.
+	</p>
+		<blockquote cite="https://www.su.se/om-oss">
+			Stockholms högskola grundades 1878 med ambitionen att förnya de traditionella universiteten i Sverige. Nära
+			kontakter och ett aktivt erfarenhets- och kunskapsutbyte med omvärlden präglar verksamheten sedan starten.
+			<footer>
+				— <a href="https://www.su.se/om-oss">www.su.se</a>
+			</footer>
+		</blockquote>
+	<p>
+		<b><code>&lt;br&gt;</code></b>
+		<br>
+		br-taggen är en så kallad singleton tagg (kräver ingen stängningstagg) och används för radbrytning.
+	</p>
+	<p>
+		<b><code>&lt;cite&gt;</code></b>
+		<br>
+		Används för titlar för exempelvis böcker filmer artikler, källhänvisning med mera.
+		<br>
+		<br>
+		<cite>HTML5_ The Missing Manual, 2nd Edition.pdf</cite>
+	</p>
+	<p>
+		<b><code>&lt;code&gt;</code></b>
+		<br>
+		Stöds av de flesta webbläsare och sätter typsnittet på en text för att efterlikna datorkod, utan att man behöver använda CSS. För att använde taggen skriver man:
+		<br>
+		<br>
+		<code>&lt;code&gt;Text&lt;/code&gt;</code>
+	</p>
+	<p>
+		<b><code>&lt;dfn&gt;</code></b><br>Används för att markera det som definieras i en mening eller fras. Man kan välja att lägga till en title tagg med eller utan
+		abbr-tagg inuti dfn-taggen
+		<br>
+		<br>
+		<dfn>Den här texten ligger inom dfn-taggar</dfn>
+	</p>
+	<p><b><code>&lt;div&gt;</code></b><br>Används för att gruppera element, och/ tillsammans med CSS för att styla en webbsida.</p>
+	<p>
+		<b>
+			<code>&lt;em&gt;</code>
+		</b>
+		<br>Används för att <em>betona</em> (Emphasize) en text.
+	</p>
+	<p>
+		<b>
+			<code>&lt;h1&gt;</code>,<code>&lt;h2&gt;</code>,<code>&lt;h3&gt;</code>,<code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>,<code>&lt;h6&gt;</code>
+		</b>
+		<br>Används för att definiera rubriker. <code>&lt;h1&gt;</code> används för huvudrubrik och de övriga som underrubriker.
+	</p>
+	<p>
+		<b><code>&lt;kbd&gt;</code></b><br>Används för att beskriva tangentbordskommandon.
+	</p>
+
+	<p>
+		<b><code>&lt;p&gt;</code></b><br>Definierar en paragraf.
+	</p>
+	<p>
+		<b><code>&lt;pre&gt;</code></b><br>Till skillnad mot <code>&lt;p&gt;</code> så behåller <code>&lt;pre&gt;</code> formattering som exempelvis flera mellanslag i rad.
+	</p>
+	<p>
+		<b><code>&lt;q&gt;</code></b>
+		<br>
+		Används vid kortare citat
+	</p>
+	<p>
+		<b><code>&lt;samp&gt;</code></b>
+		<br>
+		Används för att presentera resultatet av ett datorprogram.
+	</p>
+	<p>
+		<b>
+			<code>&lt;strong&gt;</code>
+		</b>
+		<br>
+		Används för att markera att ett ord är <strong>viktigt</strong>. Om inte CSS används renderas <code>&lt;strong&gt;</code> och <code>&lt;b&gt;</code> (bold) oftast lika av webbläsaren.
+	</p>
+	<p>
+		<b><code>&lt;var&gt;</code></b>
+		<br>
+		Definierar att texten inom taggen är en variabel.
+	</p>
+
+
+	<p>
+		<b><code>&lt;a&gt;</code></b>
+		<br>
+		Används för att skapa hyperlänkar. På <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">mozilla.org</a> kan du läsa mer om a-taggen.
+	</p>
+	<p>
+		<b>
+			<code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> och <code>&lt;dd&gt;</code>
+		</b>
+		<br>
+		Används tillsammans för att skapa en definiationslista. Nedanstående lista är gjord med dessa taggar
+	</p>
+	<dl>
+		<dt><code>&lt;dl&gt;&lt;/dl&gt;</code></dt>
+		<dd>Används för att omsluta hela listan</dd>
+		<dt><code>&lt;dt&gt;&lt;/dt&gt;</code></dt>
+		<dd>sätts ordet som skall förklaras</dd>
+		<dt><code>&lt;dd&gt;&lt;/dd&gt;</code></dt>
+		<dd>här sätts förklaringen</dd>
+	</dl>
+	<p>
+		<code><b>&lt;li&gt;</b></code><br>Definierar en komponent i en lista
+	</p>
+	<p>
+		<code><b>&lt;ol&gt;</b></code>
+		<br>
+		Om li-komponenten sätts inom ol-taggar (ordered list) så numreras dessa.
+	</p>
+	<ol>
+		<li>Element A</li>
+		<li>Element B</li>
+		<li>Element C</li>
+	</ol>
+	<p><code><b>&lt;ul&gt;</b></code><br>Om li-komponenten sätts inom ul-taggar (unordered list) så dekoreras dessa med listpunkter</p>
+	<ul>
+		<li>Element A</li>
+		<li>Element B</li>
+		<li>Element C</li>
+	</ul>
+
+	<table>
+		<caption>Tabell 1. En html-tabells delkomponenter</caption>
+		<colgroup>
+			<col id="left-col" />
+			<col span="1" id="right-col" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Tagg</th>
+				<th>Beskrivning</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>&lt;caption&gt;</code></td>
+				<td>Tabellens rubrik</td>
+			</tr>
+			<tr>
+				<td><code>&lt;col&gt;</code></td>
+				<td>Med hjälp av col-taggen i kombination med CSS kan man sätta en style för en hel kolumn i taget</td>
+			</tr>
+			<tr>
+				<td><code>&lt;colgroup&gt;</code></td>
+				<td>Används för att omsluta en eller flera col-taggar</td>
+			</tr>
+			<tr>
+				<td><code>&lt;table&gt;</code></td>
+				<td>Definierar en tabell. Inom dessa tagggar ligger alla andra element som associeras med tabellen</td>
+			</tr>
+			<tr>
+				<td><code>&lt;tbody&gt;</code></td>
+				<td>Inom denna tagg ligger alla celler förutom de celler som hör till rubrik eller sidfot</td>
+			</tr>
+			<tr>
+				<td><code>&lt;td&gt;</code></td>
+				<td>Utgör tabellens celler. I dessa placeras den data som tabellen skall visa</td>
+			</tr>
+			<tr>
+				<td><code>&lt;tfoot&gt;</code></td>
+				<td>Placeras innan tbody-taggen. Inom dessa taggar läggs de element som utgör tabellens sidfot.</td>
+			</tr>
+			<tr>
+				<td><code>&lt;th&gt;</code></td>
+				<td>Definierar en cell som associeras med en rubrik för en rad. </td>
+			</tr>
+			<tr>
+				<td><code>&lt;thead&gt;</code></td>
+				<td>Omsluter de rader som innehåller th-taggar</td>
+			</tr>
+			<tr>
+				<td><code>&lt;tr&gt;</code></td>
+				<td>tr-taggen skapar en rad i tabellen. Dessa rader kan sedan delas upp i celler</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<p>
+		Nedan är ett exempel hur <code>area</code> och <code>map</code> används. Klicka på planeterna för att få upp mer information.
+	</p>
+	<img src="../../Gesallprov/Resources/Planets2013.svg.png" alt="Planets" usemap="#planetmap" />
+	<map name="planetmap">
+		<area shape="circle" coords="-220,200,300" alt="Sun" href="https://sv.wikipedia.org/wiki/Solen" />
+		<area shape="circle" coords="131,162,2" alt="Mercury" href="https://sv.wikipedia.org/wiki/Merkurius" />
+		<area shape="circle" coords="157,162,3" alt="Venus" href="https://sv.wikipedia.org/wiki/Venus" />
+		<area shape="circle" coords="193,162,3" alt="Earth" href="https://sv.wikipedia.org/wiki/Jorden" />
+		<area shape="circle" coords="225,162,2" alt="Mars" href="https://sv.wikipedia.org/wiki/Mars_(planet)" />
+		<area shape="circle" coords="287,162,37" alt="Jupiter" href="https://sv.wikipedia.org/wiki/Jupiter" />
+		<area shape="circle" coords="396,162,32" alt="Saturn" href="https://sv.wikipedia.org/wiki/Saturnus" />
+		<area shape="circle" coords="467,162,13" alt="Uranus" href="https://sv.wikipedia.org/wiki/Uranus" />
+		<area shape="circle" coords="512,162,13" alt="Neptunus" href="https://sv.wikipedia.org/wiki/Neptunus" />
+	</map>
+	<br>
+	<strong>Figur3.</strong>&nbsp;Exempel på bild med area länk inspirerad från w3schools.com
+</body>
+</html>

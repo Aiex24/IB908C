@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>2.1 Grunderna i CSS 3</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Inlämningsuppgift webbprogrammering klientsidan" />
+	<meta name="keywords" content="stockholms universitet, webbprogrammering, klientsidan, inlämningsuppgift, html, css, javascript" />
+	<meta name="author" content="Alexander Krasse" />
+	<meta name="GENERATOR" content="Microsoft Visual Studio 2017, Notepad++ v7.5.7" />
+	<meta name="robots" content="all" />
+</head>
+<body>
+<h1>2.1 Grunderna i CSS 3</h1>
+	<p>
+		<b>Externt länkad CSS-fil och dess fördelar</b>
+		<br>
+		Det finns tre sätt att implementera CSS: External Style Sheet, Internal Style Sheet ovh Inline Style. Fördelen med den förstnämda är att man kan använda samma
+		fil för att ändra utseende på alla sidor som använder filen samtidigt, istället för att ändra varje sida var för sig. Detta underlättar då man vill ha ett
+		enhetligt utseende på ett projekt med flera sidor.
+	</p>
+	<p>
+		<b>Arv</b>
+		<br>
+		Arv läggs till på en property för att sätta värdet till samma värde som elementet det ligger i har. Default värdet på olika properties varierar.
+	</p>
+	<p>
+		/*background: Före: transparent. Efter: white*/
+		<br>
+		background: white;
+		<br><br>
+		/*color: Före: Samma som parent. Efter: blue*/
+		<br>
+		color: blue;
+		<br><br>
+		/*margin: Före: 0 Efter: Samma som parent*/
+		margin: inherit;
+	</p>
+	<p>
+		<b>Cascade</b><br>
+		<q>Cascade</q> är en algoritm som avgör vilken CSS som skall användas på en property då flera värden har blivit angivna.
+	</p>
+	<p>
+		<b>Selektorer (tagg-, attribut-, klass-, id- och barn-selektorer)</b><br>
+		Det finns olika sätt att definiera en selektor. Nedan återfinns några av dem.
+	</p>
+	<p>
+		/*Tagg: Sätter CSS på alla h1 element*/
+		<br>
+		h1 {
+		<br>
+		color: red;
+		}
+		<br>
+		<br>
+		/*Attribut: Sätter CSS på alla element som har attributet target=su*/
+		<br>
+		[target=su] {
+		<br>
+		background: red;
+		<br>
+		}
+		<br><br>
+		/*Klass: Sätter CSS på alla element med klass-namnet "myClass"*/
+		<br>
+		.myClass {
+		<br>
+		color: red;
+		<br>
+		}
+		<br><br>
+		/*id: Sätter CSS på elementet med id=myId*/
+		<br>
+		#myId {
+		<br>
+		color: red;
+		<br>
+		}
+		<br>
+		<br>
+		/*barnelement: Sätter CSS på alla h1 som har en header som parent*/
+		<br>
+		header > h1{
+		<br>
+		color: green;
+		<br>
+		}
+		<br>
+		<br>
+		/*barnelement: Sätter CSS på alla h1 inuti en header*/
+		<br>
+		header h1 {
+		<br>
+		color: green;
+		<br>
+		}
+
+	</p>
+	<p>
+		<b>Enheter (absoluta: in, cm, mm, pt, pc, px och relativa: em, ex, %)</b><br>
+		Enheter kan delas in absoluta och relativa storlekar. De absoluta behåller samma storlek medan de relativa beror på hur stort browserfönstret är eller storleken på dess parent-element.
+	</p>
+
+
+	/*ABSOLUTA ENHETER*/
+	<br>
+	<br>
+	/*in: Sätter höjden på divar till 1 tum*/
+	<br>
+	<br>
+	div {
+	<br>
+	height: 1in;
+	<br>
+	}
+	<br>
+	<br>
+	/*cm: Sätter höjden på divar till 1 centimeter*/
+	<br>
+	div {
+	<br>
+	height: 1cm;
+	<br>
+	}
+	<br><br>
+	/*mm: Sätter höjden på divar till 1 millimeter*/
+	<br>
+	div {
+	<br>
+	height: 1mm;
+	<br>
+	}
+	<br><br>
+	/*pt: Sätter höjden på divar till 1 point (1 point = (1/72)tum))*/
+	<br>
+	div {
+	<br>
+	height: 1pt;
+	<br>
+	}
+	<br>
+	/*pc: Sätter höjden på divar till 1 picas (1 picas = (1/12)tum)*/
+	<br>
+	div {
+	<br>
+	height: 1pc;
+	<br>
+	}
+	<br><br>
+	/*px: Sätter höjden på divar till 1 bildpunkt (1 bildpunkt = (1/96)tum)*/
+	/*skärmar med hög upplösning har fler bildpunkter definierad som 1 pixel*/
+	<br>
+	div {
+	<br>
+	height: 1px;
+	<br>
+	}
+	<br><br>
+	/*RELATIVA ENHETER*/
+	<br>
+	/*em: Sätter höjden på divar till samma storlek som storleken på typsnittet för det aktuella elementet*/
+	<br>
+	div {
+	<br>
+	height: 1em;
+	<br>
+	}
+	<br><br>
+	/*ex: Sätter höjden på divar till storleken på hur hög ett gemen "x" är för typsnittet för det aktuella elementet*/
+	<br>
+	div{
+	<br>
+	height: 1ex;
+	<br>
+	}
+	<br>
+	/*%: Sätter höjden på divar till 1% av hur högt dess parent-element är*/
+	<br>
+	div {
+	<br>
+	height: 1%;
+	<br>
+	}
+
+	<p>
+		<b>Hur ett CSS-dokument är uppbyggt</b><br>
+		Först i dokumentet skall eventuell teckenuppsättning anges, varefter importering av exempelvis andra CSS-dokument eller fonts ligger. Detta kan göras antingen genom att ange en string eller en url.
+		Sedan kommer selektorn som avgör vilket element som skall påverkas. Inom måsvingarna kan man ange alla de egenskaper man vill sätta ett värde på.
+	</p>
+	<figure>
+		<img src="../../Gesallprov/Resources/cssuppbyggnad.png" alt="cssuppbyggnad" />
+		<br>
+		<fig-caption><b>Figur 6.</b> Exempel på hur ett CSS dokumnet är uppbyggt.</fig-caption>
+	</figure>
+
+</body>
+</html>

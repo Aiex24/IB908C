@@ -1,0 +1,104 @@
+.boxModell {
+	padding: 15px;
+	border: 15px;
+	margin: 15px;
+}
+
+.boxmodellMargin {
+	background: #336850;
+	padding: 0 15px 15px 15px;
+	width: 113px;
+	color: white;
+}
+
+.boxmodellBorder {
+	background: #348a75;
+	padding: 0 15px 15px 15px;
+	width: 83px;
+}
+
+.boxmodellPadding {
+	background: #2db75f;
+	padding: 0 15px 15px 15px;
+	width: 53px;
+}
+
+.boxmodellContent {
+	background: white;
+	padding: 0;
+	width: 53px;
+	color: black;
+}
+
+.borderExample {
+	border: solid 2px black;
+	outline: dotted 2px red;
+}
+
+#kallebild, #kallebildClipPath {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+#kallebildClipPath {
+	clip-path: circle(50%);
+}
+
+.bildexempel>*{
+	width: 50px;
+	height: 50px;
+	background: red;
+	float: left;
+}
+
+.hiddenImage {
+	visibility: hidden;
+}
+
+.collapsedImage {
+	display: none;
+}
+
+#squareHidden {
+	overflow: hidden;
+}
+
+#squareScroll {
+	overflow: scroll;
+}
+
+.windowdiv {
+	background-color: rgba(0, 150, 100, 0.1);
+}
+
+#windowImage {
+	width: 100%;
+	height: 10cm;
+}
+
+.bigSquare {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 50px;
+	border: 2px solid #0f5514;
+	border-radius: 40px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#gradientColor {
+	background: linear-gradient(to bottom right, #024e16, #6afb64);
+}
+
+#radialColor {
+	background: radial-gradient(#6afb64, #024e16);
+}
+
+.multipleImages {
+	background: url('../../Gesallprov/resources/monkey.png') right bottom no-repeat, url('../../Gesallprov/resources/wavebackground.png');
+	background-size: 80px, 130px, auto;
+	width: 100%;
+	height: 100px;
+}

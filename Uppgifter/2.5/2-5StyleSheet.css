@@ -1,0 +1,40 @@
+.a-button, .change-table-layout{
+	padding: 5px 10px;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+	.a-button:hover, .a-imgButton:hover {
+		background: #c21e1e;
+	}
+
+	.a-button:link, .a-button:visited, .change-table-layout {
+		color: white;
+	}
+
+	.a-button:active, .a-imgButton:active, .change-table-layout {
+		background-color: #6d1616;
+	}
+
+.a-button, .a-imgButton{
+	background: red;
+	margin: 2px;
+	border: 2px solid #c41515;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.a-imgButton {
+	display: inline-block;
+	padding: 5px;
+	cursor: crosshair;
+}
+	.a-imgButton img {
+		width: 30px;
+		height: 30px;
+	}
+	
+.a-button:visited, .a-imgButton:visited {
+	background: black;
+}
